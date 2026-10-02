@@ -1,0 +1,10 @@
+Given an exact existence oracle FIND-ONE(G,q), construct four distinct solutions:
+
+S1 := FIND-ONE(G,q)
+For j = 1..3:
+    enumerate tuples (v1,...,vj) in S1 x ... x Sj
+    call FIND-ONE(G - {v1,...,vj}, q)
+    first returned solution is distinct from every S_i because it omits v_i in S_i
+    if no tuple works: fewer than j+1 distinct solutions exist
+
+For fixed four outputs this needs O(q^3) existence calls.

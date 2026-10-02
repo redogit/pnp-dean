@@ -1,0 +1,17 @@
+MAX-REPAIR(S):
+    repeat until fixed point:
+        cardinality repair
+        exclusion-isolate inclusion
+        compatibility q-core peel
+        vertex-cover pressure forcing
+        Nemhauser-Trotter LP persistency
+        crown/kernel reductions
+        components / co-components
+        modules / twins / domination
+        SAT/no-good propagation
+        certified equation propagation
+        degree-fall extraction
+        canonicalize and merge equivalent states
+    return S
+
+Every repair must be answer-preserving and reconstructible.

@@ -1,0 +1,21 @@
+CERTIFIED-MPCA(S):
+    choose polynomial-size square-free monomial dictionary M
+    generate only certified polynomial consequences
+    Boolean-reduce and linearize them as A y = b
+    exact-row-reduce A
+    if rank(A) < rank([A|b]): return NO
+
+    d := |M| - rank(A)
+    if d <= O(log n): enumerate affine Boolean candidates; verify originals
+
+    N := exact basis of ker(A)
+    for each candidate carrier action a:
+        derive proposed certified equations B_a y = c_a
+        gain[a] := rank(B_a N)
+        optional SVD(B_a N) for steering only
+    apply action with maximum certified marginal rank/cost
+
+    if best algebraic lift adds Δm features and Δr independent equations:
+        prefer it only when its proof-value justifies Δd = Δm - Δr
+
+Exact rank proves; PCA/SVD steers.

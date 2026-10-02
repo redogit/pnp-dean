@@ -1,0 +1,111 @@
+{
+  "schema": "standalone-export-status/v1",
+  "workspace": "pnp-dean",
+  "status": "validated-local-export-with-declared-limitations",
+  "source_bytes_and_modes": "verified against original Git blobs and SHA-256; original checkouts untouched",
+  "historical_scope_files": 250,
+  "dependency_files": 3,
+  "totals": {
+    "passed": 21,
+    "skipped": 0,
+    "additional_successful_checks": 1
+  },
+  "checks": [
+    {
+      "group": "pnp-dean",
+      "check": "mlir-python",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "projects/research/P versus NP Repair Lab/mlir/test/python",
+        "-p",
+        "test_*.py"
+      ],
+      "environment": {},
+      "exit": 0,
+      "summary": [
+        "Ran 19 tests in 0.002s",
+        "OK"
+      ]
+    },
+    {
+      "group": "pnp-dean",
+      "check": "discriminators",
+      "command": [
+        "python",
+        "test_discriminators.py"
+      ],
+      "environment": {},
+      "exit": 0,
+      "summary": [
+        "PASS pnp decision-field discriminators"
+      ]
+    },
+    {
+      "check": "native-build-and-tests",
+      "exit": 0,
+      "summary": [
+        "C++20 GNU 14.2 Debug build passed",
+        "2 CTest tests passed",
+        "5405 exhaustive graph/target cases passed"
+      ]
+    }
+  ],
+  "earlier_failed_checks": [],
+  "root_validation_runner": "exercised successfully",
+  "limitations": [
+    "Chrome/Chromium browser checks could not run because google-chrome is absent.",
+    "Full Windows SDK, Android and native LLVM/MLIR builds were not tested.",
+    "All fifteen original exclusions remain absent; excluded test/projection tools are not claimed as validated.",
+    "Original scope status and original test reports are historical; this is a new export validation, not a replay claim for the old 740-test aggregate.",
+    "Original commits remain intact in the source repositories; unrelated full history is not imported into these scoped exports.",
+    "Native source recovery resolves the earlier missing-source blocker; earlier failed_native_builds and prior_blockers are historical evidence. Publication status is recorded separately in IMPORT_RECEIPT.json."
+  ],
+  "content_scan": {
+    "unique_source_blobs": 1722,
+    "archive_members": 1067,
+    "credential_pattern_findings": 0,
+    "structured_private_origin_true_count": 0,
+    "scope": "Bounded credential and explicit private-origin-marker scan; not a universal personal-data classifier."
+  },
+  "failed_native_builds": [
+    {
+      "check": "test_solver",
+      "exit": 1,
+      "summary": "",
+      "log": "/workspace/scratch/repository-publication/standalone-validation/test_solver.log"
+    },
+    {
+      "check": "test_exhaustive",
+      "exit": 1,
+      "summary": "",
+      "log": "/workspace/scratch/repository-publication/standalone-validation/test_exhaustive.log"
+    }
+  ],
+  "prior_blocked_status": "blocked-incomplete-native-source",
+  "prior_blockers": [
+    {
+      "component": "GYRO-DEAN-4 native C++",
+      "missing": [
+        "include/gyro/state.hpp",
+        "include/gyro/certificate.hpp",
+        "native implementation sources"
+      ],
+      "evidence": "Both attempted C++ test builds fail at missing gyro/state.hpp. Recovered SOURCE_ARCHIVE_NOTE.md identifies a complete source archive.",
+      "recovery": "Exact GYRO-DEAN-4-source.zip found in Library; transfer into environment failed. Bytes and shared-file identity not verified, so nothing imported.",
+      "needed_action": "Make that exact original archive available in this environment, compare shared source files, then package missing original dependencies and rerun native tests."
+    }
+  ],
+  "blockers": [],
+  "native_recovery": {
+    "manifest": "NATIVE_RECOVERY_MANIFEST.json",
+    "fresh_validation": "NATIVE_RECOVERY_VALIDATION.json",
+    "missing_files_recovered": 67,
+    "native_ctest_passed": 2,
+    "exhaustive_graph_target_cases": 5405,
+    "assertions_enabled": true
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "schema": "native-source-recovery/v1",
+  "original_snapshot_commit": "5230f055a60c34f5db98f94e673b5ca551d297c6",
+  "archives_inspected": [
+    {
+      "name": "GYRO-DEAN-4-source.zip",
+      "sha256": "896a9e8cee6c1ac0248bd91c9d1f09e121f4717c46f20c1aa272e54f8e53edb2",
+      "bytes": 55738
+    },
+    {
+      "name": "GYRO-DEAN-4-extended.zip",
+      "sha256": "22c758d043a09e1605a3e26c4d9f5441a8e43bdc2b53470dcddf8f4dbe15f55d",
+      "bytes": 685426
+    },
+    {
+      "name": "GYRO-DEAN-4.zip",
+      "sha256": "649b16c7ff8791d61d8b6f09ea7d42903a4afcab831d47a1fa606f1d2b2c8b21",
+      "bytes": 30885
+    }
+  ],
+  "source_archive": "recovery/GYRO-DEAN-4-source.zip",
+  "source_archive_sha256": "896a9e8cee6c1ac0248bd91c9d1f09e121f4717c46f20c1aa272e54f8e53edb2",
+  "imported_missing_files": [
+    {
+      "archive_member": "CLAIMS.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/CLAIMS.md",
+      "sha256": "22bc5eee617c6eaacc595fdb3260f047621373d446d36eab998d7c6e6f7fb550",
+      "git_blob": "2f01db0e238fc5089f1d49de99699b4b51bf7380",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "CMakeLists.txt",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/CMakeLists.txt",
+      "sha256": "a85ad389f5e30a83bcd40f00eacf455d70f17593a33769de685d07ea4a7ab56c",
+      "git_blob": "103fa5be3cda15781eae24d4bcbab7107aaf8622",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "config/default.toml",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/config/default.toml",
+      "sha256": "103e99f9d4728185b7ed74e3aa63ddd5f19d002e231e8c5501afc119cba7a870",
+      "git_blob": "44633d3296d5b2ed043b9771c6ede25a04ab34b1",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "docs/SEMANTIC_GRAVITY.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/SEMANTIC_GRAVITY.md",
+      "sha256": "86420de0b072703eea13d21c934acf65bbdcbccffeb659c3024d77e750654e0f",
+      "git_blob": "7ab035fae38f554b4eaf82a14dfceba454d141d1",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "docs/IMPLEMENTATION_NOTES.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/IMPLEMENTATION_NOTES.md",
+      "sha256": "9fb956b66e87757c3973383c85465b531ee34a5ec4fcdfc5d4fd708614dcb404",
+      "git_blob": "acc103ff3baeecff2cead28d713f65af658480ef",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "docs/REFERENCES.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/REFERENCES.md",
+      "sha256": "fd244d869bca388c101c9d406d421efeda45b4fb5a410da263713dff4bda5754",
+      "git_blob": "8e677c6dd8d7d8c682e4eaf96a66c23615a5e843",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "docs/SQL_CARRIER.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/SQL_CARRIER.md",
+      "sha256": "4816aea33b51f357c7f2d3270e3b1cf1e5477a344a673eb9e4c51f337938d847",
+      "git_blob": "f60597099ddd3b1fa745d534c0686514e46a1194",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "docs/PROOF_RESEARCH_PROTOCOL.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/PROOF_RESEARCH_PROTOCOL.md",
+      "sha256": "bf72f3aa94ec673b19f46e8402b4b1b9c66f6548d1c2a45bb3b84a3de0c16ce3",
+      "git_blob": "0d8f9823ac6d7b99f239a41ec93f63282948220e",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "evidence/G20_CORE.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/evidence/G20_CORE.md",
+      "sha256": "54de7da75843e24242b5d687f1e4989453590d0ec6ded779c9b0ca1853c316f6",
+      "git_blob": "b2f4ad9afdd54c2129679f0ae57ab27cbb69d790",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "evidence/PETERSEN_PAIRWISE_FLAT.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/evidence/PETERSEN_PAIRWISE_FLAT.md",
+      "sha256": "5c6bc8cc1fc5e4068d9141e05198e08b1250fb38267eee9d3f7118d2dc53583e",
+      "git_blob": "84e522a89e1703c89017e47b5cff30fa7ae6fa01",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "examples/g20_students.csv",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/g20_students.csv",
+      "sha256": "0d9d7e8a2cdc1f824e4335ec4ff708de38a7a1c62e388b801df158f834161055",
+      "git_blob": "9fe73e8e08a1154c86b01c631cc374b4054b0e9b",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "examples/README.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/README.md",
+      "sha256": "1b1706296e8ef95110d5113e1a6001e5666546a3e2833c3e555d42e4e68b7b12",
+      "git_blob": "b72d3993d26c9cb60fb53b2820b1a5dfc61cf845",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "examples/g20_exclusions.csv",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/g20_exclusions.csv",
+      "sha256": "06ec81d7dac39c51823cf677915c37c809c3277ff5152946f15ab65d0463ba43",
+      "git_blob": "96c0196c9d457f90b80e50253d88b06acd4922a9",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "examples/petersen_students.csv",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/petersen_students.csv",
+      "sha256": "cd5d31bcddd284c5d7edeb84271221dd6ebb43ac8d3fde5fbbb103f21a2f8d46",
+      "git_blob": "779a260eb8426d40751c2b43f9bc4b4347b29ed9",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "examples/students.csv",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/students.csv",
+      "sha256": "bd08ddd4875dbf201e280fecca9c164b3fedb1dc5d4fb84bfa489bb0eb8c86de",
+      "git_blob": "abe0d7c56c4ae367f98b8f2ea871ddc66e0c29d6",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "examples/petersen_exclusions.csv",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/petersen_exclusions.csv",
+      "sha256": "da919bba124d2793ec15001d1e25a63652ad77e58f319f88671c4f9e3561f040",
+      "git_blob": "42856bf9ee0516eb29c56636e2cc58b34634f711",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "examples/exclusions.csv",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/exclusions.csv",
+      "sha256": "d876fc6dc0380fdc5072abe44006aae8f5e3ae57a9a7fc954e18924ee68cdae2",
+      "git_blob": "317ec19eac0ed6284458324df09ec84ae5f03012",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/certificate.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/certificate.hpp",
+      "sha256": "b07a20bbd4498ecace901147972cbdbe75649dc1573a354967321ea4aa9888a3",
+      "git_blob": "8245b5785c3ec453b83f44f4d096aaacc00ed8c1",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/exact_rank.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/exact_rank.hpp",
+      "sha256": "a2c00dc20dc5ab30d70a1709658b73f124d373e899e7c40b6b8025a229011415",
+      "git_blob": "73e53097cd7bb29dd2795577451ba721702bc871",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/dynamic_bitset.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/dynamic_bitset.hpp",
+      "sha256": "93ceb62a64adf579b77df24716a1971a85db67aa8ba36713647036d1afb5bf6c",
+      "git_blob": "7e2917af8bd21c45605292bf11e6b82fab58832a",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/carrier.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carrier.hpp",
+      "sha256": "542278854f8fba315be0ae890f19f57049394269048bc36f1a21bffdb62b6e08",
+      "git_blob": "311b016933715e27079c94a8f627016254bd8fe0",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/carriers/frame_hammer.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/frame_hammer.hpp",
+      "sha256": "8403ecce991c97ac8dd6b6f02cac7ee6e66a6fa99cae07afb462be6af812b85e",
+      "git_blob": "1438eb72a9df4b7944a5945d2698dbd1ed73b8ac",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/carriers/certified_mpca.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/certified_mpca.hpp",
+      "sha256": "03590b59409c09d5e2793760d324dbbb0d62846378e9bce72cdb692c6d3b86cb",
+      "git_blob": "88c1cbfe3e2b1251aefab98e5fee738a088d11ad",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/carriers/factor_sql_carrier.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/factor_sql_carrier.hpp",
+      "sha256": "9a67993a790524018f3d8a5e467f1f6270fb6f2a348b5949f7490de633a21c8a",
+      "git_blob": "ccac00e14bd251b026a1cdd5c4bd53783de10c7c",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/carriers/cover_lp_carrier.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/cover_lp_carrier.hpp",
+      "sha256": "3eb842714ce95f3c149847cc1689cc1b79ba050ee6026489956699beae601953",
+      "git_blob": "be14f006d99c767e01d98c0a300add70cee30115",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/carriers/graph_carrier.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/graph_carrier.hpp",
+      "sha256": "6b2fa4d0093c0164be90a6b4c75cc28ae452a041e559a9b59db267ec76d073bb",
+      "git_blob": "9993c6fdd29be07695794903f24225df84569b4e",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/carriers/sat_consensus.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/sat_consensus.hpp",
+      "sha256": "6ec93a894c86765b8178ab460a838c8656509dcfbc0b40ed8e530b53b5d39fb1",
+      "git_blob": "b74f5611946ff16317f808d7b24d4fa82e8d294b",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/state.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/state.hpp",
+      "sha256": "e14b4b426a8f61867f962ccc6d6857dc81f39c2576ac0173cae3e610dd70bb34",
+      "git_blob": "bf2c8639d15af626831ed98ba9b13443c786a02b",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "include/gyro/bit_graph.hpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/bit_graph.hpp",
+      "sha256": "414a062d6ef1b45057e7f6a3f8e958ea31e40fad21bf0d291e2efa8cc3df279f",
+      "git_blob": "597e8d141589a56d39d32fb5d65deee7af91fe6a",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/02_PRESSURE_CLOSURE.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/02_PRESSURE_CLOSURE.md",
+      "sha256": "f1d1e08d4632dbd731aec2d849de9d757a565754553020fa99d8fc425fb3e080",
+      "git_blob": "41409b7380281ece8dd3d48e4ad312aa651e1f3c",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/13_CERTIFIED_MACAULAY_ENGINE.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/13_CERTIFIED_MACAULAY_ENGINE.md",
+      "sha256": "44bc6dfcf31b64a4257b0235510e46a1ac949002b2cebb46371cfa425be603ec",
+      "git_blob": "28368368e318f351b0036ff3e812bb64ab20c4c4",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/09_REGULAR_CORE_PLATEAU.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/09_REGULAR_CORE_PLATEAU.md",
+      "sha256": "fe44bb61ba1463131ab6224f168722ad0f772fd6e73ea9167972712a53af71c1",
+      "git_blob": "437f1759d1f8f8b3b44da7012a33be3d34ffbdbd",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/18_MULTI_FRAME_RANK_COLLAPSE.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/18_MULTI_FRAME_RANK_COLLAPSE.md",
+      "sha256": "790a1b02e645f10a757668a6775a2bc8c83411e1e6f99dd19161976e7613ed6f",
+      "git_blob": "3de698ed1bae0d9ade2ddf8b09229755c01a2c89",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/01_DEAN4_NP_COMPLETENESS.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/01_DEAN4_NP_COMPLETENESS.md",
+      "sha256": "b768d804a5068c9362c88569cb33b8e136cd1f6a1d04645d8023461eb984d9ca",
+      "git_blob": "4c065560ac9c38a018695157d07dfa6a9cb19b25",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/07_CAPPED_RECURRENCE_AND_FACTORIZATION.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/07_CAPPED_RECURRENCE_AND_FACTORIZATION.md",
+      "sha256": "ed8f8e43fa9923ceec53b727827f1ba2be97ac5dec7cb2ef0ab7ac3e67b805e8",
+      "git_blob": "fa46c4f0e449e0d96ee3870cd0bfb0ee0812a3c6",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/16_GRAPH_HILBERT_BRIDGE.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/16_GRAPH_HILBERT_BRIDGE.md",
+      "sha256": "328690518d29325391f7722d097fe7aee286524f00996fa66210e41b74696307",
+      "git_blob": "4d9630e438a2c81ddc3b1110f8d82e69d64774d1",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/11_GYRO_CLOSURE_AND_FRONTIER_MASS.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/11_GYRO_CLOSURE_AND_FRONTIER_MASS.md",
+      "sha256": "53f99e328725b35e6f255ece48b22ebbdd2b6bb7c4e4bb90989c63ff70aa7e01",
+      "git_blob": "ccf10ba7b40c80162d737a112a98a35ef95c152f",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/10_CONTEXT_FRONTIER_AND_RANK_BARRIERS.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/10_CONTEXT_FRONTIER_AND_RANK_BARRIERS.md",
+      "sha256": "2927a5804adc85e44590b23d4f3ab90ec9b4a0afaed10f45b5c9c70012a4a9de",
+      "git_blob": "bbea8dac5b15e31febc035fda9717f8ca2fa03f6",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/17_DUAL_SUPPORT_FRAME_THEOREMS.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/17_DUAL_SUPPORT_FRAME_THEOREMS.md",
+      "sha256": "4aac93f433fcaa7bff5eee6e2f6ff5d49a0599858e808714ff57dfd9853406b6",
+      "git_blob": "9774cf460ca183d093df879bfefbe2b10d7cda9b",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/08_VERTEX_COVER_DUALITY_AND_KERNEL.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/08_VERTEX_COVER_DUALITY_AND_KERNEL.md",
+      "sha256": "c59a1020d7ade3f6ef5a762a191f936fe57b0a6848428a27fa44b67bca98772f",
+      "git_blob": "6c29443cc105e36dc4fb655776a1791eb4e5a76a",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/20_PROOF_STATUS_AND_OPEN_CLAIMS.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/20_PROOF_STATUS_AND_OPEN_CLAIMS.md",
+      "sha256": "2506d25db8a5d8164a3bbcb25fab81c91611f2d94a6d331380b9ce4a0bfba9b1",
+      "git_blob": "e39d9e4b35f11b890079ff072ac12aa73887d539",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/12_MAXIMAL_LINEAR_PCA.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/12_MAXIMAL_LINEAR_PCA.md",
+      "sha256": "513df403423a83d557ec45530e0869371cbe48e9fabcf4804d7346824c294903",
+      "git_blob": "10d3feb86ed566c3eedec48325d0549f88617c9e",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/19_SUBMODULAR_RANK_GRAVITY.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/19_SUBMODULAR_RANK_GRAVITY.md",
+      "sha256": "a28b591662ca1fb9e743f5aa5692542f59ff3f156dbb77be745fffb96a89ada4",
+      "git_blob": "989e02790668f2a7ba9037a09a676e4f628b8d8e",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/06_SOLVER_CORRECTNESS_AND_TERMINATION.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/06_SOLVER_CORRECTNESS_AND_TERMINATION.md",
+      "sha256": "ad907d47975a6bd2e1b404ce837b6a09cc005ed3ee241d5aeb2b6e359d388458",
+      "git_blob": "f8950ec6d4065d511931139385d21d9eaf6695d8",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/03_CONTEXT_SIGNATURE.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/03_CONTEXT_SIGNATURE.md",
+      "sha256": "e2a1c43ebf0e8ebdbcc34893242dc1e2fc42501c8c2dcf7c12dd9083e7dce506",
+      "git_blob": "7b71f1522425f8e8169600caed2de8c77bd00a8b",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/14_LIFTED_MPCA_CURVATURE.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/14_LIFTED_MPCA_CURVATURE.md",
+      "sha256": "77b90feb3d005262fcf6f8d183650948c7bcabf4dd5f3bfe81d1d01b23fb9bd3",
+      "git_blob": "c784a1c850b464d6bf9f5e9f7a50529b604028b5",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/05_FOUR_RESULT_SELF_REDUCTION.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/05_FOUR_RESULT_SELF_REDUCTION.md",
+      "sha256": "7908723d2072866055fc66725a96174fc01bf5acceae5099ff4f3be7ffd55899",
+      "git_blob": "ff6e4906fc77651b5fe1ba86601b0e54f2d58bfe",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/15_SEMANTIC_JACOBIAN_AND_BLOCK_ATTACKS.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/15_SEMANTIC_JACOBIAN_AND_BLOCK_ATTACKS.md",
+      "sha256": "8b4c44b85e5cbe7c2d6117c3e75df9dc1a4438577e3ad142fde878cfde58af8d",
+      "git_blob": "b7df49f8b09253fd2469cf2a8220e8f66ec2164a",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/21_CLAIM_FALSIFICATION_LEDGER.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/21_CLAIM_FALSIFICATION_LEDGER.md",
+      "sha256": "0349526b3f3d66d3e93970abbfeaeefb93767e403cbe5218dcc50a79941c1cd4",
+      "git_blob": "d24242189f406da78a24ff0d9b50727a659b1fb3",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "proofs/04_CERTIFIED_RANK_GRAVITY.md",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/04_CERTIFIED_RANK_GRAVITY.md",
+      "sha256": "53a22663e5a0a2c0f09441acd221ee56e72a20ce81367546cb04ff3b6af8fc0f",
+      "git_blob": "53b773154c2336f593294185049ab67c9609383a",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "pseudocode/CLAIM_ATTACK_LOOP.txt",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/CLAIM_ATTACK_LOOP.txt",
+      "sha256": "07d9a40eac1403f6420d51104cae412d46a004c1f8d7bb4829020e274c534ee0",
+      "git_blob": "5e40ab15eea67415c40b80992964ea5992d14d4e",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "pseudocode/DEAN4_ENUMERATION.txt",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/DEAN4_ENUMERATION.txt",
+      "sha256": "b554eab1c2ce408debb783cc3316331b0b298fce4c82647d920d2d52c0e52a41",
+      "git_blob": "66ce99b10943c6ee902279ea0299ed407231d234",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "pseudocode/CERTIFIED_MPCA.txt",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/CERTIFIED_MPCA.txt",
+      "sha256": "e0d85b1521cab40830ce93fa5584dff4635b1b0caba569f59561a097377b4da6",
+      "git_blob": "fb6851f58f8b82695a8578fca98192e1187b2e05",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "pseudocode/MAX_REPAIR.txt",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/MAX_REPAIR.txt",
+      "sha256": "7db34e97b4f8cf7e7bbe1a474c36f1394706d6ea3e14bc24a696bff1d2d02c35",
+      "git_blob": "52aa6e1f22098f5111d4ee281cc791b37497c023",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "pseudocode/GYRO_DEAN_4.txt",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/GYRO_DEAN_4.txt",
+      "sha256": "73afd4b62d3698c604d77366ef8c8ce2f58ec67cf6d442eef6e6073bc56a3a2d",
+      "git_blob": "d87f8f58cdce1ea032d17382b6e37833b3e72e53",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "sql/compile_conflicts.sql",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/compile_conflicts.sql",
+      "sha256": "b4a0020d5213b2a91074cd4e532eafbe960e3a9677c39da1ce990330831398ce",
+      "git_blob": "3b7c66f5f174f1fa1f9682f28cac889fef5ad522",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "sql/verify_results.sql",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/verify_results.sql",
+      "sha256": "53d76507ea13d734012867079b35c16d6c731811f202dc375dd434bdf0c67b3c",
+      "git_blob": "f42f248d193704f148bc2dd3709dbbd760ca66a5",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "sql/schema.sql",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/schema.sql",
+      "sha256": "21cdfbd32842b7ef02414d5f8ab217321495a36d516240cda8c5d378842ca31b",
+      "git_blob": "6ad0abd8dca5bb6a98cf7d936dc84f282006eb4f",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/main.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/main.cpp",
+      "sha256": "0ac88cdd95d89120b6695c5410181c3f1c47eac18cf55301242ff8d94129ca88",
+      "git_blob": "937b17b7d31345f245b33f1c84b1d4738318bd2c",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/bit_graph.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/bit_graph.cpp",
+      "sha256": "c3d13c01723fd08c99afd00fee633acdb9ced58a3d78e2b5c827ff56a321dd52",
+      "git_blob": "3adc9927ee4927dbbc6d57d5e6629e91f7fb3eaa",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/solver.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/solver.cpp",
+      "sha256": "8578c8e43859b93394f8503c68e98c827b48e8b1f71d34023b90bb5276a1d944",
+      "git_blob": "5c7e8f9de1734bd173ad58e55b692a32a2c9a8b7",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/carriers/certified_mpca.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/certified_mpca.cpp",
+      "sha256": "3a28172fe6af80dd80408aa4730c0b4a67648c9458738aa7709f4f49a67e2fbb",
+      "git_blob": "f312006e9215a3fc7c80bf79090e96dfd3917098",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/carriers/factor_sql_carrier.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/factor_sql_carrier.cpp",
+      "sha256": "e58182cd87e2a216788fd1765df0b12817105b9686f3a130e75f19c9709aef1e",
+      "git_blob": "877de8761312250f466799c2adbd6ea73a624202",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/carriers/frame_hammer.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/frame_hammer.cpp",
+      "sha256": "a4a107efff2699635d25d354685d3fc93d7f4b70bb320935fd1c43452b36bb7b",
+      "git_blob": "1f42edb0633556efed188e967aacdb267b1925b9",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/carriers/cover_lp_carrier.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/cover_lp_carrier.cpp",
+      "sha256": "e015a471b679baf1421e3f2d935e568fbc97241584265c254df93ea43cb3a358",
+      "git_blob": "43ab78c4b27407b71661ced39a92a56aa72561c0",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/carriers/graph_carrier.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/graph_carrier.cpp",
+      "sha256": "2ba896de617984d67d62db818d2f1fb68a2ea59012a97984272282a58a5a076a",
+      "git_blob": "0d8f84eaf69e7809e05f351c47cad150df35214c",
+      "mode": "100644"
+    },
+    {
+      "archive_member": "src/carriers/sat_consensus.cpp",
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/sat_consensus.cpp",
+      "sha256": "17b600e74729fabd4d39be3e79cd2733a18417a4d289cca928ee46250ee7d82f",
+      "git_blob": "abf5ca33bc0988905a04ca3a330254c06ccb75f1",
+      "mode": "100644"
+    }
+  ],
+  "shared_identical_files": [
+    "docs/ALGORITHM.md",
+    "include/gyro/solver.hpp",
+    "tests/test_solver.cpp",
+    "tests/test_exhaustive.cpp"
+  ],
+  "differing_documents_retained_from_git": [
+    "PROOF_REPORT.md",
+    "README.md",
+    "docs/EVIDENCE_BOUNDARY.md"
+  ],
+  "extended_archive_source_matches_source_archive": true,
+  "excluded": "Other ZIPs were inspected only; extended build products were not imported. Existing explicit export exclusions and rights are unchanged.",
+  "evidence_boundary": "Native build and finite tests establish bounded implementation evidence, not a P=NP proof or universal polynomial runtime bound."
+}

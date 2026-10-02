@@ -1,0 +1,21 @@
+{
+  "schema": "native-recovery-validation/v1",
+  "command": [
+    "python",
+    "validate.py"
+  ],
+  "exit_code": 0,
+  "build_configuration": "Debug; assert checks enabled",
+  "toolchain": {
+    "CMAKE": "/workspace/.cloud-tools/lib/python3.12/site-packages/cmake/data/bin/cmake",
+    "CTEST": "/workspace/.cloud-tools/lib/python3.12/site-packages/cmake/data/bin/ctest",
+    "cxx": "GNU g++"
+  },
+  "elapsed_seconds": 4.602,
+  "fresh_evidence": "PASS source identity, file modes, explicit repairs and exclusions\nRunning mlir-python\n...................\n----------------------------------------------------------------------\nRan 19 tests in 0.001s\n\nOK\nRunning discriminators\nPASS pnp decision-field discriminators\nRunning native-build-and-tests\n-- The CXX compiler identification is GNU 14.2.0\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.1s)\n-- Generating done (0.0s)\n-- Build files have been written to: /tmp/gyro-dean-native-_omc3uzr\n[  6%] Building CXX object CMakeFiles/gyro_core.dir/src/bit_graph.cpp.o\n[ 13%] Building CXX object CMakeFiles/gyro_core.dir/src/solver.cpp.o\n[ 20%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/graph_carrier.cpp.o\n[ 26%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/cover_lp_carrier.cpp.o\n[ 33%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/frame_hammer.cpp.o\n[ 40%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/certified_mpca.cpp.o\n[ 46%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/sat_consensus.cpp.o\n[ 53%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/factor_sql_carrier.cpp.o\n[ 60%] Linking CXX static library libgyro_core.a\n[ 60%] Built target gyro_core\n[ 66%] Building CXX object CMakeFiles/gyro_dean.dir/src/main.cpp.o\n[ 73%] Building CXX object CMakeFiles/gyro_tests.dir/tests/test_solver.cpp.o\n[ 80%] Linking CXX executable gyro_tests\n[ 80%] Built target gyro_tests\n[ 86%] Building CXX object CMakeFiles/gyro_exhaustive_tests.dir/tests/test_exhaustive.cpp.o\n[ 93%] Linking CXX executable gyro_dean\n[ 93%] Built target gyro_dean\n[100%] Linking CXX executable gyro_exhaustive_tests\n[100%] Built target gyro_exhaustive_tests\nUpdateCTestConfiguration  from :/tmp/gyro-dean-native-_omc3uzr/DartConfiguration.tcl\nTest project /tmp/gyro-dean-native-_omc3uzr\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 1\n    Start 1: gyro_tests\n\n1: Test command: /tmp/gyro-dean-native-_omc3uzr/gyro_tests\n1: Working Directory: /tmp/gyro-dean-native-_omc3uzr\n1: Test timeout computed to be: 120\n1: all tests passed\n1/2 Test #1: gyro_tests .......................   Passed    0.00 sec\ntest 2\n    Start 2: gyro_exhaustive_tests\n\n2: Test command: /tmp/gyro-dean-native-_omc3uzr/gyro_exhaustive_tests\n2: Working Directory: /tmp/gyro-dean-native-_omc3uzr\n2: Test timeout computed to be: 120\n2: exhaustive labeled graphs n<=5: 5405 graph/target cases passed\n2/2 Test #2: gyro_exhaustive_tests ............   Passed    0.20 sec\n\n100% tests passed out of 2\n\nTotal Test time (real) =   0.20 sec\nPASS recovered native source identity, C++ build and both native tests\n",
+  "limitations": [
+    "Finite native tests are not a P=NP proof or universal runtime bound.",
+    "Full native LLVM/MLIR, browser, Windows and Android builds were not run.",
+    "Original source reports remain historical; prior aggregate test counts are not claimed as rerun."
+  ]
+}

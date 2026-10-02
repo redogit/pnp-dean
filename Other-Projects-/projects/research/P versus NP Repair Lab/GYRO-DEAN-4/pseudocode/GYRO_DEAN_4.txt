@@ -1,0 +1,33 @@
+GYRO-DEAN-4(G,q,capacity):
+    if capacity < q: return NO
+    results := []
+    repeat until |results| = 4:
+        cohort := FIND-DIFFERENT(G,q,results)
+        if no cohort: break
+        results.append(cohort)
+    independently verify every result
+    return results
+
+FIND-ONE(G,q):
+    S := initial canonical state
+    return GYRO(S)
+
+GYRO(S):
+    S := MAX-REPAIR(S)
+    if terminal: return terminal certificate/witness
+    if memoized: return memoized result
+
+    repeat:
+        choose best certificate-backed carrier action by gravitational score
+        if action proves progress:
+            S := APPLY(action,S)
+            S := MAX-REPAIR(S)
+        else break
+
+    if terminal: return
+
+    v := STRONG-BRANCH-PIVOT(S)
+    left  := GYRO(S with x_v=0, then MAX-REPAIR)
+    if left YES: return left
+    right := GYRO(S with x_v=1 and N(v)=0, q:=q-1, then MAX-REPAIR)
+    return right

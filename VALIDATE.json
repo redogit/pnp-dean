@@ -1,0 +1,45 @@
+{
+  "schema": "standalone-export-validation/v1",
+  "checks": [
+    {
+      "name": "mlir-python",
+      "cwd": "Other-Projects-",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "projects/research/P versus NP Repair Lab/mlir/test/python",
+        "-p",
+        "test_*.py"
+      ],
+      "environment": {},
+      "timeout_seconds": 300
+    },
+    {
+      "name": "discriminators",
+      "cwd": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14",
+      "command": [
+        "python",
+        "test_discriminators.py"
+      ],
+      "environment": {},
+      "timeout_seconds": 300
+    },
+    {
+      "name": "native-build-and-tests",
+      "cwd": ".",
+      "command": [
+        "python",
+        "validate_native.py"
+      ],
+      "timeout_seconds": 660
+    }
+  ],
+  "not_exercised": [
+    "Chrome/Chromium browser checks (browser absent in preparation environment).",
+    "Windows SDK, Android and full LLVM/MLIR native builds.",
+    "Excluded projection verifier and privacy/lineage documents/tests remain withheld."
+  ]
+}

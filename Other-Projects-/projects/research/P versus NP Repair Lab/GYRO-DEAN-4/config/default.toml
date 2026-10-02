@@ -1,0 +1,16 @@
+[target]
+result_count = 4
+
+[gyro]
+max_block_probe = 3
+prefer_exact_rank = true
+allow_numeric_pca_for_steering = true
+
+[algebra]
+max_feature_degree = 3
+max_features = 200000
+exact_backend = "bareiss_reference"
+
+[memo]
+cache_no_states = true
+cache_yes_states = false

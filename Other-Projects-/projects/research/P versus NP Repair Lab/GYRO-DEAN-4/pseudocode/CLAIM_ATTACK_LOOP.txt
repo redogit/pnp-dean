@@ -1,0 +1,38 @@
+CLAIM_ATTACK_LOOP(claim, calibration_instances):
+
+    1. FORMALIZE
+       - write quantifiers, input family, output invariant, and complexity bound.
+       - separate fixed calibration constants from unbounded parameters.
+
+    2. PROVE_LOCAL_LEMMAS
+       - derive exact implications with explicit reconstruction/certificates.
+       - add them to the proof ledger only after checking all preconditions.
+
+    3. ADVERSARIAL_TEST
+       - generate exhaustive small instances when feasible.
+       - include regular, symmetric, expander-like, high-width, pairwise-flat,
+         and deliberately degenerate calibration objects.
+
+    4. IF COUNTEREXAMPLE:
+       - mark the claim FALSE, preserve the counterexample, and identify
+         the exact structural reason the claim failed.
+       - convert that failure mechanism into a new carrier/repair candidate.
+
+    5. IF SURVIVES TESTS:
+       - tests are evidence only; seek a quantified proof.
+       - try to derive a polynomial certificate verifier.
+
+    6. INTEGRATE
+       - add proved transformation to MAX_REPAIR / carrier atlas.
+       - attach lift/reconstruction rule.
+       - update canonical state and memo signature if semantics changed.
+
+    7. RE-ATTACK
+       - every new repair is re-run against all prior counterexamples.
+       - every new failure becomes the next claim.
+
+    8. NEVER PROMOTE
+       - finite experiments -> universal proof;
+       - numerical SVD -> exact rank;
+       - correlation -> implication;
+       - carrier-specific progress -> P=NP.

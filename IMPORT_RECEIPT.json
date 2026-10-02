@@ -1,0 +1,2897 @@
+{
+  "schema": "authorized-connector-import/v1",
+  "repository": "redogit/pnp-dean",
+  "original_incomplete_snapshot_commit": "5230f055a60c34f5db98f94e673b5ca551d297c6",
+  "recovered_local_commit": "5de33d51bea26f0c9fadaba0d955d373bca9f96b",
+  "recovered_tree": "6c207b98933ad622c936c5d3d5f293cfec2f12e1",
+  "recovered_exact_history_bundle_sha256": "d71c6cb8be9c3e4baf325ea7f994ce7e7e9c7165bfe2dd8b20299a4a60f07c90",
+  "bootstrap_commit": "84c66b3b108505aa163a46c1b5d263ea30864232",
+  "commit_representation": "User explicitly authorized connector-generated commit identities; exact original and recovered local histories retained in separate unchanged Git bundles.",
+  "source_scope": {
+    "id": "pnp-dean",
+    "name": "P vs NP / Dean",
+    "purpose": "Solvers, probes, proofs, contracts, and evidence for the declared research scope",
+    "repositories": [
+      "redogit",
+      "Other-Projects-",
+      "conscience64"
+    ],
+    "source_roots": [
+      "Other-Projects-/projects/research/P versus NP Repair Lab",
+      "conscience64/research/pnp"
+    ],
+    "include_patterns": [
+      "redogit/research/pnp/**",
+      "redogit/PNP_*.json"
+    ],
+    "entry_points": [
+      "redogit/research/pnp/carriers/docs/PNP_CURRENT_PROBLEM_MAP_2026-09-30.md",
+      "Other-Projects-/projects/research/P versus NP Repair Lab/README.md"
+    ],
+    "organization_action": "Index current scope and evidence separately; do not promote open research claims",
+    "workspace_directory": "redogit/workspaces/pnp-dean"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc23526fb184ca30304b85d8709a97d82646cb58",
+      "sha256": "7e9ae8cfd10ed919d51c6d885de783c8c62cd541999883fbfeff237faa9151a1"
+    },
+    {
+      "path": "EXPORT_DEPENDENCIES.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4e0a9bdd3c6cb6a9c30a88ecf2d77cac70a9485",
+      "sha256": "234f17ad649e43e342fd9e167468b8e2bc94a36a7ef3f092e9b0bdeb2e53b8d5"
+    },
+    {
+      "path": "EXPORT_EXCLUSIONS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "989811995f9e8f05c5387803572506a2a2730d3f",
+      "sha256": "da0c382218a99a40e4744568021f5c604f387840e4313c36c348d7f4d0223161"
+    },
+    {
+      "path": "EXPORT_PROVENANCE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "870e3a663d5ffcbc6240c48be235373e84761ae7",
+      "sha256": "01a788637ab9013996b7f39965ede712e823897df27319839283e5f4a26fd48d"
+    },
+    {
+      "path": "NATIVE_RECOVERY_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "967d6ae907813839ad99859e8dfa99dc7461a62a",
+      "sha256": "eabd2a67ac18a8e32b96f66ce550f4b53cdc10c14f76ed63a73ba67af46ff5fa"
+    },
+    {
+      "path": "NATIVE_RECOVERY_VALIDATION.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "018267b2cd8e3543f2819a5e723b976e4e97c146",
+      "sha256": "10d7c0f54341a7a960d7074b5268656b8d753b6d164e4d069975feb65a5495d6"
+    },
+    {
+      "path": "NATIVE_RECOVERY_VALIDATION.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88208a20f3ef65548235f20d272ea7a0922fec97",
+      "sha256": "814cfc561739609a357ecadffbfe6e5a06e6fb98fb799a3e7570798d4b1b4302"
+    },
+    {
+      "path": "Other-Projects-/COMMERCIAL_ACCESS_POLICY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9a7bf9085173f85a42f8a4812f99bbdef24fc0b",
+      "sha256": "f15eeef67cc0f9069a0a6cd3fb0f219ac742cb1d41171cb18fd4f43940d70db2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "099b6175c9e0ded85ef18b8039f06196c86c04db",
+      "sha256": "970629634298fbae3294263b5f87177a1c5b4b9fbada82619fc5050d6d026afe"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/CLAIMS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f01db0e238fc5089f1d49de99699b4b51bf7380",
+      "sha256": "22bc5eee617c6eaacc595fdb3260f047621373d446d36eab998d7c6e6f7fb550"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "103fa5be3cda15781eae24d4bcbab7107aaf8622",
+      "sha256": "a85ad389f5e30a83bcd40f00eacf455d70f17593a33769de685d07ea4a7ab56c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/PROOF_REPORT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "289c1f8dbe7667ed4d05b9417db77b0ad6f90c59",
+      "sha256": "d0844bf5947b1c6cae09d865e07d57bfc176445c567caf9cc9b6078c0080b462"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ee1669d80e5a8cda101ffeb43e8659eaca966f1",
+      "sha256": "dedc2545f423e1390b295580a99490dbb254f06d525e4157e9ed4b602df600ad"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/SOURCE_ARCHIVE_NOTE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9e5cad0cfb5171d3d6a87624ab329421094ab47",
+      "sha256": "51a1feb65436695c35ac7f8080fc69b01315a44d983b536d5630229df9dbc971"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/config/default.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44633d3296d5b2ed043b9771c6ede25a04ab34b1",
+      "sha256": "103e99f9d4728185b7ed74e3aa63ddd5f19d002e231e8c5501afc119cba7a870"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/ALGORITHM.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adcbbe21743a6e2180112a864f80410e127842c3",
+      "sha256": "260e9efa4149e2a179d08fadb6cbf4668733dd44a7e0b87b048ec88a371501f3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/EVIDENCE_BOUNDARY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b216cfb57b986048869bbbc0b8d838dfefc3b35",
+      "sha256": "87ae51b90382b9fdb0cfc57e5a7f78e61e4ed3d91bd8db364c3668091d41bbd8"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/IMPLEMENTATION_NOTES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acc103ff3baeecff2cead28d713f65af658480ef",
+      "sha256": "9fb956b66e87757c3973383c85465b531ee34a5ec4fcdfc5d4fd708614dcb404"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/PROOF_RESEARCH_PROTOCOL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d8f9823ac6d7b99f239a41ec93f63282948220e",
+      "sha256": "bf72f3aa94ec673b19f46e8402b4b1b9c66f6548d1c2a45bb3b84a3de0c16ce3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/REFERENCES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e677c6dd8d7d8c682e4eaf96a66c23615a5e843",
+      "sha256": "fd244d869bca388c101c9d406d421efeda45b4fb5a410da263713dff4bda5754"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/SEMANTIC_GRAVITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ab035fae38f554b4eaf82a14dfceba454d141d1",
+      "sha256": "86420de0b072703eea13d21c934acf65bbdcbccffeb659c3024d77e750654e0f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/SQL_CARRIER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f60597099ddd3b1fa745d534c0686514e46a1194",
+      "sha256": "4816aea33b51f357c7f2d3270e3b1cf1e5477a344a673eb9e4c51f337938d847"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/evidence/G20_CORE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2f4ad9afdd54c2129679f0ae57ab27cbb69d790",
+      "sha256": "54de7da75843e24242b5d687f1e4989453590d0ec6ded779c9b0ca1853c316f6"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/evidence/PETERSEN_PAIRWISE_FLAT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84e522a89e1703c89017e47b5cff30fa7ae6fa01",
+      "sha256": "5c6bc8cc1fc5e4068d9141e05198e08b1250fb38267eee9d3f7118d2dc53583e"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b72d3993d26c9cb60fb53b2820b1a5dfc61cf845",
+      "sha256": "1b1706296e8ef95110d5113e1a6001e5666546a3e2833c3e555d42e4e68b7b12"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/exclusions.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "317ec19eac0ed6284458324df09ec84ae5f03012",
+      "sha256": "d876fc6dc0380fdc5072abe44006aae8f5e3ae57a9a7fc954e18924ee68cdae2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/g20_exclusions.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96c0196c9d457f90b80e50253d88b06acd4922a9",
+      "sha256": "06ec81d7dac39c51823cf677915c37c809c3277ff5152946f15ab65d0463ba43"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/g20_students.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fe73e8e08a1154c86b01c631cc374b4054b0e9b",
+      "sha256": "0d9d7e8a2cdc1f824e4335ec4ff708de38a7a1c62e388b801df158f834161055"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/petersen_exclusions.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42856bf9ee0516eb29c56636e2cc58b34634f711",
+      "sha256": "da919bba124d2793ec15001d1e25a63652ad77e58f319f88671c4f9e3561f040"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/petersen_students.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "779a260eb8426d40751c2b43f9bc4b4347b29ed9",
+      "sha256": "cd5d31bcddd284c5d7edeb84271221dd6ebb43ac8d3fde5fbbb103f21a2f8d46"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/students.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abe0d7c56c4ae367f98b8f2ea871ddc66e0c29d6",
+      "sha256": "bd08ddd4875dbf201e280fecca9c164b3fedb1dc5d4fb84bfa489bb0eb8c86de"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/bit_graph.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "597e8d141589a56d39d32fb5d65deee7af91fe6a",
+      "sha256": "414a062d6ef1b45057e7f6a3f8e958ea31e40fad21bf0d291e2efa8cc3df279f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carrier.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "311b016933715e27079c94a8f627016254bd8fe0",
+      "sha256": "542278854f8fba315be0ae890f19f57049394269048bc36f1a21bffdb62b6e08"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/certified_mpca.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88c1cbfe3e2b1251aefab98e5fee738a088d11ad",
+      "sha256": "03590b59409c09d5e2793760d324dbbb0d62846378e9bce72cdb692c6d3b86cb"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/cover_lp_carrier.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be14f006d99c767e01d98c0a300add70cee30115",
+      "sha256": "3eb842714ce95f3c149847cc1689cc1b79ba050ee6026489956699beae601953"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/factor_sql_carrier.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccac00e14bd251b026a1cdd5c4bd53783de10c7c",
+      "sha256": "9a67993a790524018f3d8a5e467f1f6270fb6f2a348b5949f7490de633a21c8a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/frame_hammer.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1438eb72a9df4b7944a5945d2698dbd1ed73b8ac",
+      "sha256": "8403ecce991c97ac8dd6b6f02cac7ee6e66a6fa99cae07afb462be6af812b85e"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/graph_carrier.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9993c6fdd29be07695794903f24225df84569b4e",
+      "sha256": "6b2fa4d0093c0164be90a6b4c75cc28ae452a041e559a9b59db267ec76d073bb"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/sat_consensus.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b74f5611946ff16317f808d7b24d4fa82e8d294b",
+      "sha256": "6ec93a894c86765b8178ab460a838c8656509dcfbc0b40ed8e530b53b5d39fb1"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/certificate.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8245b5785c3ec453b83f44f4d096aaacc00ed8c1",
+      "sha256": "b07a20bbd4498ecace901147972cbdbe75649dc1573a354967321ea4aa9888a3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/dynamic_bitset.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e2917af8bd21c45605292bf11e6b82fab58832a",
+      "sha256": "93ceb62a64adf579b77df24716a1971a85db67aa8ba36713647036d1afb5bf6c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/exact_rank.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73e53097cd7bb29dd2795577451ba721702bc871",
+      "sha256": "a2c00dc20dc5ab30d70a1709658b73f124d373e899e7c40b6b8025a229011415"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/solver.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76fe5b7554328f1acdbff307824cc0ed4fcbf754",
+      "sha256": "90029503073266b1ce349cff10669bb60390866bd5ebc526a734e8f4179a3263"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/state.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf2c8639d15af626831ed98ba9b13443c786a02b",
+      "sha256": "e14b4b426a8f61867f962ccc6d6857dc81f39c2576ac0173cae3e610dd70bb34"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/01_DEAN4_NP_COMPLETENESS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c065560ac9c38a018695157d07dfa6a9cb19b25",
+      "sha256": "b768d804a5068c9362c88569cb33b8e136cd1f6a1d04645d8023461eb984d9ca"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/02_PRESSURE_CLOSURE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41409b7380281ece8dd3d48e4ad312aa651e1f3c",
+      "sha256": "f1d1e08d4632dbd731aec2d849de9d757a565754553020fa99d8fc425fb3e080"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/03_CONTEXT_SIGNATURE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b71f1522425f8e8169600caed2de8c77bd00a8b",
+      "sha256": "e2a1c43ebf0e8ebdbcc34893242dc1e2fc42501c8c2dcf7c12dd9083e7dce506"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/04_CERTIFIED_RANK_GRAVITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53b773154c2336f593294185049ab67c9609383a",
+      "sha256": "53a22663e5a0a2c0f09441acd221ee56e72a20ce81367546cb04ff3b6af8fc0f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/05_FOUR_RESULT_SELF_REDUCTION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff6e4906fc77651b5fe1ba86601b0e54f2d58bfe",
+      "sha256": "7908723d2072866055fc66725a96174fc01bf5acceae5099ff4f3be7ffd55899"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/06_SOLVER_CORRECTNESS_AND_TERMINATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8950ec6d4065d511931139385d21d9eaf6695d8",
+      "sha256": "ad907d47975a6bd2e1b404ce837b6a09cc005ed3ee241d5aeb2b6e359d388458"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/07_CAPPED_RECURRENCE_AND_FACTORIZATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa46c4f0e449e0d96ee3870cd0bfb0ee0812a3c6",
+      "sha256": "ed8f8e43fa9923ceec53b727827f1ba2be97ac5dec7cb2ef0ab7ac3e67b805e8"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/08_VERTEX_COVER_DUALITY_AND_KERNEL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c29443cc105e36dc4fb655776a1791eb4e5a76a",
+      "sha256": "c59a1020d7ade3f6ef5a762a191f936fe57b0a6848428a27fa44b67bca98772f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/09_REGULAR_CORE_PLATEAU.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "437f1759d1f8f8b3b44da7012a33be3d34ffbdbd",
+      "sha256": "fe44bb61ba1463131ab6224f168722ad0f772fd6e73ea9167972712a53af71c1"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/10_CONTEXT_FRONTIER_AND_RANK_BARRIERS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbea8dac5b15e31febc035fda9717f8ca2fa03f6",
+      "sha256": "2927a5804adc85e44590b23d4f3ab90ec9b4a0afaed10f45b5c9c70012a4a9de"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/11_GYRO_CLOSURE_AND_FRONTIER_MASS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccf10ba7b40c80162d737a112a98a35ef95c152f",
+      "sha256": "53f99e328725b35e6f255ece48b22ebbdd2b6bb7c4e4bb90989c63ff70aa7e01"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/12_MAXIMAL_LINEAR_PCA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10d3feb86ed566c3eedec48325d0549f88617c9e",
+      "sha256": "513df403423a83d557ec45530e0869371cbe48e9fabcf4804d7346824c294903"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/13_CERTIFIED_MACAULAY_ENGINE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28368368e318f351b0036ff3e812bb64ab20c4c4",
+      "sha256": "44bc6dfcf31b64a4257b0235510e46a1ac949002b2cebb46371cfa425be603ec"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/14_LIFTED_MPCA_CURVATURE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c784a1c850b464d6bf9f5e9f7a50529b604028b5",
+      "sha256": "77b90feb3d005262fcf6f8d183650948c7bcabf4dd5f3bfe81d1d01b23fb9bd3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/15_SEMANTIC_JACOBIAN_AND_BLOCK_ATTACKS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7df49f8b09253fd2469cf2a8220e8f66ec2164a",
+      "sha256": "8b4c44b85e5cbe7c2d6117c3e75df9dc1a4438577e3ad142fde878cfde58af8d"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/16_GRAPH_HILBERT_BRIDGE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d9630e438a2c81ddc3b1110f8d82e69d64774d1",
+      "sha256": "328690518d29325391f7722d097fe7aee286524f00996fa66210e41b74696307"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/17_DUAL_SUPPORT_FRAME_THEOREMS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9774cf460ca183d093df879bfefbe2b10d7cda9b",
+      "sha256": "4aac93f433fcaa7bff5eee6e2f6ff5d49a0599858e808714ff57dfd9853406b6"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/18_MULTI_FRAME_RANK_COLLAPSE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3de698ed1bae0d9ade2ddf8b09229755c01a2c89",
+      "sha256": "790a1b02e645f10a757668a6775a2bc8c83411e1e6f99dd19161976e7613ed6f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/19_SUBMODULAR_RANK_GRAVITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "989e02790668f2a7ba9037a09a676e4f628b8d8e",
+      "sha256": "a28b591662ca1fb9e743f5aa5692542f59ff3f156dbb77be745fffb96a89ada4"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/20_PROOF_STATUS_AND_OPEN_CLAIMS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e39d9e4b35f11b890079ff072ac12aa73887d539",
+      "sha256": "2506d25db8a5d8164a3bbcb25fab81c91611f2d94a6d331380b9ce4a0bfba9b1"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/21_CLAIM_FALSIFICATION_LEDGER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d24242189f406da78a24ff0d9b50727a659b1fb3",
+      "sha256": "0349526b3f3d66d3e93970abbfeaeefb93767e403cbe5218dcc50a79941c1cd4"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/CERTIFIED_MPCA.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb6851f58f8b82695a8578fca98192e1187b2e05",
+      "sha256": "e0d85b1521cab40830ce93fa5584dff4635b1b0caba569f59561a097377b4da6"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/CLAIM_ATTACK_LOOP.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e40ab15eea67415c40b80992964ea5992d14d4e",
+      "sha256": "07d9a40eac1403f6420d51104cae412d46a004c1f8d7bb4829020e274c534ee0"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/DEAN4_ENUMERATION.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66ce99b10943c6ee902279ea0299ed407231d234",
+      "sha256": "b554eab1c2ce408debb783cc3316331b0b298fce4c82647d920d2d52c0e52a41"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/GYRO_DEAN_4.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d87f8f58cdce1ea032d17382b6e37833b3e72e53",
+      "sha256": "73afd4b62d3698c604d77366ef8c8ce2f58ec67cf6d442eef6e6073bc56a3a2d"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/MAX_REPAIR.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52aa6e1f22098f5111d4ee281cc791b37497c023",
+      "sha256": "7db34e97b4f8cf7e7bbe1a474c36f1394706d6ea3e14bc24a696bff1d2d02c35"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/compile_conflicts.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b7c66f5f174f1fa1f9682f28cac889fef5ad522",
+      "sha256": "b4a0020d5213b2a91074cd4e532eafbe960e3a9677c39da1ce990330831398ce"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/schema.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ad0abd8dca5bb6a98cf7d936dc84f282006eb4f",
+      "sha256": "21cdfbd32842b7ef02414d5f8ab217321495a36d516240cda8c5d378842ca31b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/verify_results.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f42f248d193704f148bc2dd3709dbbd760ca66a5",
+      "sha256": "53d76507ea13d734012867079b35c16d6c731811f202dc375dd434bdf0c67b3c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/bit_graph.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3adc9927ee4927dbbc6d57d5e6629e91f7fb3eaa",
+      "sha256": "c3d13c01723fd08c99afd00fee633acdb9ced58a3d78e2b5c827ff56a321dd52"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/certified_mpca.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f312006e9215a3fc7c80bf79090e96dfd3917098",
+      "sha256": "3a28172fe6af80dd80408aa4730c0b4a67648c9458738aa7709f4f49a67e2fbb"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/cover_lp_carrier.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43ab78c4b27407b71661ced39a92a56aa72561c0",
+      "sha256": "e015a471b679baf1421e3f2d935e568fbc97241584265c254df93ea43cb3a358"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/factor_sql_carrier.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "877de8761312250f466799c2adbd6ea73a624202",
+      "sha256": "e58182cd87e2a216788fd1765df0b12817105b9686f3a130e75f19c9709aef1e"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/frame_hammer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f42edb0633556efed188e967aacdb267b1925b9",
+      "sha256": "a4a107efff2699635d25d354685d3fc93d7f4b70bb320935fd1c43452b36bb7b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/graph_carrier.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d8f84eaf69e7809e05f351c47cad150df35214c",
+      "sha256": "2ba896de617984d67d62db818d2f1fb68a2ea59012a97984272282a58a5a076a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/sat_consensus.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abf5ca33bc0988905a04ca3a330254c06ccb75f1",
+      "sha256": "17b600e74729fabd4d39be3e79cd2733a18417a4d289cca928ee46250ee7d82f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "937b17b7d31345f245b33f1c84b1d4738318bd2c",
+      "sha256": "0ac88cdd95d89120b6695c5410181c3f1c47eac18cf55301242ff8d94129ca88"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/solver.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c7e8f9de1734bd173ad58e55b692a32a2c9a8b7",
+      "sha256": "8578c8e43859b93394f8503c68e98c827b48e8b1f71d34023b90bb5276a1d944"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/tests/test_exhaustive.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4536b9371d60dc20ded2cc85aace94607a4fcabf",
+      "sha256": "5d1d5cdb4cfac8e364d2b8dbd9bea06dde682651224ba616e0f72cee7e5d7e09"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/tests/test_solver.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5e3e223f005ba2255cf7e36eab2217c2aa8d44f",
+      "sha256": "8ed93692f82256cafbd7cc48fde6779f55578dcf51f5a9e929e5ba3eddaeaf8c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee604b7da452a2278ca286de5b60f80945922515",
+      "sha256": "c54eab0db35025993644e5913e9c3c034e4043502250b692b4b036cfde3b38c7"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/AFFINE_COORDINATE_BRANCHING_THEOREM.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39f68829100126bdfd53b77eee9e452007699811",
+      "sha256": "6a680606700174b04fe0acb4e025775d67e571cac8438a48a300fa094f604412"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/CONSEQUENCE_SELECTOR_K4_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44e6e1d2062b854d194dfe59f72792fd468cd100",
+      "sha256": "de5bbc2de1739ff012f3bae653e7449191536af3c3886d2bc7e79da999e86c27"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/DF_PNP_01_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e80d60b46b9399bf4626b586006540ef91373e23",
+      "sha256": "0198e605186e33910e3620566101a8613f01dc50172ac7c8e49d9b8fb0e9c34a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/METHOD_FIREWALL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4e97b87322596304e5ebb2686294647abf8a29f",
+      "sha256": "df96d678936882f85df857de153959fd2004324d6135e686f34d3166b940a51c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/ONE_FEEDBACK_ROUND_SELECTOR_RESULT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5f87a06e69f095304970f8596bed404c4efad33",
+      "sha256": "b472f29fc8b175b50475b97ee29a56b775afdb179a433454d91e6406d99d2e37"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/ORIGINAL_PARTITION_INVARIANCE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b931c9296b735123a8a4559ee9bd59f2a24fc03a",
+      "sha256": "e4d06a42921f6b358a935a3136dfbce762e51d239c5719003d950ac488ff7986"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/SUCCINCT_AFFINE_CANDIDATE_FRONTIER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0457875db563870ce54e13bc6a0223a433608dab",
+      "sha256": "317542fc16cf6736a1a2c14db950938ccb048dad292aefc373a56424abf62985"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/consequence_selector_k4.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0923cc2554f1fe43b4a791bee91c919f97ffd624",
+      "sha256": "6dc61edb7d550df066758142b5e7c0d4aa31096350df07c3e50ea688d35fd17e"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/df_pnp_01.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f5a084d52e40f5ab96e8b1f752369f5bc01d438",
+      "sha256": "c28eed2753afa1fb609e57a9ce1326e6adcd360f6822c21ac7cf7d5ac05f67da"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/CHECKPOINT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c42a87fb722a8b24b23fe911278d8ff586764c8",
+      "sha256": "836df8be283fd390aed9c1390af8593eeac205bb03737d3685bbba39294191a8"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/CONTRACTS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11850ad108ddd3c6fafa13b789eb58d477c8bc1c",
+      "sha256": "21b42e4ea683d3d5e63603918c428b5678a19ecf90d7557c1ec1b0bb613d5af0"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/REPORT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38e42882c50a4751a61c0915113585f62834ecc1",
+      "sha256": "b9079684994a35604769f50eb82f729662750faa57ea74e33a8c94e57f35dd8a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/SOURCE_PROVENANCE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a863b9b1608a1832551e6db212889a5c20ddac0",
+      "sha256": "25612831cd8c726491c2ed51e045aa82bdc38bc2b6c3e9e7603b253411fa40e2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/experiment_a_symmetry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "555dcc4697d88c316bcd1f499f4cc489f254f494",
+      "sha256": "bf65caea11c880d9e2a2c0b5722efc132ac428ffae295870dacc95b6124f4c34"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/experiment_b_consequence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbbb5fec0291d717205b226af4bf6d75e5b3ccc7",
+      "sha256": "a6e91c259333b3c1bc09d532b8a3a54678679d3a91e738cfb1e350ad104a3d37"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1c52f9cfa2717ac1dcf7e89cf83e9959a98fa47",
+      "sha256": "56a616f369aba965cad585b02cf54bab721322b7a8d173314acb9eb44315d105"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/test_discriminators.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85b123e30cbd31a58b454255958e0462dc55bf25",
+      "sha256": "de4a2fddf3ab739ff234962ed665da7761cb2a0496546473aff713d287b7d80e"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/one_feedback_round_selector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e80a5e643a9d6433c5f9759b39b2fd5b01ec002",
+      "sha256": "2eedb37002e4fa15570b731a08983ba77eb8d55c04af4cecdffa67f53df63ba2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/docs/CURRENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe346a0abb21ccf66084332b69a96505a4d98e0e",
+      "sha256": "59af13c2dc350935156598d636dea57c64aada31286a5d87fd5b7948d6770cfe"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/docs/GYRO_DEAN_DECISION_FIELD_2026-09-17.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4a662cdd57175bb5916be58afa2b2f591d9954e",
+      "sha256": "f1a6d77e1de8b11cfc637d5cd1eefffcb597c4e50ca98d76d065a5d13a8661d1"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ff7925582a5052974f3e952e77afd74b2ee0a9e",
+      "sha256": "c7a66c4dcb15a76c1c3037eb2a35248708c7ae27b1954902d0ea0edd2911c04f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/NOTES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bfae6bc3d043bbd5bf99bde26f4a95e5fa58c3a",
+      "sha256": "c57de6f9df558842e3cc79d6789e45915f7e76498f220c9f17c3c30f9e58629d"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/PUBLISH_FILES.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22fdd89f421aba2dc217622743e1291ff64e6d15",
+      "sha256": "70418a7f859eb63b13046e9114bdff31c9845c74a23a33a84ae4476aa682987f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/audit_contract.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd79ac0f7a90936368007c5ac8845746b940aea9",
+      "sha256": "a8c91c028a429a72182fb262190064c94e07f1e014c569e60eb3b741dd8adcd8"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/audit_replay.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c1e52108a40af5493f21de24ddca96b8a986316",
+      "sha256": "55ee963e2e390e9d8c347589da4d5a1ea70e4f76c8de00a56b76ba94452521a5"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/constructor.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87ad1c910d8cfb959b124cb6fccefdcab70e72a1",
+      "sha256": "0040da3e086a1d89532eef24f320b1b52d3617bee2ea85b688f8b11254f5aaa2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/constructor_v6.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eb8950f053d2cda2e611d7dc75d3698c9be64a8",
+      "sha256": "5734325ad2e16a77f6d916e869ffcfced701e34dd682b3c8119fa90ec1f88f7e"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/constructor_v6_1.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef086df6a3dbedb37199ffd48e2bfe6169e4349d",
+      "sha256": "b658c345faf4341e1791d95cdeca18f22096fe3572425dc4af3d255841d0362f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/contract.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68a2ab40f6e0855ce2195d3b02bf393496cad71a",
+      "sha256": "b66cf9a66e7e6d894cac9db59a8b367011278540b018765eb679b5f67a3af369"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/contract_v6.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98422cdf4959fdf14d62c1dcfa2f4e7546b60beb",
+      "sha256": "fdfc0ffb9cf932bb522352a2392b8b1a06b0630fd8bc3752b75cd8b2431a6875"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/contract_v6_1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac9edb803c6a9e5abdd851efc0d712f1c51e10de",
+      "sha256": "12f4a9dc2d9630d0ac7237b4c91ea53862d0be97de7833ed3baee0a70e4bcbfd"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/contract_v6_2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5af3d309557b6effd3fd3ffd37e75a86c4eec89",
+      "sha256": "644278321b443b7c27927a5074d90545e36b6a3e250bea6501fcf720f62012ae"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/run_suite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9754a96266c139494a9cbf05e4811d97b807c92",
+      "sha256": "c47ee80fedde3006295e66e5b831814b9867ddac1c1f208ce8c6565ef9a5465b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/run_v6.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ecc8832d22454c57761790fcda66e3a60431458",
+      "sha256": "91215b00a8018111d0e69c7196edab83591882cec56777dd53cf075286acb17c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/run_v6_1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0973323bb5fc1012dd65a25796219e30311076f4",
+      "sha256": "dde4e9288ab6e2293b250951afcded9d9e133d31976817684b669dd2dfbd61de"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/run_v6_2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b70200ec78b31f9cb10b1d3a5c7276a6e24f322",
+      "sha256": "14070a2c456226d672c4a480ee7e6f8d6eec152c5a96f939d9c43e0358289e26"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/audit-001/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "312426b9f3d4469053605abbfa7a5abf555aa808",
+      "sha256": "f703f243d7307e18006de640923bd197bf51d90a6a8998a71d4b9c5ca276cc40"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/audit-001/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56adaecee6efaee898e731c99581a16e02330b0f",
+      "sha256": "34b27fbbfb57596e2247cfdbf885a21677215bc6e930cc12f0a8adcdaf4d2de6"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/audit-001/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/audit-001/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "401b2199c0d58eb705f72dbfa454ba7c2855c0e7",
+      "sha256": "7153548f4d1b8aec4d3f38266a8f0a74b94133471506a8938604023e170fc337"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-001/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b8a59779a3ebceaa422865298a04afe06cd8874",
+      "sha256": "0326a9220735d65504e22030b67852a664467a51ee8e8b95da8e21cee3d9295c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-001/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f702db273574acf400a7abc271a90c546396bbae",
+      "sha256": "6e590e7a22f11fa82c8fd82c80929372d20eae5f488a53bbce9570f3aaaa91f1"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-001/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-001/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70d9bd75849175cf5680828badcc486b3af4e101",
+      "sha256": "5af03f76979c8a77b4eed691980b3cca7c97943054c03f1a5fae3c707b4fc007"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-002/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ae5563bb324ce3109ec6215156a252a4ebea34a",
+      "sha256": "92cb6e1e3803137bcf0e506abf57d5b41f82471a97c892a6842de635ff215dd3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-002/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9efe846d1527561dd27e7377fea453f8cc4714f5",
+      "sha256": "b0971b0165cbec2c5ab943dadcd21b5b7a6bab9acf5c2be23f72fceb22dab3f0"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-002/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-002/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5b49992dea0623649031ec0be17c58aaa9d434f",
+      "sha256": "662fd9ca31e3396654183731b8f3caf783099699bf559cb8802aee223ec85975"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-003/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0f1e15c80724b9ae9cca0ee130c57c917b1d61e",
+      "sha256": "8836a8d83e46a50e6cfbcd68790fc3f6c761b073adf71b45ab55b0653d920c23"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-003/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0e5f00c2ba615463b9eb91db9019d6b61d86809",
+      "sha256": "d69b235e868ac1631179db42c3afcc25e02005468e5469b29a26297242844e60"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-003/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-003/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0793b13e654487c6e2feb77dfc1b8b5fcf0914c",
+      "sha256": "173c592f08aae6f9e04f182328bcc35791604e91cf9dadc9792265a82ea0ae0d"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b1f837d132d6d56be3996f108670b2d185b8a8e",
+      "sha256": "b83a9fe82cef1494b71c7758f8d0d017ae97d62c9fda3b2aff98b72fe8d64614"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n2_g0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "150eb3ceffe53bfb292b57393276eede37ba4836",
+      "sha256": "67d2ac5fcc555cd8ea06e45b99c1d3c8a5bd5e4819b0e11cc274bcbb7d1765f2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n2_g1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69566b5fa6cd88ae826a7d253d1f3b2720a87ee7",
+      "sha256": "bf4d8be9c56dab63c618caf8d01dffaa37dc0c7ea744df946ae58074d924f1cc"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n2_g2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1594a4781be504382eeb8e2dd0db114d62d31b2f",
+      "sha256": "eaccaa0d4ab5b48bc795f02954ba5455b086ba99068bcc314e49f24335ccb182"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n2_g3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57f5a3b8fef29fab2a4b05064e9cd21c822ba2e4",
+      "sha256": "efad7c8e1c850443f7005c73708c4b46c2a66d4932de138a9d8426d7ccb55e98"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n2_g4.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5477ce2c07fdbb15d90a612a323defd930720a9",
+      "sha256": "89458b8894774d2a7525e316e9865d0356b4f2bbf5933fea196c7daf1c3a6445"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n2_g5.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1639ba8fb33990ff3bb703b6bac352c049c2719c",
+      "sha256": "f4e7fb98252db8001cb1fa052c28263221628507c900779b0e600dd534155c8d"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n2_g6.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e078c6fc6f0b1bd8b7dd37302be1a9d5327a874",
+      "sha256": "4de7e3c8c7202d31c7ae39046759fac5a29bcb9582167c8dd24feda99bd66378"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n3_g0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb0c23dc18c14790f3c90d7b24765976120666f9",
+      "sha256": "8c7cb4aa19b53a4e57ac0ab37fdb4f541ca610a9ce0b5b82f021b5d64154d96b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n3_g1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "941cbb2b466273522cc1cb18554676b51965a3da",
+      "sha256": "251607bb931b44919f39c6d5e0789f115d5e68a369b980cd6bf3275b339f64d0"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n3_g2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dbfa0abf82f5ab6a5b9620f43c8a90d2c3f8229",
+      "sha256": "d5486dd3ea857e6aa1493d8d12b2ed28f0547612c2679bea65b46fabbb05cfa3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n3_g3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "815654aada26fdd9d585aff02a33b30dacd956e8",
+      "sha256": "e8a9aa8a0069ca87ae3e82559b81aa31d501657e8306044d55a6deb592d8594e"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n3_g4.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59fb15a51937c3ca4741667c6f0f62bbbd32b1da",
+      "sha256": "7d58d4442f621200ee30f99d931925b58b232d6d9f4ba978baf711c73936103b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n3_g5.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3332a582625055161031f671c3b742927214f08b",
+      "sha256": "e392ef5b2b4a9e6ad4d291db88b492cf4e2de4434eefb71b085f9814825a833a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n3_g6.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb97cfde3539893a42491ad3e948b4a02daa963f",
+      "sha256": "a9686f0a1f5838033a0e3ceba0215089d26bfefa6dfe464cbe3dcbb26e9091d8"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n4_g0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9118966927980b197a584a4181e30222333ebcf",
+      "sha256": "4c0e065610d5d85b9c119ec86d36e5ec26bbf1ba577a7a07e1a45d6b1235f490"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n4_g1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df8fa0f11abbb54c7f23c9dbf149aa1e44925a17",
+      "sha256": "c81663460e42a11cf7428531d771fbe7ff5adccf99dfe14e1b0d26eb8cd1ccb9"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n4_g2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdc6fa36c22493c8e58c1adfa040a58b97406050",
+      "sha256": "31afa4bcbd33e0ba2624838571f09c23cab85ecdda3cc0826e8d0ecc211af961"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n4_g3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eec3489663313bdbee4762a148adbf347b27b872",
+      "sha256": "fcddff8ce055d05546a07424d3a17953d18e19059c21cb098ceeba02a4817d34"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n4_g4.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32fd56a2a8db39c3d416b6e96f36bec31b2c99b8",
+      "sha256": "9d32fd044ea8fb00b14f15d8b5395e77c6d9b8fe2149316ec7e7f5633e59d2ef"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n4_g5.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b855ae39d5b846a59c712fc6d66f665baddf327",
+      "sha256": "28f65b2acace5b6de2444d9ef4a082630742e1691edeb1c59b45c6b3c69603b5"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/n4_g6.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f4dcf016065a8c4c18327cfb82533476654eeb8",
+      "sha256": "31a03b365ac81e13e3c435070b04487d708dbf6862e0bea29ea2f81a3607962b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38b713bf5eeeb3fabaeb455dda3c2464d4a82b8f",
+      "sha256": "fb21c01c50445f0e0ebbd9e0ffe75e58cdd8e9c2603a6446a0ec7f2519201793"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/runs/suite-004/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4540bb32781405ba6a80609f16665aa7b68464f6",
+      "sha256": "58cde227515b1654362858abf55a99e0a2e68048083ec657bbd483661c5159be"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c9280991af17198d0c783a2d98cefdd42a167b",
+      "sha256": "7bbc21c94996c84c594a50d9320004b7dbcd2b542864e7c27428c2212efa0dc2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b6dd89c93c0976acc1d067aa0607fccc8f0942a",
+      "sha256": "b27c6fdfa722d3aeba4d7c9093decea75f81a5ba6bf6c2988cd50ad02328fe5a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/evidence/parity-v1/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7593b53bf50201ed8e256f232808f5aaa09cad3",
+      "sha256": "5fcdb7abdefdbe68b038f14fc7c987415a9f8945f679d17050be564911a3ddca"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27e6a5e481a0c1bb3c7712d53c3e438b5f65b8ba",
+      "sha256": "df7c571b9e1b589a531c26ff3a776fa8088b5e7293e8411c89037f946e3f9b55"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CarrierDialect.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfdf67069aa674d8c072f6be602efcfbcdcffc16",
+      "sha256": "5d8370808f4345ebe091c2524c29679ad87a9f0f151bb4910bedc1b2a0abef6f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CarrierDialect.td",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99a8d2feb41d959d9f55e12264c4839a39f3e0da",
+      "sha256": "1d85d78f7dc9e328f538b09e3f46a10d4e3e9dcdf74357170230c2591d6607d4"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CarrierOps.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5e17f781eb8744815d14012ed4dd09d5953d0ab",
+      "sha256": "bbf14fa883de2b31b12d99aa200d53a850a6ad69e73a402e15debb0801f1114d"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CarrierOps.td",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ba366968e4c345dd91f8bf3924b75f176f5b64d",
+      "sha256": "5ffd8c9d919f4fdb81fabb1a2c01c5d70177b802d6bc66a31c8cf66af4453e94"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CarrierTypes.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44232cfa3b9f79da67358aab51af32f7ee8b4c2d",
+      "sha256": "9cebeb761d6a45256df6f831afa63b5314c1ca3f451fa2b6a276c7ce35d72e41"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CarrierTypes.td",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bc5132fd12e8805e647589b23429e05f12c9736",
+      "sha256": "e63a9ec3d1e67174f8cc55d3637191541c74f6425f66169095e98ca819a23c51"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CoreAttrs.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aa99ba61086af298ce3d5d0e66d779bb5993ca4",
+      "sha256": "95aeb7671db8aa63de1e8e0c73b88e357e56cdf1e46597a431a02b04fc237392"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CoreDialect.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a98922c0ff26cf71cf4ab03a2332f03a8393f2ca",
+      "sha256": "00e5ac29211580ff9d47b2bc245b8d9dbd34d1f40a0014218e0a288e6682d577"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CoreDialect.td",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88d3b4d4e499bf003a1a39d3cd7e4e240a7d7abe",
+      "sha256": "0dd0618ed36c7bab139300928cb11c6e15f8e9417dd5daf83cd77cef28df186c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CoreOps.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8172edfc9513032ed729597a19fe59df4690af15",
+      "sha256": "e4ec7b0ac3f66fc1566ac93e2e28da3e3b29e56e9605f05f91b5a0fc7da6eb01"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/CoreOps.td",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21888e4e45e189cc372a0a3d430d2117f964f7d4",
+      "sha256": "ba3ce1ffdb28c5ec4b9378f5247f50a53034fb203805c6f8d0583ace54e74704"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/EvidenceDialect.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d033fc8c0c19a3ccfd3794bbaea89655b73c21de",
+      "sha256": "0f45b51424c74fcf18037ccdceb9c43c7dde35acee85b13ce0f3bfcf08ca7cff"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/EvidenceDialect.td",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9452ef51cb2285fe88ae471c0e6d2d55e188fda2",
+      "sha256": "111de068c21b571103f6caba4447d10631e844957cf417ec2b073b43409a05a0"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/EvidenceOps.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63d85d17ae2217686028df4958c49000571fecdc",
+      "sha256": "61bf3c2ec01214418bf95117690c386082278529d11293c3fc55fd312563dd64"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/EvidenceOps.td",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22b34f716bc47c5f77c3fcf68eaccffb5d9737d2",
+      "sha256": "76e72f52052925f4bac6fddd3fc5ae33a07047523748b26f620c3c6883f84ea3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/EvidenceTypes.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a1f85e275407d8bc79c38a7cf99e6b92fa33b62",
+      "sha256": "7b21645f7bc461f02a7599ad715c6873dc725254e027f32b61ad36a25290b3a3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/EvidenceTypes.td",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a932861ac1eefe64fc26065083fbef98fa49781",
+      "sha256": "8b8b3e7924da849f8e46295e17c765abf573c2532e6f6cc76d8e9b0833f417a9"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/include/pnp/RegisterDialects.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "197dcbbff154a03a6d774d418ffac3333370726e",
+      "sha256": "d7fdf79d40207f3a30de556237952f78a5e87911c22a9e492a998b72b57867cb"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/lib/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d093e9d6c34cbf739bdb4d918e6ec5d90323cd6",
+      "sha256": "0cb5f0f980773fc191f872353aaa82ddb105167142bf4faa39326c500c624f61"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/lib/Carrier/CarrierDialect.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cef4f6adbcb4d2e96e63debcf6cc1bc1fa76d4ed",
+      "sha256": "d2a6c8bf2efbb09f41387b82ddb1bb08440d5d19a87ee7c75601ebf4fca9b748"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/lib/Core/CoreDialect.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0cde2ea053601a2399d7d77d5e772a6c2fb7b22",
+      "sha256": "d5ae65269d74b445c7f0afc485cf76fc774bc9ce47b658aa49a52edfe435bd23"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/lib/Evidence/EvidenceDialect.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c14c8e63dc74c2b6a0824b17a78437920012b83",
+      "sha256": "40ae66351461fbae2d08568ebefd1dc7a0ec8876646ae191c9e34b17f5afe1f9"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/lib/RegisterDialects.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a10a7c3928dc43fc6c1db57a30a52f8c13a7b4a8",
+      "sha256": "7cbb07af8f5bca96329a84648d4043c521d0c1431996070c034f68223c961721"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/python/check_parity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "723e737a61a634ce417f2cfad38eb00e1d77e52e",
+      "sha256": "7d03de81239605366b69aa546aa5603de388b1b2dfdf2bccf2b945e147bd4ee6"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/python/emit_legacy_mlir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "476686bbf4115a8c520de33f5a2a1937059512bf",
+      "sha256": "f686d112487dff407110791ddc13810832055ea5cfbf73e727f8a1d25ee277fc"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/python/freeze_parity_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "323d52cbf8e62c6cf0ddcf6d917ca2892585c77a",
+      "sha256": "e0ee407a8cde4b57d110f307380c48e97616b92f628fe34dbd33e602666bad40"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70397ecf56bfc8578abd0e4721b976c8b4d80c42",
+      "sha256": "abdc4b22b2b02c6d354b165178cdd74aa9d2d73803765b58814ba189ed48033c"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/dialects/carrier-roundtrip.mlir",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e115a3a6981aac948812aec7a199fc1b701b910d",
+      "sha256": "19afcdd3ad73de25c4149d3bafa9f201126bc1dfae52fe7b729a2cc2050f15c7"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/dialects/core-roundtrip.mlir",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca51809dd12b7adcf3e85135926589eaaf57ec19",
+      "sha256": "17b7b376b88139791b434ab3a434793e0b9c11fd9182af68e5355aff8a8fdfef"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/dialects/evidence-roundtrip.mlir",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8079b43176608a3063baa510b4f3a8b86a962aff",
+      "sha256": "eae44fe62cbeff2de3a7ca997fb70a4165dc6b21d00f810237dd573742af1b37"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/lit.cfg.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe5f419c9aabf0e48a693e3b02bd0f910b153d75",
+      "sha256": "6970cd1dd8654396291ed600675fa2e455540c54b7979a92ada5a95fc34548aa"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/lit.site.cfg.py.in",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37e66110411ec21e9ead5a3a9b9763b4b249dfd9",
+      "sha256": "6e62c76e9bc9442d288effd851caf5e848bfaf2a89b5b209eb51044be10d2cba"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/negative/invalid-carrier.mlir",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c1970534506896fb97de2c3bc20bccc4289c0f0",
+      "sha256": "0e75e7efcbfa337355e7268de62931e9db23f75c9f80954e0006743efb544541"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/negative/negative-cost.mlir",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50f793d3eee9210685647e8b057adaee154a7055",
+      "sha256": "12d324c39fae319b45d446c05731fce775f2c4c0c255af52b8d5925c5dcac3d3"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/negative/unknown-is-distinct.mlir",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "320c31e008160a1dffe8d3aa9a44334b70ec6b82",
+      "sha256": "ef0bc150b1adc7bfccbd955d44062296f8a0f3c34332bad9ef9aba89d9fa4979"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/parity/frozen-cases.mlir",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ed67783293ecbd91d03b544d1101426667622d3",
+      "sha256": "bef841be0b6a72e8da788f91a6d5af8ed4455110113a8712242c79843f8ee73d"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/python/test_build_contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72cbb4b5d64dc8295a43d60150757f3c839ad3fb",
+      "sha256": "ed34ab8286a366d9d95a2b4b0e683e9ca026dfaa045ec467761734cf7db5431f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/python/test_check_parity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "094894395b4e53aa4ed3a9e22cda16ffb95b0a7e",
+      "sha256": "def5f61c660890cf1f2752bf1f74feb5eb7b41cb0c6f3c78c31e7c417899192a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/python/test_emit_legacy_mlir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dceeb139f3d354b2270b88c1097b403a701139c",
+      "sha256": "c00ea03575d6cb7aa9e20b0f8199891e34ef1a7fff0a5548ba71ea8405560b60"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/test/python/test_freeze_parity_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad95adc1ee73ba7e2507c8df65b64f1015ce2a56",
+      "sha256": "e47f1b65483fd940a6a05848da63e8efc15c9a2474bd34e53770ad6000d05019"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/tools/pnp-opt/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d33b6af012d771ceee84a4229b1a350492a99610",
+      "sha256": "ccd34edfb9041f672fd91c90e6f7be381cc72d179a749a26db28c36e498ae4f9"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mlir/tools/pnp-opt/pnp-opt.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cb6facdb672ff87b43d10738b34bc0cfcc1ee6b",
+      "sha256": "2e5feca37602b99d0ec7725724a4b3f1bcc4b87b302453554b11747638dfb93b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/CLAIMS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a7e680b2b09fc6368222ed11a0ca4d02b60822e",
+      "sha256": "c3f9497de59a354879763fdb72cca6e34e421d94e5c6520be5b98db3a772e1a1"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/INDEPENDENT_REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "431b73669d9f7feae90bc1389f164daf56b18368",
+      "sha256": "efc7232d1eb0b126e3c1a3b63469cad75c4dbc734a2887da1cc96bd3bd9894e5"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/MACRO_REPAIR.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c0212a530a97374f60e9b0fb1444006e4ce27f6",
+      "sha256": "7e029113d7ce137dc672fe1ccf8ce1ddcd9995037c8d08a9834825b76abbf633"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/audit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "829a5fa094861189dd607e1471473a927d143a81",
+      "sha256": "1fce0cc5f4121609061ac3401f87ca9378098a82a55d7480dab2fd16751b0082"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/audit_macro.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf484cda5747b367f215e18b7a5f04bca1f490a7",
+      "sha256": "792ed26e393a1b74cfed5b5f37ada812de620a6a415d7cba8bef41e9265ea4c5"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/contract.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af671e14338d6b4cfdd061d32e311f57764be40a",
+      "sha256": "77274652837241c99d1008fae7a8bff02910c52d671962189c720451798a2dd7"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/macro-001/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91e5b9ab9e548cd87089bb3ee5101170a75f96fd",
+      "sha256": "bcf2a8196c3130d9c757a13abe6e29ed52a3a3172d5eb336401ff8f3e2ec4728"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/macro-001/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1bec7735c35678c6f45c937963734e6fe28e6f3",
+      "sha256": "3ba78a2b91f075f05492123ec34cf6ad208e9c7d111a533166dddc124db8d6a2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/macro-001/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/macro-001/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1349988c62860a17f69ca1d789807f7ebb345d6",
+      "sha256": "3bf3da0a52f766205a1d4dd92d3f23327a3584d8b83c49bdefd9b4186b205c3a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/macro-002/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d56998037fcff4f901f18d45818b88566a7462e",
+      "sha256": "d69e0f5f54e28d598d02cd325ddca475ccc08e645aa4ec983c1bf72d78ff0aee"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/macro-002/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1bec7735c35678c6f45c937963734e6fe28e6f3",
+      "sha256": "3ba78a2b91f075f05492123ec34cf6ad208e9c7d111a533166dddc124db8d6a2"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/macro-002/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/macro-002/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1349988c62860a17f69ca1d789807f7ebb345d6",
+      "sha256": "3bf3da0a52f766205a1d4dd92d3f23327a3584d8b83c49bdefd9b4186b205c3a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-001/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66e308788abe5b91d1a803aeed1cc722da9f22b7",
+      "sha256": "806588cab8433450ef17b31d83101865e16c45e057c97b3bdd5eadcd903eb044"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-001/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1168b6a2908f70f198dd7b24d4be69434debe92",
+      "sha256": "fbaceb09387bdc904496c64e7eaf3d254108ec01257a78679ea5103248099d7a"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-001/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-001/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f04d2a85b3951c021199a9ba53d508be4f08dcb",
+      "sha256": "8f750147950eb74460bef938b07a33238909e880b4b4a412995c6b7b67bee26b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-001/trap.plan.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5de785949ea598c4b7fe0e5c582564b4e8c62a4a",
+      "sha256": "3212d3e23d8bbd1831ab50e5ceb09cccd5996a231b72ba959f415fd832bf8dc1"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-002/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c91c6a46252bdd02199cae0fe4180642631d9669",
+      "sha256": "5d175aebfdfb457ebf1d22a7ffd85220882d58a682e7d60563870fa1b33b4413"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-002/results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cfc3b4a956b16a44f0249f6415911ec51bb51ce",
+      "sha256": "dd3505dc7450f0768f2b7257d935e95b9bc5fdb104edc04ed530460a49f34d5f"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-002/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-002/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f04d2a85b3951c021199a9ba53d508be4f08dcb",
+      "sha256": "8f750147950eb74460bef938b07a33238909e880b4b4a412995c6b7b67bee26b"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/evidence/run-002/trap.plan.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5de785949ea598c4b7fe0e5c582564b4e8c62a4a",
+      "sha256": "3212d3e23d8bbd1831ab50e5ceb09cccd5996a231b72ba959f415fd832bf8dc1"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/history/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c50e12112b4a8618eb809d2a7918ac61eaf4291c",
+      "sha256": "c8b8d54260d8b0720716e1e8bc73f9bdc28c911622e4e027e3b7bdf4a4199a48"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/history/repair_pre_doc_fix.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec1ef7eecff25c593b2ca94e28295ac84f72f602",
+      "sha256": "5914a2ee46f5f479643460043808697f476fa1943f5661f87b7f0291173eeeee"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/macro-contract.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ca8435bf804dc39d19a74b6c7129bafd5b2c43a",
+      "sha256": "8b702546ed65a36b64199e8b8b7c0373de4908ad684bfb4d83ec56582ef99727"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/macro_repair.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13eeec72198ac8a66ac9f4ee193bbc6ab28bb60d",
+      "sha256": "9f8f19d277d5ca13308809d55396985a57857164c2c54b5ea20aad3f2a1abff7"
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/repair.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ba0849ada4c69347c0d1ddf2c843bb796d0c9e5",
+      "sha256": "983022f7566c0a9b0d8858feec08e5b31181142d058eb2b326443f3bc1a8df07"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4b7209ada884d144c83380e20c9d3f47c1f1e38",
+      "sha256": "0bee0e22c0c72b35e489d886508355f9e8a48f67ac1477b3cc3ccb7065ea0f08"
+    },
+    {
+      "path": "VALIDATE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "578aa859b74622d6e661c213f85e92bf36be7905",
+      "sha256": "1def269cedea06834252176205389f31879ad83f5f90d7952443c120e8d94232"
+    },
+    {
+      "path": "VALIDATION_STATUS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "752648c176ff8383b738109c0da43c1b050a78fc",
+      "sha256": "4b7b9fcf8d048ca5e88d1f7c673420e449adf3c2f13f24edbad62d9c0d8025b7"
+    },
+    {
+      "path": "conscience64/COMMERCIAL_ACCESS_POLICY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9a7bf9085173f85a42f8a4812f99bbdef24fc0b",
+      "sha256": "f15eeef67cc0f9069a0a6cd3fb0f219ac742cb1d41171cb18fd4f43940d70db2"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/ALL_RESEARCH_TO_P_VS_NP_ROLE_MATRIX.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc87ef51f3a088549b4e61de4cc25aec619814b6",
+      "sha256": "31adbc1e31d4c189e53165b3c4f46227e22f1be243968539857e5fa95a61fb8c"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/ALL_RESEARCH_TO_P_VS_NP_ROLE_MATRIX.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "502d90409c618aceffbe10a1200892060c0836ae",
+      "sha256": "cc108750babc3942eca5b4e3032168e9803ababf23adf6be628f8afe646c223a"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/BOOLEAN_MEMBERSHIP_HSP_BOUNDARY_AND_FOURIER_QUOTIENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a210c6336898871ff5a843054822ede6179f83c7",
+      "sha256": "73153d92dd6e49ffba92e349056da83df98c1a655284dda0caf1817dafda474b"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/SHOR_HSP_PNP_EVIDENCE_UPDATE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf2876c72af83bc3f8bd9c6666751afbd3f53de8",
+      "sha256": "8583b8523359ec637b2fa2add9f62981297a24c51283510e7c76fbca80bffb24"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/WHOLE_RESEARCH_PARETO_ABLATION_ACTIVE_CARRIER.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5085372dc7d4479459be9f4ed86b659544108a73",
+      "sha256": "8496ab8b1c458efa0172044cea99e65fa111210820b3f84f212af333f17637e9"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/transports/BOOLEAN_MEMBERSHIP_HSP_BOUNDARY_AND_FOURIER_QUOTIENT.md.gz.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8de58e3150d4f38e66250dd8b7ad79364b388cf",
+      "sha256": "1a168fd1c10936f9e9d30f0c7b7c700be5d0d22da131b1d4c0407fd2a6101880"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/transports/FOURIER_CARRIER_VS_3SAT_SEARCH_COST.json.gz.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4681c7416bfea52d135bcd76630e4fb84c01992",
+      "sha256": "18a4f0f0b6088d54cadf095be8d87439c87ab4cd42bd05b5bf2fda3a613e09d9"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/transports/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f1d0fedc3c584a26e6a0049b3abc65e3aaaa4ea",
+      "sha256": "6b9cbbd572b09700a97aa429dce72786c3d7ee14e34decef49dfc13254a936c1"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/transports/SHOR_HSP_PROMISE_DEFECT_AUDIT.json.gz.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b022d050bab2b295a5f7fa7dd557c252cd3f136",
+      "sha256": "4f88801d5054bc5d1d35be5797095b14a255d8c45f0eb57cdc13d3cc853bcf40"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/transports/SHOR_HSP_STABILIZER_FREE_VARIABLE_AUDIT.json.gz.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6a6120aeb109be2f50eb23889e6fecc4c585b2c",
+      "sha256": "42b341d25624ae1141ccaeaeed541ff12d51b904924d173bbf288ef7474a6203"
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/transports/WHOLE_RESEARCH_PARTIAL_HARD_ECOLOGY_EXPERIMENT.json.gz.b64",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8c97c4f96fa44e9a605a9af459fcf70b36788ec",
+      "sha256": "2dfff26c2a97909bb24c69f83ec6de25d0ebd60ff9bae8cef3f4158c86e52e73"
+    },
+    {
+      "path": "recovery/GYRO-DEAN-4-source.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2bdb4fba3608fc43c19d238c2148e822552e125",
+      "sha256": "896a9e8cee6c1ac0248bd91c9d1f09e121f4717c46f20c1aa272e54f8e53edb2"
+    },
+    {
+      "path": "redogit/COMMERCIAL_ACCESS_POLICY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70867f201d185a8a035d81fbff85cda385bee902",
+      "sha256": "cac0c3b451ad3e63050129d3f50ba4d2ad9e227d2087a845705023e0941cd9cd"
+    },
+    {
+      "path": "redogit/PNP_CUBIC_3UNIFORM_RESIDUAL_EVIDENCE_2026-09-26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a41a9e74a95bd2c0fbe5bea0fa52517591bdfe4",
+      "sha256": "dfb8818f523f1f8587c3728d9700204c74e03709ffbda796cd60090b6c547e32"
+    },
+    {
+      "path": "redogit/PNP_CUBIC_BOND_COEFFICIENT_EVIDENCE_2026-09-26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9414503c5cf78c3b783793e322a11e4e17d9cbb",
+      "sha256": "8597344018b123029edc8de0ad02a1b8fba2e1ecf88e13febd450b5b7b2cd75b"
+    },
+    {
+      "path": "redogit/PNP_CUBIC_FRONTIER_PROJECTION_EVIDENCE_2026-09-26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51d8da7b12a47eda79325b98d03dc214226659c6",
+      "sha256": "24e881330607683fbbe20fd8c2e4e4725a84bc34fd96d99262822de78110c09e"
+    },
+    {
+      "path": "redogit/PNP_DEAN_ARTICULATION_CONTRACT_2026-09-30.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ddec9eb9930d6274b58cf8410ce7a0720786b01",
+      "sha256": "aadf7237097ffe57fdaf7e4b748e7b7cfbbcc0e9c8ac77df7f970227824d2cad"
+    },
+    {
+      "path": "redogit/PNP_DEAN_BOUNDARY_STATE_CONTRACT_2026-09-29.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d32e974aa213b0a86bd59b64a3811ec7641ff6f8",
+      "sha256": "4cb65d161a3802755aa8400cbea56fb0f03e7563803ba0a3ed6b50abc2b0783b"
+    },
+    {
+      "path": "redogit/PNP_DEAN_COMPONENT_EXPRESSION_EXECUTION_2026-09-30.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09e38e37d7aa56c096ed6348d254fbf3f77284d8",
+      "sha256": "30ed12f059a66fc6704d7e32d95e4728d3a57834da7623ea405653578d3ef0c0"
+    },
+    {
+      "path": "redogit/PNP_DEAN_COMPONENT_EXPRESSION_RESULT_2026-09-30.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1879920a0d6d206d4aceeb17309ccc798afd81c9",
+      "sha256": "55be44770b11c7c829f18cce540de86b86db9b78509a18eecdae490eed9b20ff"
+    },
+    {
+      "path": "redogit/PNP_DEAN_PARITY_REPAIR_CONTRACT_2026-09-30.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7a2d59c54daa6bc8edb2d5221adb6080b766b13",
+      "sha256": "c6e1b12d8cb5e20954536ab8f1c89c373613b35861d7f89f2199fc0a2f6d5f73"
+    },
+    {
+      "path": "redogit/PNP_SEMANTIC_INTERSECTION_QUOTIENT_EVIDENCE_2026-09-26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "064ce2ea6376ebaa5c651ce62c36713389ea0f87",
+      "sha256": "66be8b411b18edf87d676e9787e85d329da8caa226dd027635ddb1eece8e5794"
+    },
+    {
+      "path": "redogit/research/pnp/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f208fcea8e4b123772c10698e194867ad3ac747c",
+      "sha256": "18ac106064894237ffd006b513d598bc545163e85fd6d7c7d83f6e0ebd454b6c"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "317678e94ea65a3d213c9ae7b5d58989a3c1fabc",
+      "sha256": "dbb117ac59d8a7d1e4435bf65d3c7a949a86130287e049ec59aa94b7e36e29be"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_BEND_FIRST_MIXED_LAYER_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd9b8483d09760799e2d20bffdde5557e8c50088",
+      "sha256": "930e9af9f96e85afd43b264232277dcbd29d2cb312d4591f7c67aced39f86e88"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_BOOLEAN_SHEAR_FIBER_THEOREM_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d26bbb2e9303028c6f4d15da04d8e9847b7bcb2c",
+      "sha256": "ee9c5e79a7246b4e5a58c2cde9adc49f4db83175265630d9d79ec42314db69fb"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_BOUNDARY_RESCUE_CORRECTION_SET_SEAM_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d8272a2ae1c1867e5463fc69b3169539a1c6876",
+      "sha256": "16c7797f1ebe0e1d52751bc9f42cea386f5fa95914eb3778c571aeaac79b0572"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_BOUNDARY_RESIDUAL_MAP_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a919ffcbf3927e25766ba1878e19b27984648562",
+      "sha256": "f4e1f8de892ba570eb1f73d5587dd3bd6abdbb70afda8e1ed3fc9e5e0f16eb4b"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_BOUNDARY_RESIDUAL_ORTHANTS_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "431a516490a38d7477e38e89f001ec51bddf3275",
+      "sha256": "c8011d66791f539dbe8e8d53346eae05493d001cd4a2a07d7350c23e8018b695"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_CROSS_CIRCUIT_BOUNDED_ADHESION_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d9de5068e0644790bbe09fbb24bce818dfb83c5",
+      "sha256": "68837079db1bb08a9faa67c8a81a15570ae41529ea03c795f06a82676fcd926d"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_CUBIC_3UNIFORM_RESIDUAL_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50d395ccbb66dbe794d782e36fdc7ac7228560ee",
+      "sha256": "106143a012b604db30bcc7b07a609518b10c8ba9812a69fe1ece3e7726c9a723"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_CUBIC_BOND_LATTICE_CARRIER_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8beb699c07a8a6f9bc8aca1c0bf30ed2f4bdd91",
+      "sha256": "2a270e78234481bab8fc92ba52a985eb3b3ea16cc3d81e1f68313dcded2d257d"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_CUBIC_FRONTIER_PROJECTION_CARRIER_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "386976fd2fa716371db4d6ab545ff4408ded5ff5",
+      "sha256": "3c595416ecfa01253a75bd87326931fef6c03de5eebfc8e0d6a889a1a893dc69"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_CURRENT_PROBLEM_MAP_2026-09-30.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c636b6f119d276d0307464278df39e7bd584f59c",
+      "sha256": "be0114a23e82300956c5e854eca5bfccd060f26132a8273bb46a7cec61be81b9"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_FIXED_B_BVE_UNIFORMITY_EDGE_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b9c6144a7d1b840d3788ac32f16f34d996f9ad4",
+      "sha256": "c8b4dcc82ba3ba0805f77729aef845a62e10a3e3d08a1084e2fcfe8c99a5037c"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_HIGHER_ORDER_CIRCUIT_COMPATIBILITY_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6c96ae37cee6353bcac5626718a9b86dbaec4a3",
+      "sha256": "257d70209195a546210a5a149a2ad228df719d1126848a3388d22c5374054551"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_LOG_SURPLUS_TIGHT_EDGE_CLOSURE_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3b9003144db55b8e4a9235d4ac7c74a580f9992",
+      "sha256": "ae5c57508d9425b290b47336199aee84bf3cb07103639e90ff50e9b4bcb2bba2"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_MINIMAL_LINEAR_BOOLEAN_SEAM_PAIR_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "722c7f7361e5a4cfda50e9ee2c8f074566be17f9",
+      "sha256": "4d9e60f87a7c30e1bc994f0c9d418eae64034914fe70ee3d85b29ef93b7fd51e"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_MINIMUM_SURPLUS_FORK_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36a39d53fdbd5acca26fdeaca263899e14e1a9e4",
+      "sha256": "4404aeac294f8424ca230ce405abd57994cf6497fa64e4ab458d006c129ab746"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_POSITIVE_CIRCUIT_LOCAL_DECISION_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bf314b582cb992819685fcc3b2897e3c2379037",
+      "sha256": "775766a73eec5f3b41e2310e58668dfb21ca4dfe7b0316b152765d943f8cd36d"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_POSITIVE_CIRCUIT_SIGNATURE_COMPLETENESS_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32acfdf996d04a22437ed893e06dc838be78afe3",
+      "sha256": "99107b84f88eb22c5e215dd1ae55531054ebc0d0a1bd565d69f265c89c1e9a16"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_R5_PLUS1_ADDITIVE_BVE_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "274c4ccab9c2c61b482b932486ddad469f5ef601",
+      "sha256": "4ccbfe254e1f64079df397a2cd2e997b1355d998d28c764adb35254f165915d2"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_R5_R6_SURPLUS_FLOOR_2X3_CROWN_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2d2681eb0757a3c06055b76dfee818cf065349e",
+      "sha256": "9e74c53e89edaeff2428bddde7f417232cf2b6e9ffb04586e0292daa1df0f26e"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_SEMANTIC_INTERSECTION_QUOTIENT_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ad7cf465f501a419e5efa60a173801b8b31d0a",
+      "sha256": "d2b94dd0abbb6032e71ecfccbc4ec3bf5ce8ba7eacbeacb1f5aca252aee345d0"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_SIGNED_BINARY_CLUSTER_CARRIER_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9140e541c8a7e94da7115db25e64036356691f63",
+      "sha256": "5696012d69b1c26876e0ccbd1e9462a1a4db5bebf3912d1e8bc97157f640fae9"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_SURPLUS_AUTARKY_OBJECT_REDUCTION_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2276d2b845496121bc70c51c34ecfd0878219826",
+      "sha256": "141c78a964b8f7c736a0a3c30dd51206fb4cddb84fd5d89b0904b0ed11ec8b5c"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_SURPLUS_INFLATION_COUNTERPROBE_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "858bd7de11c9fc4795b179027644dbcf8bfeda22",
+      "sha256": "489618df1e7672c60340542d310baba76cff37034bdcaa2e8a0f038b6fed5ace"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_SURPLUS_INFLATION_UNIFORM_EDGE_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ff50cde407bb923fb1383b2db6aac2e59930c57",
+      "sha256": "5c2fad762edc94e530181419b36a19b7325538db0c2eff1880cc014c7799101d"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_TIGHT_BLOCK_BALANCE_INHERITANCE_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc64137f341e2f455a9fb27e2560faef79d94668",
+      "sha256": "db6ab04e443a3162bff8ff18bfa55a1dc3c27be3ca96700ac3d37cd431606800"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_TIGHT_BLOCK_COFACTOR_DEFICIENCY_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc18507c00855fa837d718f649480625d4033bce",
+      "sha256": "7615843ca98b0e0ab79ddebfeed514dadbc0196c60745bd62146ceb2fdb73e31"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_TIGHT_BLOCK_INTERFACE_LIFT_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56ae4a6d8655599d277622976852ecf3a664cda0",
+      "sha256": "3ca6dc28ff83e5df211d4a6f82b4352717a8cf21d2af29301f18d7ccf722249e"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/RMAL_PNP_LIVE_DESIGN_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feb205774156a6867be68973c59c801cbb158e79",
+      "sha256": "fbb71a54586c6fc652db7e86086e06813203e81b7634ee0191b560ec0a337511"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/probes/PNP_CUBIC_BOND_COEFFICIENT_CHECK_2026-09-26.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48d581af24407559ba58b0980b9a35735a2e98e1",
+      "sha256": "7f74772e0eb96ae95f1d2338afe3b7b7fd693b1ee77447a53bb9a3566ba6d166"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/probes/PNP_CUBIC_FRONTIER_PROJECTION_CHECK_2026-09-26.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4e10f02081c5ce8786952a4eb1b29bd29d397f1",
+      "sha256": "55269039e85d737ddd6637693461a2a1471b14e759973a132f351bc48569d5f7"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/probes/PNP_MINIMAL_LINEAR_BOOLEAN_SEAM_PAIR_CHECK_2026-09-26.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86797ee8ae8ed974e591e0353f44bc6a22a3fd72",
+      "sha256": "50716066cae366d8564f4f604be197c86597b40c3589b2f3d4a0febb11eab51f"
+    },
+    {
+      "path": "redogit/research/pnp/carriers/probes/PNP_SEMANTIC_INTERSECTION_QUOTIENT_CHECK_2026-09-26.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d650c75bc81ac1d1ec2a15d633a566f9bfc340a",
+      "sha256": "883141ddbf0878c79075c818579ec3d2fbdf31b0718483a5a5abd67b83667798"
+    },
+    {
+      "path": "redogit/research/pnp/dean/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e8e67b180e498613a8542b2c8525e291af33b1c",
+      "sha256": "a25ab3a32f9d1cc5e094b334c9b76aca0585de7cb0b9b4694f1a6062fddfd86a"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_ARTICULATION_2026-09-30.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e46b1ce8517f7247d28bc2b5b1786545c3034658",
+      "sha256": "1f16a5f650c5aa9de7943cf961d5617727e972571fc2fe48160e7030e68af97c"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_BOUNDARY_STATE_PROGRESSION_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d44299b8812b268c7b8441547fabe719235f69c2",
+      "sha256": "11b2ac0b6bd13e4120cb19b10ddc15082454924406bbb23a88756fe58c0c9356"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_CLIQUE_OVERLAP_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c37ce432d9289c534bd831b8267e9b69c2899130",
+      "sha256": "5689cb7268e88f36d69c101e12725bf374f82d166a07a5817cf9feec8da85a52"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_COMPONENT_EXPRESSION_2026-09-30.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "357f0ee3a72c1a94ce815234eab81ea76a5b0616",
+      "sha256": "d02799ce2b249d23003487bf3fbac508a29e78c66654bd63c545dd5bdf5f2bf8"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_CYCLE_CERTIFICATE_DISCOVERY_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c23e881e31c1f9a41222463b267dd78131bdec0d",
+      "sha256": "23d2b2e94836a683c2cd03baa81808523cf0d255cd30b26b18adecff1847fa4e"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_FIXED_LIST_C5_CHAIN_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92fa8e022d10af1720ccac7c7e12508bc7a5ffd3",
+      "sha256": "777b9de98eea11b8dcb89e33d46c1aa386e718a68eeaeea20d273971d30e275e"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_FROZEN_CATALOG_WHEEL_GAP_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "103b2f788ab0e5fb9c525b640e32970c004c990d",
+      "sha256": "6790f074984a6606ebcfe891c2b284d68ac112becb94acb737e7a3f756af9217"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_MIXED_FRAME_DISCOVERY_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7668341d393c2eb36fd5a55e794ae72815eb630d",
+      "sha256": "668af89f7ead437ba00c339daf60ec77ca004fdbb97876bd7871a1c63710086c"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_NINE_VERTEX_LOCAL_ROUNDING_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f70c16a2143c04f8035d112c1cf04819c11d6e29",
+      "sha256": "14174c8f0518c39205e0674636c415a753330c734c779ee464f611296bbc4012"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_ONE_DEGREE_RANK_REPAIR_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ff02a6c779beaca3619fa376396c9d71ab9fadb",
+      "sha256": "4bd48e4e0e8af98821b520cd77bdfaa89cc045d79aefa2dc30b540b08179a18c"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_OVERLAPPING_WHEEL_ROUNDING_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "495fddf4d5be4d56f80d25b334b28f50aa8dddb2",
+      "sha256": "f1cd9e82592c664c73648ac1c4ce284b7f43d0f4b3a9735b025b9c65256135cf"
+    },
+    {
+      "path": "redogit/research/pnp/dean/docs/PNP_DEAN_PARITY_REPAIR_2026-09-30.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c30f24152f908eb8f81078401dca4896f63055c1",
+      "sha256": "e9b06456cd89e7d9756eecbf0def25aa728b1faf768e44da6f2ff5cc8c6cd1f1"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_ARTICULATION_RUN_2026-09-30/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a100c85ec2d7a9d37d76a7243b9878161125f45",
+      "sha256": "47c01786b40d07742b5f2fe83227f92e8f40b2e876d0c594b1b966e5774c84da"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_ARTICULATION_RUN_2026-09-30/result.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aa04c3aff290f5902de8a8ececc94dfa35cdeb7",
+      "sha256": "f7acf72dd42172b1004e0e2a1c28f65adb6d600cd71f98979a927d778166fbad"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_ARTICULATION_RUN_2026-09-30/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_ARTICULATION_RUN_2026-09-30/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd0cc4f4aa2e7a172f05c551cf5888f14923c55d",
+      "sha256": "fcfaab598239b4f457f576adc1b6493ed9e4f391ef8b52ca43a2035dc41825eb"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_BOUNDARY_STATE_RUN_2026-09-29_r2/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310ae174fede5fd92a304d1a870108e08568a69e",
+      "sha256": "9faec9c0d89c7f22aba3d7084e3ee30b6e86172396f3c13e3013d44f6a00425e"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_BOUNDARY_STATE_RUN_2026-09-29_r2/result.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8faeb8c21d0387588570731cc56c640b8f391920",
+      "sha256": "904137cb1108c52faeb4e4934c8c7014ab5e92c3611d17b861ff1de5191a9f3e"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_BOUNDARY_STATE_RUN_2026-09-29_r2/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_BOUNDARY_STATE_RUN_2026-09-29_r2/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f918da9bcdbebdb0bbe6af39479d7d7bb57ca08",
+      "sha256": "5873fc4b542290d5b95bc879e6e0b13de6dfe64b9ace62ae2e6003bb5a198340"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_PARITY_REPAIR_RUN_2026-09-30/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aad54b9ade781ab84c28a44ba7dabe9cc16eb58",
+      "sha256": "6e6fcc36574ed6a95e15ac143e270a1ba5568f6a2b8e1e84b24e505cbeda458e"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_PARITY_REPAIR_RUN_2026-09-30/result.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e95b0a85be3cbdbe35e8ac6f69ff61628045def",
+      "sha256": "28d4d2ce9c8474b9364018d9ec726d73d817a5937962ee766c6f1e59af51aabd"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_PARITY_REPAIR_RUN_2026-09-30/stderr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "redogit/research/pnp/dean/evidence/runs/PNP_DEAN_PARITY_REPAIR_RUN_2026-09-30/stdout.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "194537e1a3c5ccc666c1ada4aeb544749e7409f9",
+      "sha256": "1172c394ec27659bcb159249bc2eda312e77fb43f518b7845d31079c91f6c311"
+    },
+    {
+      "path": "redogit/research/pnp/dean/probes/PNP_DEAN_ARTICULATION_PROBE_2026-09-30.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "721f28ade8cdc98dcc0d88874caf1a9c56287279",
+      "sha256": "fea7dcb37cdeb575e8aba747fd32645989eaf4ddc5ebdf9e38d71baa5d177c53"
+    },
+    {
+      "path": "redogit/research/pnp/dean/probes/PNP_DEAN_BOUNDARY_STATE_PROBE_2026-09-29.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "612cc4dfcc3f4dd5565e4687797a76c0bbd904ef",
+      "sha256": "c4c51a43248dc01b205e06ae43c8f0169ca920b0196bad92adba850c3558a59e"
+    },
+    {
+      "path": "redogit/research/pnp/dean/probes/PNP_DEAN_COMPONENT_EXPRESSION_PROBE_2026-09-30.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61cd2e133e42799ab05f21c8ca661c419ae55153",
+      "sha256": "a70cb8b653f5e692f628105f69cd412697cf3302a8a0d38f4dea24a1a31690d5"
+    },
+    {
+      "path": "redogit/research/pnp/dean/probes/PNP_DEAN_OVERLAPPING_WHEEL_ROUNDING_2026-09-29.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ec9cafe852feb18440f97f6c444145874d9bbda",
+      "sha256": "540597867082750d0a29c5122f8da06459f457473f4e6433714cb17cb23e465a"
+    },
+    {
+      "path": "redogit/research/pnp/dean/probes/PNP_DEAN_PARITY_REPAIR_PROBE_2026-09-30.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0536f6f708f3fed223786b9b45a1287e1d9d751e",
+      "sha256": "709c2f6933e414ebc9a1034dc53f565bc1b57211544f8da6a8c4b212aa6905d5"
+    },
+    {
+      "path": "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_HANDOFF_002_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa31966e296d992944643bde00695370af99fd25",
+      "sha256": "5efa1a56f4485ead331d93fdf50290f6ddbbf295ee9fb3cab273e6870f0e7088"
+    },
+    {
+      "path": "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_HANDOFF_003_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a0e459f6564156e6ba5721746a41f83e6f87135",
+      "sha256": "ba9adf7d13f7d3736dd93cc04db9fecbc8b35f200849edc0215a52d16bdbc035"
+    },
+    {
+      "path": "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_HANDOFF_004_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ed6273172ab387312ef1639c1e31fa404e235b8",
+      "sha256": "27c989dbc8f7c0466e2a3a826ef236a726983d39c7bac2b658b69cfc0fc4eef4"
+    },
+    {
+      "path": "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_PACKET_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d231e23d8093dec96a3e50673720ef3a4a43c187",
+      "sha256": "5f3c6e20fc9ff99304afebe57890a3bfdaac613acd8559e40bd3c0360d66e697"
+    },
+    {
+      "path": "validate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd14b4ead1b20497f54f88bde0bdff14100ef91c",
+      "sha256": "bc021c28d55f4415d6b8cfa868c23f4fd3e80ad5bbc7871e7835df6ca6b17d1a"
+    },
+    {
+      "path": "validate_native.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aa10b5acbcddbee77d54a5ce4aae1d5b7a949e3",
+      "sha256": "7702bb4897bfd5a85be9e036bc8c0b2dc5eb832798544f143aa9eb0d8752c023"
+    }
+  ],
+  "native_recovery": {
+    "schema": "native-source-recovery/v1",
+    "original_snapshot_commit": "5230f055a60c34f5db98f94e673b5ca551d297c6",
+    "archives_inspected": [
+      {
+        "name": "GYRO-DEAN-4-source.zip",
+        "sha256": "896a9e8cee6c1ac0248bd91c9d1f09e121f4717c46f20c1aa272e54f8e53edb2",
+        "bytes": 55738
+      },
+      {
+        "name": "GYRO-DEAN-4-extended.zip",
+        "sha256": "22c758d043a09e1605a3e26c4d9f5441a8e43bdc2b53470dcddf8f4dbe15f55d",
+        "bytes": 685426
+      },
+      {
+        "name": "GYRO-DEAN-4.zip",
+        "sha256": "649b16c7ff8791d61d8b6f09ea7d42903a4afcab831d47a1fa606f1d2b2c8b21",
+        "bytes": 30885
+      }
+    ],
+    "source_archive": "recovery/GYRO-DEAN-4-source.zip",
+    "source_archive_sha256": "896a9e8cee6c1ac0248bd91c9d1f09e121f4717c46f20c1aa272e54f8e53edb2",
+    "imported_missing_files": [
+      {
+        "archive_member": "CLAIMS.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/CLAIMS.md",
+        "sha256": "22bc5eee617c6eaacc595fdb3260f047621373d446d36eab998d7c6e6f7fb550",
+        "git_blob": "2f01db0e238fc5089f1d49de99699b4b51bf7380",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "CMakeLists.txt",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/CMakeLists.txt",
+        "sha256": "a85ad389f5e30a83bcd40f00eacf455d70f17593a33769de685d07ea4a7ab56c",
+        "git_blob": "103fa5be3cda15781eae24d4bcbab7107aaf8622",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "config/default.toml",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/config/default.toml",
+        "sha256": "103e99f9d4728185b7ed74e3aa63ddd5f19d002e231e8c5501afc119cba7a870",
+        "git_blob": "44633d3296d5b2ed043b9771c6ede25a04ab34b1",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "docs/SEMANTIC_GRAVITY.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/SEMANTIC_GRAVITY.md",
+        "sha256": "86420de0b072703eea13d21c934acf65bbdcbccffeb659c3024d77e750654e0f",
+        "git_blob": "7ab035fae38f554b4eaf82a14dfceba454d141d1",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "docs/IMPLEMENTATION_NOTES.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/IMPLEMENTATION_NOTES.md",
+        "sha256": "9fb956b66e87757c3973383c85465b531ee34a5ec4fcdfc5d4fd708614dcb404",
+        "git_blob": "acc103ff3baeecff2cead28d713f65af658480ef",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "docs/REFERENCES.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/REFERENCES.md",
+        "sha256": "fd244d869bca388c101c9d406d421efeda45b4fb5a410da263713dff4bda5754",
+        "git_blob": "8e677c6dd8d7d8c682e4eaf96a66c23615a5e843",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "docs/SQL_CARRIER.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/SQL_CARRIER.md",
+        "sha256": "4816aea33b51f357c7f2d3270e3b1cf1e5477a344a673eb9e4c51f337938d847",
+        "git_blob": "f60597099ddd3b1fa745d534c0686514e46a1194",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "docs/PROOF_RESEARCH_PROTOCOL.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/PROOF_RESEARCH_PROTOCOL.md",
+        "sha256": "bf72f3aa94ec673b19f46e8402b4b1b9c66f6548d1c2a45bb3b84a3de0c16ce3",
+        "git_blob": "0d8f9823ac6d7b99f239a41ec93f63282948220e",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "evidence/G20_CORE.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/evidence/G20_CORE.md",
+        "sha256": "54de7da75843e24242b5d687f1e4989453590d0ec6ded779c9b0ca1853c316f6",
+        "git_blob": "b2f4ad9afdd54c2129679f0ae57ab27cbb69d790",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "evidence/PETERSEN_PAIRWISE_FLAT.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/evidence/PETERSEN_PAIRWISE_FLAT.md",
+        "sha256": "5c6bc8cc1fc5e4068d9141e05198e08b1250fb38267eee9d3f7118d2dc53583e",
+        "git_blob": "84e522a89e1703c89017e47b5cff30fa7ae6fa01",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "examples/g20_students.csv",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/g20_students.csv",
+        "sha256": "0d9d7e8a2cdc1f824e4335ec4ff708de38a7a1c62e388b801df158f834161055",
+        "git_blob": "9fe73e8e08a1154c86b01c631cc374b4054b0e9b",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "examples/README.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/README.md",
+        "sha256": "1b1706296e8ef95110d5113e1a6001e5666546a3e2833c3e555d42e4e68b7b12",
+        "git_blob": "b72d3993d26c9cb60fb53b2820b1a5dfc61cf845",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "examples/g20_exclusions.csv",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/g20_exclusions.csv",
+        "sha256": "06ec81d7dac39c51823cf677915c37c809c3277ff5152946f15ab65d0463ba43",
+        "git_blob": "96c0196c9d457f90b80e50253d88b06acd4922a9",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "examples/petersen_students.csv",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/petersen_students.csv",
+        "sha256": "cd5d31bcddd284c5d7edeb84271221dd6ebb43ac8d3fde5fbbb103f21a2f8d46",
+        "git_blob": "779a260eb8426d40751c2b43f9bc4b4347b29ed9",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "examples/students.csv",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/students.csv",
+        "sha256": "bd08ddd4875dbf201e280fecca9c164b3fedb1dc5d4fb84bfa489bb0eb8c86de",
+        "git_blob": "abe0d7c56c4ae367f98b8f2ea871ddc66e0c29d6",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "examples/petersen_exclusions.csv",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/petersen_exclusions.csv",
+        "sha256": "da919bba124d2793ec15001d1e25a63652ad77e58f319f88671c4f9e3561f040",
+        "git_blob": "42856bf9ee0516eb29c56636e2cc58b34634f711",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "examples/exclusions.csv",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/exclusions.csv",
+        "sha256": "d876fc6dc0380fdc5072abe44006aae8f5e3ae57a9a7fc954e18924ee68cdae2",
+        "git_blob": "317ec19eac0ed6284458324df09ec84ae5f03012",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/certificate.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/certificate.hpp",
+        "sha256": "b07a20bbd4498ecace901147972cbdbe75649dc1573a354967321ea4aa9888a3",
+        "git_blob": "8245b5785c3ec453b83f44f4d096aaacc00ed8c1",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/exact_rank.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/exact_rank.hpp",
+        "sha256": "a2c00dc20dc5ab30d70a1709658b73f124d373e899e7c40b6b8025a229011415",
+        "git_blob": "73e53097cd7bb29dd2795577451ba721702bc871",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/dynamic_bitset.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/dynamic_bitset.hpp",
+        "sha256": "93ceb62a64adf579b77df24716a1971a85db67aa8ba36713647036d1afb5bf6c",
+        "git_blob": "7e2917af8bd21c45605292bf11e6b82fab58832a",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/carrier.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carrier.hpp",
+        "sha256": "542278854f8fba315be0ae890f19f57049394269048bc36f1a21bffdb62b6e08",
+        "git_blob": "311b016933715e27079c94a8f627016254bd8fe0",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/carriers/frame_hammer.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/frame_hammer.hpp",
+        "sha256": "8403ecce991c97ac8dd6b6f02cac7ee6e66a6fa99cae07afb462be6af812b85e",
+        "git_blob": "1438eb72a9df4b7944a5945d2698dbd1ed73b8ac",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/carriers/certified_mpca.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/certified_mpca.hpp",
+        "sha256": "03590b59409c09d5e2793760d324dbbb0d62846378e9bce72cdb692c6d3b86cb",
+        "git_blob": "88c1cbfe3e2b1251aefab98e5fee738a088d11ad",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/carriers/factor_sql_carrier.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/factor_sql_carrier.hpp",
+        "sha256": "9a67993a790524018f3d8a5e467f1f6270fb6f2a348b5949f7490de633a21c8a",
+        "git_blob": "ccac00e14bd251b026a1cdd5c4bd53783de10c7c",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/carriers/cover_lp_carrier.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/cover_lp_carrier.hpp",
+        "sha256": "3eb842714ce95f3c149847cc1689cc1b79ba050ee6026489956699beae601953",
+        "git_blob": "be14f006d99c767e01d98c0a300add70cee30115",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/carriers/graph_carrier.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/graph_carrier.hpp",
+        "sha256": "6b2fa4d0093c0164be90a6b4c75cc28ae452a041e559a9b59db267ec76d073bb",
+        "git_blob": "9993c6fdd29be07695794903f24225df84569b4e",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/carriers/sat_consensus.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/carriers/sat_consensus.hpp",
+        "sha256": "6ec93a894c86765b8178ab460a838c8656509dcfbc0b40ed8e530b53b5d39fb1",
+        "git_blob": "b74f5611946ff16317f808d7b24d4fa82e8d294b",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/state.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/state.hpp",
+        "sha256": "e14b4b426a8f61867f962ccc6d6857dc81f39c2576ac0173cae3e610dd70bb34",
+        "git_blob": "bf2c8639d15af626831ed98ba9b13443c786a02b",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "include/gyro/bit_graph.hpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/include/gyro/bit_graph.hpp",
+        "sha256": "414a062d6ef1b45057e7f6a3f8e958ea31e40fad21bf0d291e2efa8cc3df279f",
+        "git_blob": "597e8d141589a56d39d32fb5d65deee7af91fe6a",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/02_PRESSURE_CLOSURE.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/02_PRESSURE_CLOSURE.md",
+        "sha256": "f1d1e08d4632dbd731aec2d849de9d757a565754553020fa99d8fc425fb3e080",
+        "git_blob": "41409b7380281ece8dd3d48e4ad312aa651e1f3c",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/13_CERTIFIED_MACAULAY_ENGINE.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/13_CERTIFIED_MACAULAY_ENGINE.md",
+        "sha256": "44bc6dfcf31b64a4257b0235510e46a1ac949002b2cebb46371cfa425be603ec",
+        "git_blob": "28368368e318f351b0036ff3e812bb64ab20c4c4",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/09_REGULAR_CORE_PLATEAU.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/09_REGULAR_CORE_PLATEAU.md",
+        "sha256": "fe44bb61ba1463131ab6224f168722ad0f772fd6e73ea9167972712a53af71c1",
+        "git_blob": "437f1759d1f8f8b3b44da7012a33be3d34ffbdbd",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/18_MULTI_FRAME_RANK_COLLAPSE.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/18_MULTI_FRAME_RANK_COLLAPSE.md",
+        "sha256": "790a1b02e645f10a757668a6775a2bc8c83411e1e6f99dd19161976e7613ed6f",
+        "git_blob": "3de698ed1bae0d9ade2ddf8b09229755c01a2c89",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/01_DEAN4_NP_COMPLETENESS.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/01_DEAN4_NP_COMPLETENESS.md",
+        "sha256": "b768d804a5068c9362c88569cb33b8e136cd1f6a1d04645d8023461eb984d9ca",
+        "git_blob": "4c065560ac9c38a018695157d07dfa6a9cb19b25",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/07_CAPPED_RECURRENCE_AND_FACTORIZATION.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/07_CAPPED_RECURRENCE_AND_FACTORIZATION.md",
+        "sha256": "ed8f8e43fa9923ceec53b727827f1ba2be97ac5dec7cb2ef0ab7ac3e67b805e8",
+        "git_blob": "fa46c4f0e449e0d96ee3870cd0bfb0ee0812a3c6",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/16_GRAPH_HILBERT_BRIDGE.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/16_GRAPH_HILBERT_BRIDGE.md",
+        "sha256": "328690518d29325391f7722d097fe7aee286524f00996fa66210e41b74696307",
+        "git_blob": "4d9630e438a2c81ddc3b1110f8d82e69d64774d1",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/11_GYRO_CLOSURE_AND_FRONTIER_MASS.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/11_GYRO_CLOSURE_AND_FRONTIER_MASS.md",
+        "sha256": "53f99e328725b35e6f255ece48b22ebbdd2b6bb7c4e4bb90989c63ff70aa7e01",
+        "git_blob": "ccf10ba7b40c80162d737a112a98a35ef95c152f",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/10_CONTEXT_FRONTIER_AND_RANK_BARRIERS.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/10_CONTEXT_FRONTIER_AND_RANK_BARRIERS.md",
+        "sha256": "2927a5804adc85e44590b23d4f3ab90ec9b4a0afaed10f45b5c9c70012a4a9de",
+        "git_blob": "bbea8dac5b15e31febc035fda9717f8ca2fa03f6",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/17_DUAL_SUPPORT_FRAME_THEOREMS.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/17_DUAL_SUPPORT_FRAME_THEOREMS.md",
+        "sha256": "4aac93f433fcaa7bff5eee6e2f6ff5d49a0599858e808714ff57dfd9853406b6",
+        "git_blob": "9774cf460ca183d093df879bfefbe2b10d7cda9b",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/08_VERTEX_COVER_DUALITY_AND_KERNEL.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/08_VERTEX_COVER_DUALITY_AND_KERNEL.md",
+        "sha256": "c59a1020d7ade3f6ef5a762a191f936fe57b0a6848428a27fa44b67bca98772f",
+        "git_blob": "6c29443cc105e36dc4fb655776a1791eb4e5a76a",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/20_PROOF_STATUS_AND_OPEN_CLAIMS.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/20_PROOF_STATUS_AND_OPEN_CLAIMS.md",
+        "sha256": "2506d25db8a5d8164a3bbcb25fab81c91611f2d94a6d331380b9ce4a0bfba9b1",
+        "git_blob": "e39d9e4b35f11b890079ff072ac12aa73887d539",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/12_MAXIMAL_LINEAR_PCA.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/12_MAXIMAL_LINEAR_PCA.md",
+        "sha256": "513df403423a83d557ec45530e0869371cbe48e9fabcf4804d7346824c294903",
+        "git_blob": "10d3feb86ed566c3eedec48325d0549f88617c9e",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/19_SUBMODULAR_RANK_GRAVITY.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/19_SUBMODULAR_RANK_GRAVITY.md",
+        "sha256": "a28b591662ca1fb9e743f5aa5692542f59ff3f156dbb77be745fffb96a89ada4",
+        "git_blob": "989e02790668f2a7ba9037a09a676e4f628b8d8e",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/06_SOLVER_CORRECTNESS_AND_TERMINATION.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/06_SOLVER_CORRECTNESS_AND_TERMINATION.md",
+        "sha256": "ad907d47975a6bd2e1b404ce837b6a09cc005ed3ee241d5aeb2b6e359d388458",
+        "git_blob": "f8950ec6d4065d511931139385d21d9eaf6695d8",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/03_CONTEXT_SIGNATURE.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/03_CONTEXT_SIGNATURE.md",
+        "sha256": "e2a1c43ebf0e8ebdbcc34893242dc1e2fc42501c8c2dcf7c12dd9083e7dce506",
+        "git_blob": "7b71f1522425f8e8169600caed2de8c77bd00a8b",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/14_LIFTED_MPCA_CURVATURE.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/14_LIFTED_MPCA_CURVATURE.md",
+        "sha256": "77b90feb3d005262fcf6f8d183650948c7bcabf4dd5f3bfe81d1d01b23fb9bd3",
+        "git_blob": "c784a1c850b464d6bf9f5e9f7a50529b604028b5",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/05_FOUR_RESULT_SELF_REDUCTION.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/05_FOUR_RESULT_SELF_REDUCTION.md",
+        "sha256": "7908723d2072866055fc66725a96174fc01bf5acceae5099ff4f3be7ffd55899",
+        "git_blob": "ff6e4906fc77651b5fe1ba86601b0e54f2d58bfe",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/15_SEMANTIC_JACOBIAN_AND_BLOCK_ATTACKS.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/15_SEMANTIC_JACOBIAN_AND_BLOCK_ATTACKS.md",
+        "sha256": "8b4c44b85e5cbe7c2d6117c3e75df9dc1a4438577e3ad142fde878cfde58af8d",
+        "git_blob": "b7df49f8b09253fd2469cf2a8220e8f66ec2164a",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/21_CLAIM_FALSIFICATION_LEDGER.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/21_CLAIM_FALSIFICATION_LEDGER.md",
+        "sha256": "0349526b3f3d66d3e93970abbfeaeefb93767e403cbe5218dcc50a79941c1cd4",
+        "git_blob": "d24242189f406da78a24ff0d9b50727a659b1fb3",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "proofs/04_CERTIFIED_RANK_GRAVITY.md",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/04_CERTIFIED_RANK_GRAVITY.md",
+        "sha256": "53a22663e5a0a2c0f09441acd221ee56e72a20ce81367546cb04ff3b6af8fc0f",
+        "git_blob": "53b773154c2336f593294185049ab67c9609383a",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "pseudocode/CLAIM_ATTACK_LOOP.txt",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/CLAIM_ATTACK_LOOP.txt",
+        "sha256": "07d9a40eac1403f6420d51104cae412d46a004c1f8d7bb4829020e274c534ee0",
+        "git_blob": "5e40ab15eea67415c40b80992964ea5992d14d4e",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "pseudocode/DEAN4_ENUMERATION.txt",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/DEAN4_ENUMERATION.txt",
+        "sha256": "b554eab1c2ce408debb783cc3316331b0b298fce4c82647d920d2d52c0e52a41",
+        "git_blob": "66ce99b10943c6ee902279ea0299ed407231d234",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "pseudocode/CERTIFIED_MPCA.txt",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/CERTIFIED_MPCA.txt",
+        "sha256": "e0d85b1521cab40830ce93fa5584dff4635b1b0caba569f59561a097377b4da6",
+        "git_blob": "fb6851f58f8b82695a8578fca98192e1187b2e05",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "pseudocode/MAX_REPAIR.txt",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/MAX_REPAIR.txt",
+        "sha256": "7db34e97b4f8cf7e7bbe1a474c36f1394706d6ea3e14bc24a696bff1d2d02c35",
+        "git_blob": "52aa6e1f22098f5111d4ee281cc791b37497c023",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "pseudocode/GYRO_DEAN_4.txt",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/pseudocode/GYRO_DEAN_4.txt",
+        "sha256": "73afd4b62d3698c604d77366ef8c8ce2f58ec67cf6d442eef6e6073bc56a3a2d",
+        "git_blob": "d87f8f58cdce1ea032d17382b6e37833b3e72e53",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "sql/compile_conflicts.sql",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/compile_conflicts.sql",
+        "sha256": "b4a0020d5213b2a91074cd4e532eafbe960e3a9677c39da1ce990330831398ce",
+        "git_blob": "3b7c66f5f174f1fa1f9682f28cac889fef5ad522",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "sql/verify_results.sql",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/verify_results.sql",
+        "sha256": "53d76507ea13d734012867079b35c16d6c731811f202dc375dd434bdf0c67b3c",
+        "git_blob": "f42f248d193704f148bc2dd3709dbbd760ca66a5",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "sql/schema.sql",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/sql/schema.sql",
+        "sha256": "21cdfbd32842b7ef02414d5f8ab217321495a36d516240cda8c5d378842ca31b",
+        "git_blob": "6ad0abd8dca5bb6a98cf7d936dc84f282006eb4f",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/main.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/main.cpp",
+        "sha256": "0ac88cdd95d89120b6695c5410181c3f1c47eac18cf55301242ff8d94129ca88",
+        "git_blob": "937b17b7d31345f245b33f1c84b1d4738318bd2c",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/bit_graph.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/bit_graph.cpp",
+        "sha256": "c3d13c01723fd08c99afd00fee633acdb9ced58a3d78e2b5c827ff56a321dd52",
+        "git_blob": "3adc9927ee4927dbbc6d57d5e6629e91f7fb3eaa",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/solver.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/solver.cpp",
+        "sha256": "8578c8e43859b93394f8503c68e98c827b48e8b1f71d34023b90bb5276a1d944",
+        "git_blob": "5c7e8f9de1734bd173ad58e55b692a32a2c9a8b7",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/carriers/certified_mpca.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/certified_mpca.cpp",
+        "sha256": "3a28172fe6af80dd80408aa4730c0b4a67648c9458738aa7709f4f49a67e2fbb",
+        "git_blob": "f312006e9215a3fc7c80bf79090e96dfd3917098",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/carriers/factor_sql_carrier.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/factor_sql_carrier.cpp",
+        "sha256": "e58182cd87e2a216788fd1765df0b12817105b9686f3a130e75f19c9709aef1e",
+        "git_blob": "877de8761312250f466799c2adbd6ea73a624202",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/carriers/frame_hammer.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/frame_hammer.cpp",
+        "sha256": "a4a107efff2699635d25d354685d3fc93d7f4b70bb320935fd1c43452b36bb7b",
+        "git_blob": "1f42edb0633556efed188e967aacdb267b1925b9",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/carriers/cover_lp_carrier.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/cover_lp_carrier.cpp",
+        "sha256": "e015a471b679baf1421e3f2d935e568fbc97241584265c254df93ea43cb3a358",
+        "git_blob": "43ab78c4b27407b71661ced39a92a56aa72561c0",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/carriers/graph_carrier.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/graph_carrier.cpp",
+        "sha256": "2ba896de617984d67d62db818d2f1fb68a2ea59012a97984272282a58a5a076a",
+        "git_blob": "0d8f84eaf69e7809e05f351c47cad150df35214c",
+        "mode": "100644"
+      },
+      {
+        "archive_member": "src/carriers/sat_consensus.cpp",
+        "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/src/carriers/sat_consensus.cpp",
+        "sha256": "17b600e74729fabd4d39be3e79cd2733a18417a4d289cca928ee46250ee7d82f",
+        "git_blob": "abf5ca33bc0988905a04ca3a330254c06ccb75f1",
+        "mode": "100644"
+      }
+    ],
+    "shared_identical_files": [
+      "docs/ALGORITHM.md",
+      "include/gyro/solver.hpp",
+      "tests/test_solver.cpp",
+      "tests/test_exhaustive.cpp"
+    ],
+    "differing_documents_retained_from_git": [
+      "PROOF_REPORT.md",
+      "README.md",
+      "docs/EVIDENCE_BOUNDARY.md"
+    ],
+    "extended_archive_source_matches_source_archive": true,
+    "excluded": "Other ZIPs were inspected only; extended build products were not imported. Existing explicit export exclusions and rights are unchanged.",
+    "evidence_boundary": "Native build and finite tests establish bounded implementation evidence, not a P=NP proof or universal polynomial runtime bound."
+  },
+  "validation": {
+    "command": [
+      "python",
+      "validate.py"
+    ],
+    "exit_code": 0,
+    "build_configuration": "Debug; assert checks enabled",
+    "native_ctest_passed": 2,
+    "exhaustive_graph_target_cases": 5405,
+    "python_tests_passed": 19,
+    "discriminator_check": "passed",
+    "evidence_files": [
+      "NATIVE_RECOVERY_VALIDATION.json",
+      "NATIVE_RECOVERY_VALIDATION.log"
+    ]
+  },
+  "rights": "Original licenses, commercial access policies and explicit exclusions retained; no new license grant or private-origin content approval inferred.",
+  "evidence_boundary": "Fresh bounded tests and exact tree/blob/mode verification; no P=NP proof or universal polynomial runtime claim. Earlier preparation-stage metadata and failed build records remain historical; the missing-source blocker is resolved by the exact uploaded source archive.",
+  "additional_files": [
+    "IMPORT_BOOTSTRAP.md",
+    "IMPORT_RECEIPT.json"
+  ]
+}

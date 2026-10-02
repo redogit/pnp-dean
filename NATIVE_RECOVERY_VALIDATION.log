@@ -1,0 +1,67 @@
+PASS source identity, file modes, explicit repairs and exclusions
+Running mlir-python
+...................
+----------------------------------------------------------------------
+Ran 19 tests in 0.001s
+
+OK
+Running discriminators
+PASS pnp decision-field discriminators
+Running native-build-and-tests
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/gyro-dean-native-_omc3uzr
+[  6%] Building CXX object CMakeFiles/gyro_core.dir/src/bit_graph.cpp.o
+[ 13%] Building CXX object CMakeFiles/gyro_core.dir/src/solver.cpp.o
+[ 20%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/graph_carrier.cpp.o
+[ 26%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/cover_lp_carrier.cpp.o
+[ 33%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/frame_hammer.cpp.o
+[ 40%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/certified_mpca.cpp.o
+[ 46%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/sat_consensus.cpp.o
+[ 53%] Building CXX object CMakeFiles/gyro_core.dir/src/carriers/factor_sql_carrier.cpp.o
+[ 60%] Linking CXX static library libgyro_core.a
+[ 60%] Built target gyro_core
+[ 66%] Building CXX object CMakeFiles/gyro_dean.dir/src/main.cpp.o
+[ 73%] Building CXX object CMakeFiles/gyro_tests.dir/tests/test_solver.cpp.o
+[ 80%] Linking CXX executable gyro_tests
+[ 80%] Built target gyro_tests
+[ 86%] Building CXX object CMakeFiles/gyro_exhaustive_tests.dir/tests/test_exhaustive.cpp.o
+[ 93%] Linking CXX executable gyro_dean
+[ 93%] Built target gyro_dean
+[100%] Linking CXX executable gyro_exhaustive_tests
+[100%] Built target gyro_exhaustive_tests
+UpdateCTestConfiguration  from :/tmp/gyro-dean-native-_omc3uzr/DartConfiguration.tcl
+Test project /tmp/gyro-dean-native-_omc3uzr
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: gyro_tests
+
+1: Test command: /tmp/gyro-dean-native-_omc3uzr/gyro_tests
+1: Working Directory: /tmp/gyro-dean-native-_omc3uzr
+1: Test timeout computed to be: 120
+1: all tests passed
+1/2 Test #1: gyro_tests .......................   Passed    0.00 sec
+test 2
+    Start 2: gyro_exhaustive_tests
+
+2: Test command: /tmp/gyro-dean-native-_omc3uzr/gyro_exhaustive_tests
+2: Working Directory: /tmp/gyro-dean-native-_omc3uzr
+2: Test timeout computed to be: 120
+2: exhaustive labeled graphs n<=5: 5405 graph/target cases passed
+2/2 Test #2: gyro_exhaustive_tests ............   Passed    0.20 sec
+
+100% tests passed out of 2
+
+Total Test time (real) =   0.20 sec
+PASS recovered native source identity, C++ build and both native tests

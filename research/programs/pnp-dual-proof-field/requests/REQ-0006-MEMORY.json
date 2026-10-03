@@ -1,0 +1,35 @@
+{
+  "request_id": "REQ-0006-MEMORY",
+  "generator": "MEMORY_GENERATOR",
+  "accepted_obligation": "Shared: retrieve only historical P-vs-NP objects that can change the current Reconcile obligation",
+  "needed_inputs": [
+    "Current obligation slices O-COVER, O-CONT, O-MASS"
+  ],
+  "requested_parts": [
+    "Nearest exact predecessor rules",
+    "Nearest falsified universal claims",
+    "Relevant GYRO/frontier-mass/SAT-interface/de Bruijn carrier objects",
+    "Exact provenance and claim ceiling for each retrieved object"
+  ],
+  "candidate_operations": [
+    "RETRIEVE",
+    "CROSS_REFERENCE",
+    "PRESERVE_CHRONOLOGY",
+    "DISTINGUISH_LINEAGE"
+  ],
+  "counterprobes": [
+    "Do not flatten thematic similarity into direct ancestry"
+  ],
+  "dependencies": [],
+  "acceptance_criteria": [
+    "Every item is consequential to a current obligation",
+    "Direct lineage and thematic relation remain distinct",
+    "Failed/null branches are retained"
+  ],
+  "cost_envelope": {
+    "whole_history_loading": false
+  },
+  "output_contract": "Return a bounded obligation-local memory packet.",
+  "child_obligation_requests": [],
+  "remainder": "Unretrieved history remains explicit rather than assumed absent."
+}

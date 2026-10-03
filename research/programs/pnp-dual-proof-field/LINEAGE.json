@@ -1,0 +1,128 @@
+{
+  "schema": "pnp-dual-proof-field/lineage-v1",
+  "lineage_id": "functionalobject-anyfunctor-obligation-generator",
+  "claim_ceiling": "SUCCESSOR_PROVENANCE_ONLY",
+  "nodes": [
+    {
+      "id": "L0_FUNCTIONALOBJECT",
+      "kind": "historical_source_shape",
+      "source": {
+        "repository": "BanalityOfSeeking/ServeExcel",
+        "path": "FunctionalObject.cs",
+        "earliest_visible_commit": "cd5bfe729d7461e9773ac4873767096c8e6146a0",
+        "date": "2019-06-10",
+        "blob": "fc2716e1a3c4c2c7ea18541f25d94a26d24dca54"
+      },
+      "preserved_shape": [
+        "ordered buffers",
+        "zero-to-many operations",
+        "zero-to-many checks",
+        "reusable dataflow links",
+        "terminal null target"
+      ],
+      "denied_retroactive_semantics": [
+        "modern obligation identity",
+        "occurrence identity",
+        "provenance authority",
+        "Homeward recovery",
+        "retained failure"
+      ]
+    },
+    {
+      "id": "L1_ANYFUNCTOR",
+      "kind": "obligation_aware_execution_carrier",
+      "source_refs": [
+        "redogit/DnD:projects/decision-field/include/decision_field/anyfunctor_mirror.hpp",
+        "redogit/DnD:projects/decision-field/docs/ANYFUNCTOR_STRUCTURAL_RECONCILIATION_2026-09-29.md",
+        "redogit/DnD:projects/decision-field/docs/MIRROR_RMAL_HOMEWARD.md"
+      ],
+      "contracts": [
+        "DISCOVER != EXECUTE",
+        "EXECUTE != VERIFY",
+        "VERIFY != ADMIT",
+        "OCCURRENCE != SEMANTIC_OBJECT"
+      ]
+    },
+    {
+      "id": "L2_LOCAL_PLANE",
+      "kind": "lowered_anyfunctor_local_plane",
+      "source_refs": [
+        "redogit/DnD:projects/decision-field/docs/FUNCTIONALOBJECT_ANYFUNCTOR_LINEAGE_2026-10-03.md",
+        "redogit/DnD:projects/decision-field/include/decision_field/local_plane.hpp",
+        "redogit/DnD:projects/decision-field/include/decision_field/anyfunctor_local_plane.hpp",
+        "redogit/DnD:projects/decision-field/evidence/local_plane_2026-10-03/VERIFICATION.md"
+      ],
+      "stages": [
+        "Receive",
+        "Contextualize",
+        "Represent",
+        "Integrate"
+      ],
+      "contracts": [
+        "multiple obligations required",
+        "route integrates only after admitted execution",
+        "rejected/incomplete/conflicting observations retained",
+        "KNOWN_ROUTE != KNOWN_ANSWER",
+        "ROUTE_REUSE != OUTPUT_REUSE"
+      ]
+    },
+    {
+      "id": "L3_OBLIGATION_GENERATOR",
+      "kind": "pnp_obligation_driven_generator",
+      "source_refs": [
+        "research/programs/pnp-dual-proof-field/GENERATORS.md",
+        "research/programs/pnp-dual-proof-field/REQUEST_BUNDLE.schema.json",
+        "research/programs/pnp-dual-proof-field/OBLIGATION_SLICE.schema.json"
+      ],
+      "contract": "G_i(O_i,Gamma,C,E,B) -> RequestBundle^(0..*)"
+    }
+  ],
+  "edges": [
+    {
+      "from": "L0_FUNCTIONALOBJECT",
+      "to": "L1_ANYFUNCTOR",
+      "relation": "SUCCESSOR_SHAPE_EXPANDED_WITH_OBLIGATION_AND_OCCURRENCE"
+    },
+    {
+      "from": "L1_ANYFUNCTOR",
+      "to": "L2_LOCAL_PLANE",
+      "relation": "LOWERED_TO_FINITE_LOCAL_ROUTE_PLANE"
+    },
+    {
+      "from": "L2_LOCAL_PLANE",
+      "to": "L3_OBLIGATION_GENERATOR",
+      "relation": "LOWERED_TO_OBLIGATION_LOCAL_REQUEST_GENERATION"
+    }
+  ],
+  "mapping": {
+    "Operations[]": [
+      "requested_parts[]",
+      "candidate_operations[]"
+    ],
+    "Checks[]": [
+      "acceptance_criteria[]",
+      "counterprobes[]"
+    ],
+    "IOBuffer/DataBuffer": [
+      "carrier_refs",
+      "evidence_refs",
+      "needed_inputs"
+    ],
+    "NullTarget<T>()": [
+      "remainder",
+      "zero-output obligation"
+    ],
+    "FunctionObject<T>": [
+      "generator contract"
+    ],
+    "AnyInvocation<T>": [
+      "obligation acceptance"
+    ],
+    "computation receipt": [
+      "request/result receipt"
+    ],
+    "Homeward": [
+      "recovery_reference"
+    ]
+  }
+}

@@ -1,7 +1,11 @@
 {
   "battle_id": "BATTLE-0001",
-  "protocol": "obligation-generator-v2-replay",
-  "source_revision": "historical Dean articulation evidence replay on pnp-dean generator branch",
+  "protocol": "obligation-generator-v2.1-lineage-aware-replay",
+  "source_revision": "historical Dean articulation evidence replay; generator execution lineage attached as provenance only",
+  "lineage_refs": [
+    "FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md",
+    "LINEAGE.json"
+  ],
   "obligation": "U_COVER/U_LOCAL boundary for structural Dean composition",
   "obligation_slice_refs": [
     "O-COVER: exact recognizable structural coverage",
@@ -12,6 +16,9 @@
       "generator": "P_EQ_NP_GENERATOR",
       "accepted_obligation": "O-COVER",
       "request_ref": "requests/REQ-0001-P-EQ-COVER.json",
+      "lineage_refs": [
+        "LINEAGE.json#L3_OBLIGATION_GENERATOR"
+      ],
       "requested_parts": [
         "exact structural terminal",
         "recognizer",
@@ -22,6 +29,9 @@
       "generator": "P_NE_NP_GENERATOR",
       "accepted_obligation": "O-CONT/U-COVER boundary",
       "request_ref": "requests/REQ-0002-P-NE-CONT.json",
+      "lineage_refs": [
+        "LINEAGE.json#L3_OBLIGATION_GENERATOR"
+      ],
       "requested_parts": [
         "coupling obstruction",
         "counterexample to naive universal interface promotion"
@@ -31,6 +41,10 @@
       "generator": "COST_GENERATOR",
       "accepted_obligation": "O-LOCAL",
       "request_ref": "requests/REQ-0007-COST-MASS.json",
+      "lineage_refs": [
+        "LINEAGE.json#L2_LOCAL_PLANE",
+        "LINEAGE.json#L3_OBLIGATION_GENERATOR"
+      ],
       "requested_parts": [
         "charged discovery/lifecycle bound"
       ]
@@ -39,6 +53,10 @@
       "generator": "REFEREE_GENERATOR",
       "accepted_obligation": "scoped admission",
       "request_ref": "requests/REQ-0008-REFEREE.json",
+      "lineage_refs": [
+        "LINEAGE.json#L1_ANYFUNCTOR",
+        "LINEAGE.json#L3_OBLIGATION_GENERATOR"
+      ],
       "requested_parts": [
         "scope check",
         "counterexample replay",
@@ -49,7 +67,8 @@
   "fixed_definitions": [
     "Dean/Independent-Set semantics are unchanged",
     "Encoded input length remains the complexity variable",
-    "Finite/scoped polynomial terminal does not imply universal P=NP"
+    "Finite/scoped polynomial terminal does not imply universal P=NP",
+    "Execution-carrier lineage supplies method/provenance only and does not transfer proof authority"
   ],
   "offense": {
     "configuration_id": "OFF-STRUCT-ARTICULATION-CAP1",
@@ -91,9 +110,10 @@
   },
   "referee": {
     "verdict": "ADMIT_SCOPED",
-    "reason": "The constructive request is satisfied only on the declared singleton-interface/cap-one articulation class. The adversarial request defeats only the naive universal extension to arbitrary two-vertex-interface composition. Neither result establishes P=NP or P!=NP.",
+    "reason": "The constructive request is satisfied only on the declared singleton-interface/cap-one articulation class. The adversarial request defeats only the naive universal extension to arbitrary two-vertex-interface composition. The FunctionalObject/AnyFunctor/local-plane lineage supplies execution-carrier provenance only. Neither result establishes P=NP or P!=NP.",
     "audit_refs": [
       "Historical proof audit recorded in PNP_DEAN_ARTICULATION_2026-09-30.md",
+      "FunctionalObject/AnyFunctor lineage imported as provenance from redogit/DnD",
       "This receipt is a protocol replay, not an independent review"
     ]
   },
@@ -104,12 +124,13 @@
     "universal coverage remains open",
     "singleton and two-vertex interfaces remain distinct",
     "source authority and replay status",
-    "generator request versus verifier verdict"
+    "generator request versus verifier verdict",
+    "historical execution shape versus current generator semantics"
   ],
   "lost_or_unresolved_distinctions": [
     "what global property controls joint multi-interface coupling",
     "whether every residual reaches an admitted terminal"
   ],
   "recovery_reference": "PNP_DEAN_ARTICULATION_2026-09-30.md",
-  "remainder": "Use a genuinely controlling coupling invariant or a different carrier. Do not infer universality from small separator size."
+  "remainder": "Use a genuinely controlling coupling invariant or a different carrier. Do not infer universality from small separator size or from execution-carrier lineage."
 }

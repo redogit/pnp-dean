@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PNP Generator Request Bundle",
+  "type": "object",
+  "required": [
+    "request_id",
+    "generator",
+    "accepted_obligation",
+    "requested_parts",
+    "acceptance_criteria",
+    "output_contract",
+    "remainder"
+  ],
+  "properties": {
+    "request_id": { "type": "string" },
+    "generator": { "type": "string" },
+    "accepted_obligation": { "type": "string" },
+    "needed_inputs": { "type": "array", "items": { "type": "string" } },
+    "requested_parts": { "type": "array", "items": { "type": "string" } },
+    "candidate_operations": { "type": "array", "items": { "type": "string" } },
+    "counterprobes": { "type": "array", "items": { "type": "string" } },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "acceptance_criteria": { "type": "array", "items": { "type": "string" } },
+    "cost_envelope": { "type": ["object", "null"] },
+    "output_contract": { "type": "string" },
+    "child_obligation_requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["statement", "theorem_direction"],
+        "properties": {
+          "statement": { "type": "string" },
+          "theorem_direction": { "enum": ["P_EQ_NP", "P_NE_NP", "SHARED"] },
+          "preferred_generator": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "remainder": { "type": "string" }
+  }
+}

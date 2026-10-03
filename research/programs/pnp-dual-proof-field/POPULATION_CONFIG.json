@@ -1,0 +1,32 @@
+{
+  "schema": "pnp-dual-proof-field/population-v1",
+  "claim_ceiling": "OPEN",
+  "populations": {
+    "P_EQ_NP": {
+      "target_active": 4,
+      "max_active": 8,
+      "selection": "mechanism-diverse surviving exact configurations"
+    },
+    "P_NE_NP": {
+      "target_active": 4,
+      "max_active": 8,
+      "selection": "failure-mode-diverse valid attacks and generalized obstructions"
+    }
+  },
+  "support_roles": [
+    "EXPLORER",
+    "REPAIRER",
+    "DIVERSITY_KEEPER",
+    "MEMORY_CARRIER",
+    "COST_ACCOUNTANT",
+    "REFEREE"
+  ],
+  "rules": {
+    "combatant_self_referee": false,
+    "finite_pass_promotes_universal": false,
+    "counterexample_can_refute_universal": true,
+    "failed_route_history_preserved": true,
+    "scalar_fitness_required": false,
+    "duplicate_mechanisms_may_be_retired": true
+  }
+}

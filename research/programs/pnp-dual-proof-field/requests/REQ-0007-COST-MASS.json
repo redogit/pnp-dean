@@ -1,0 +1,42 @@
+{
+  "request_id": "REQ-0007-COST-MASS",
+  "generator": "COST_GENERATOR",
+  "accepted_obligation": "O-MASS: translate the complete proposed Reconcile lifecycle into one Cook-compatible worst-case work bound",
+  "needed_inputs": [
+    "Recognizer cost",
+    "Carrier build/update cost",
+    "Path-selection cost",
+    "Reverse-lookup cost",
+    "Reconciliation count and cost",
+    "Rollback/recovery cost",
+    "Total transition count"
+  ],
+  "requested_parts": [
+    "Symbolic cost recurrence W(n)",
+    "All hidden/unknown terms isolated as child obligations",
+    "Candidate fixed exponent k if justified",
+    "Counterfamily if exponent or depth depends on input parameters"
+  ],
+  "candidate_operations": [
+    "ACCOUNT",
+    "COMPOSE_COSTS",
+    "SOLVE_RECURRENCE",
+    "FALSIFY_BOUND"
+  ],
+  "counterprobes": [
+    "n^D with input-dependent D",
+    "2^depth hidden in recursion",
+    "oracle/preprocessing cost omitted"
+  ],
+  "dependencies": [
+    "All algorithmic RequestBundles"
+  ],
+  "acceptance_criteria": [
+    "One fixed exponent independent of graph family, K, deficit, and recursion depth",
+    "All lifecycle phases charged"
+  ],
+  "cost_envelope": null,
+  "output_contract": "Return exact/upper-bound accounting or explicit unresolved cost obligations.",
+  "child_obligation_requests": [],
+  "remainder": "Unknown cost is never silently treated as polynomial."
+}

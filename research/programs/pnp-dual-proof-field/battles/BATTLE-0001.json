@@ -1,0 +1,115 @@
+{
+  "battle_id": "BATTLE-0001",
+  "protocol": "obligation-generator-v2-replay",
+  "source_revision": "historical Dean articulation evidence replay on pnp-dean generator branch",
+  "obligation": "U_COVER/U_LOCAL boundary for structural Dean composition",
+  "obligation_slice_refs": [
+    "O-COVER: exact recognizable structural coverage",
+    "O-LOCAL: charged lifecycle for the admitted structural route"
+  ],
+  "generator_requests": [
+    {
+      "generator": "P_EQ_NP_GENERATOR",
+      "accepted_obligation": "O-COVER",
+      "request_ref": "requests/REQ-0001-P-EQ-COVER.json",
+      "requested_parts": [
+        "exact structural terminal",
+        "recognizer",
+        "reconstruction path"
+      ]
+    },
+    {
+      "generator": "P_NE_NP_GENERATOR",
+      "accepted_obligation": "O-CONT/U-COVER boundary",
+      "request_ref": "requests/REQ-0002-P-NE-CONT.json",
+      "requested_parts": [
+        "coupling obstruction",
+        "counterexample to naive universal interface promotion"
+      ]
+    },
+    {
+      "generator": "COST_GENERATOR",
+      "accepted_obligation": "O-LOCAL",
+      "request_ref": "requests/REQ-0007-COST-MASS.json",
+      "requested_parts": [
+        "charged discovery/lifecycle bound"
+      ]
+    },
+    {
+      "generator": "REFEREE_GENERATOR",
+      "accepted_obligation": "scoped admission",
+      "request_ref": "requests/REQ-0008-REFEREE.json",
+      "requested_parts": [
+        "scope check",
+        "counterexample replay",
+        "claim-ceiling check"
+      ]
+    }
+  ],
+  "fixed_definitions": [
+    "Dean/Independent-Set semantics are unchanged",
+    "Encoded input length remains the complexity variable",
+    "Finite/scoped polynomial terminal does not imply universal P=NP"
+  ],
+  "offense": {
+    "configuration_id": "OFF-STRUCT-ARTICULATION-CAP1",
+    "mechanism": "Discovered articulation decomposition with singleton interfaces; each atom becomes bipartite after deleting at most one vertex",
+    "artifact_refs": [
+      "redogit/redogit:PNP_DEAN_ARTICULATION_2026-09-30.md",
+      "redogit/pnp-dean:NATIVE_RECOVERY_VALIDATION.json"
+    ]
+  },
+  "defense": {
+    "configuration_id": "DEF-INTERFACE-COUPLING-2",
+    "attack_class": "Interface coupling: widening singleton interfaces to two boundary vertices can encode arbitrary Independent Set",
+    "artifact_refs": [
+      "redogit/redogit:PNP_DEAN_ARTICULATION_2026-09-30.md#step-39"
+    ]
+  },
+  "claim": {
+    "statement": "The singleton-interface articulation route is exact and polynomial on its declared cap-one atom class; naive promotion based only on constant-size two-vertex interfaces is not justified.",
+    "scope": "Historical evidence replay under generator protocol; no new independent mathematical verification",
+    "claim_ceiling": "SCOPED_TERMINAL_ONLY"
+  },
+  "evidence": [
+    "Step 35 exact two-state shared-vertex recurrence",
+    "Step 38 charged discovery with conservative O(n^2(n+m)) bound",
+    "Step 39 two-interface coupling obstruction/reduction",
+    "Repository validation retains finite implementation evidence and explicit OPEN universal claim ceiling"
+  ],
+  "counterexample": "Two-vertex boundary interactions have mixed terms; the retained Step 27 construction uses two-vertex interfaces around a central bag while alpha(G)=|F|+alpha(H), so small individual interfaces alone do not control global coupling.",
+  "cost": {
+    "encode": "charged by source model",
+    "discover": "O(n^2(n+m)) conservative bound for the admitted articulation route",
+    "build": "polynomial within declared route",
+    "select": "polynomial within declared route",
+    "transform": "polynomial within declared route",
+    "reconcile": "two message states per singleton separator within declared route",
+    "verify": "polynomial declared validation/certificates",
+    "rollback": null,
+    "recover": "original-ID traceback preserved within declared route"
+  },
+  "referee": {
+    "verdict": "ADMIT_SCOPED",
+    "reason": "The constructive request is satisfied only on the declared singleton-interface/cap-one articulation class. The adversarial request defeats only the naive universal extension to arbitrary two-vertex-interface composition. Neither result establishes P=NP or P!=NP.",
+    "audit_refs": [
+      "Historical proof audit recorded in PNP_DEAN_ARTICULATION_2026-09-30.md",
+      "This receipt is a protocol replay, not an independent review"
+    ]
+  },
+  "status": "SURVIVES_SCOPED",
+  "repair_of": null,
+  "preserved_distinctions": [
+    "scoped polynomial terminal",
+    "universal coverage remains open",
+    "singleton and two-vertex interfaces remain distinct",
+    "source authority and replay status",
+    "generator request versus verifier verdict"
+  ],
+  "lost_or_unresolved_distinctions": [
+    "what global property controls joint multi-interface coupling",
+    "whether every residual reaches an admitted terminal"
+  ],
+  "recovery_reference": "PNP_DEAN_ARTICULATION_2026-09-30.md",
+  "remainder": "Use a genuinely controlling coupling invariant or a different carrier. Do not infer universality from small separator size."
+}

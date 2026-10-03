@@ -1,0 +1,39 @@
+{
+  "request_id": "REQ-0008-REFEREE",
+  "generator": "REFEREE_GENERATOR",
+  "accepted_obligation": "Shared: generate admission tests for any claim that the current Reconcile obligation has advanced",
+  "needed_inputs": [
+    "Claim statement",
+    "Scope",
+    "Evidence refs",
+    "Cost refs",
+    "Recovery refs"
+  ],
+  "requested_parts": [
+    "Proof-audit request",
+    "Computation-audit request when finite evidence is used",
+    "Counterexample replay request",
+    "Cost-accounting verification request",
+    "Claim-ceiling decision checklist"
+  ],
+  "candidate_operations": [
+    "VERIFY",
+    "COUNTERPROBE",
+    "CHECK_DEPENDENCIES",
+    "CHECK_RECONSTRUCTION"
+  ],
+  "counterprobes": [
+    "Finite-to-universal promotion",
+    "Self-refereeing",
+    "Authority leakage"
+  ],
+  "dependencies": [],
+  "acceptance_criteria": [
+    "Verdict follows evidence rather than generator identity",
+    "Universal promotion requires all universal obligations"
+  ],
+  "cost_envelope": null,
+  "output_contract": "Emit verification requests; deterministic/formal checking supplies the verdict.",
+  "child_obligation_requests": [],
+  "remainder": "UNRESOLVED remains valid when evidence is insufficient."
+}

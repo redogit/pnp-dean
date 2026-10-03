@@ -1,0 +1,30 @@
+{
+  "request_id": "REQ-0005-DIVERSITY",
+  "generator": "DIVERSITY_GENERATOR",
+  "accepted_obligation": "Shared: prevent active Reconcile requests from collapsing into duplicate graph-search heuristics",
+  "needed_inputs": [
+    "Current active RequestBundles and their mechanism tags"
+  ],
+  "requested_parts": [
+    "Mechanism equivalence classes",
+    "Duplicate/subsumption candidates",
+    "Missing mechanism classes consequential to U_COVER/U_MASS"
+  ],
+  "candidate_operations": [
+    "CLASSIFY",
+    "DEDUPLICATE_OCCURRENCES",
+    "REQUEST_MISSING_MECHANISM"
+  ],
+  "counterprobes": [
+    "Ensure apparently different syntax is not the same semantic mechanism"
+  ],
+  "dependencies": [],
+  "acceptance_criteria": [
+    "Occurrence/provenance history preserved",
+    "No unique mechanism removed by scalar ranking"
+  ],
+  "cost_envelope": null,
+  "output_contract": "Return a mechanism map and zero-to-many requests for missing classes.",
+  "child_obligation_requests": [],
+  "remainder": "Diversity has no proof authority; it only controls search coverage."
+}

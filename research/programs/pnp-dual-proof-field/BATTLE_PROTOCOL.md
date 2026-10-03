@@ -1,115 +1,146 @@
-# Battle protocol
+# Obligation / request protocol
+
+The historical word "battle" remains for receipts, but execution is request-driven.
 
 ## 0. Freeze the field
 
-For each battle record:
+Record:
 
 - exact problem instance/family;
-- current theorem direction;
-- current obligation;
+- theorem direction;
+- current parent obligation;
 - fixed definitions;
 - claim ceiling;
 - starting carrier;
 - allowed evidence.
 
-Neither side may modify these after seeing the outcome.
+These do not mutate after seeing an outcome.
 
-## 1. Select one obligation
+## 1. Slice the obligation
 
-Choose the smallest unresolved obligation that can change the universal result.
+Decompose the current obligation only as far as necessary:
 
-Primary obligations are in [OBLIGATIONS.md](OBLIGATIONS.md).
+[
+Oightarrow{O_1,ldots,O_m}.
+]
 
-Do not run a battle merely because a configuration is available.
+Each slice must state what consequence changes if it is solved or broken.
 
-## 2. Populate small combatant sets
+## 2. Generator acceptance
 
-Default:
+A generator activates only by accepting one slice `O_i`.
 
-- 4 active offense configurations;
-- 4 active defense configurations;
-- hard maximum 8 per side.
+It receives only:
 
-Additional candidates remain archived/cold until diversity or repair justifies promotion.
+- the slice;
+- fixed definition references;
+- relevant carrier/evidence references;
+- a declared budget.
 
-Population slots are mechanism-diverse, not score-ranked duplicates.
+It may decline by emitting zero RequestBundles and an explicit remainder.
 
-## 3. Matchmaking
+## 3. Generate requested parts
 
-A defense configuration should attack an offense configuration only when its failure mode is relevant.
+The generator emits zero, one, or many RequestBundles.
+
+A RequestBundle asks for exact parts such as:
+
+- theorem/lemma;
+- carrier;
+- counterexample;
+- decomposition;
+- circuit;
+- cost bound;
+- DOE panel;
+- source verification;
+- repair;
+- reconstruction map.
+
+It also declares dependencies, counterprobes, acceptance criteria, output contract, and any child obligation requests.
+
+## 4. Fulfill requests
+
+Use the smallest appropriate research skill.
+
+Independent RequestBundles may execute in parallel.
+
+Dependent bundles wait for their declared prerequisites.
+
+No result inherits authority merely because another generator requested it.
+
+## 5. Cost requests
+
+Every algorithmic RequestBundle must pass through `COST_GENERATOR`.
+
+Unknown construction/discovery/reconciliation/recovery cost becomes a child obligation instead of an assumption.
+
+Research-only oracle use is allowed for discovery but must be marked; production claims must replace the oracle with explicit operations.
+
+## 6. Adversarial generation
+
+Constructive and lower-bound generators may request attacks against each other's parts.
 
 Examples:
 
-- quotient -> aliasing/future-divergence defense;
-- decomposition -> coupling/discovery-cost defense;
-- circuit -> construction/size/uniformity defense;
-- induction -> successor/nonuniformity defense;
-- reconciliation -> oracle-leakage defense.
+- quotient -> aliasing/future-divergence request;
+- decomposition -> coupling/discovery-cost request;
+- circuit -> construction/size/uniformity request;
+- induction -> successor/nonuniformity request;
+- reconciliation -> hidden-oracle request.
 
-Use full cross-product combat only when the population is small enough and every pairing is semantically meaningful.
+No fixed cross-product is required. Match requests by consequential relevance.
 
-## 4. Execute
+## 7. Referee generation
 
-Each pair produces a bounded research attempt.
+`REFEREE_GENERATOR` converts a claimed result into verification requests.
 
-Offense must state a falsifiable exact claim.
+The generator does not decide the result.
 
-Defense must state the countercondition it is trying to produce.
+Formal/deterministic checking and admissible evidence yield one of:
 
-DOE is targeted at that claim, not random benchmarking.
+- `ADMIT_SCOPED`;
+- `REJECT_COUNTEREXAMPLE`;
+- `REPAIRABLE`;
+- `UNRESOLVED`;
+- `INVALID_ATTACK`.
 
-## 5. Charge work
+Absence of a bounded counterexample never proves universality.
 
-Cost Accountant records all work that would belong to the proposed algorithm.
+## 8. Repair recursion
 
-Research-only oracle cost is separately recorded.
+For `REPAIRABLE`:
 
-An oracle may guide discovery, but any production claim must replace it with explicit circuitry/algorithmic operations and charge them.
+[
+FailureWitness
+ightarrow
+REPAIR_GENERATOR
+ightarrow
+RequestedMissingParts
+ightarrow
+SameCounterprobe.
+]
 
-## 6. Referee
+A different unrelated mechanism is a new route, not a repair.
 
-The Referee checks the exact claim, evidence, and scope.
+## 9. Distill and recurse
 
-No combatant declares victory.
+Results update the obligation graph:
 
-A bounded finite sweep can reject a universal claim by counterexample, but cannot establish universality by absence of counterexamples.
+[
+RequestedParts
+ightarrow Evidence
+ightarrow ResolvedParts + ResidualObligations.
+]
 
-## 7. Repair
+Repeated constructive successes should become certified reusable rules.
 
-For `REPAIRABLE`, instantiate the Repairer against the exact failure witness.
-
-Run the same attack again before widening the claim.
-
-## 8. Distill
-
-Repeated offense wins should become a reusable exact lemma or certified rule.
-
-Repeated defense wins should become a counterfamily or obstruction lemma.
-
-Do not merely accumulate battle counts.
-
-## 9. Population update
-
-Retain:
-
-- unique surviving mechanisms;
-- strongest counterexamples;
-- unresolved but non-dominated routes;
-- exact scoped terminals.
-
-Retire:
-
-- semantic duplicates;
-- mechanisms strictly subsumed by a certified successor;
-- disproved universals.
-
-Retirement preserves history.
+Repeated failures should become counterfamilies or obstruction lemmas.
 
 ## 10. Universal promotion gates
 
 ### P=NP
 
-Requires one shared construction satisfying:
+Requires one construction with:
 
 - universal coverage;
 - exact local rules;
@@ -122,4 +153,4 @@ Requires one shared construction satisfying:
 
 Requires a lower-bound theorem quantified over all deterministic solvers in the fixed model.
 
-Failure of every member of the current offense population is not sufficient.
+Failure of every construction generated so far is insufficient.

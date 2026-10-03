@@ -1,0 +1,33 @@
+{
+  "schema": "pnp-dual-proof-field/generator-v2",
+  "claim_ceiling": "OPEN",
+  "mode": "obligation-driven-zero-to-many",
+  "fixed_population_limit": null,
+  "activation_rule": "A generator activates only after accepting a consequential current obligation slice.",
+  "generators": [
+    "P_EQ_NP_GENERATOR",
+    "P_NE_NP_GENERATOR",
+    "EXPLORER_GENERATOR",
+    "REPAIR_GENERATOR",
+    "DIVERSITY_GENERATOR",
+    "MEMORY_GENERATOR",
+    "COST_GENERATOR",
+    "REFEREE_GENERATOR"
+  ],
+  "output": "REQUEST_BUNDLE",
+  "recursion": {
+    "child_obligations_allowed": true,
+    "zero_output_allowed": true,
+    "multiple_outputs_allowed": true,
+    "same_obligation_parallelism_allowed_when_independent": true
+  },
+  "rules": {
+    "generator_self_admission": false,
+    "finite_pass_promotes_universal": false,
+    "counterexample_can_refute_universal": true,
+    "failed_route_history_preserved": true,
+    "whole_history_loaded_by_default": false,
+    "unknown_cost_becomes_obligation": true,
+    "unresolved_is_valid": true
+  }
+}

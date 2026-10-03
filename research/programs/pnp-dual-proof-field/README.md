@@ -1,6 +1,6 @@
 # Dual Adversarial Proof Field
 
-This program turns the two theorem directions
+This program turns
 
 [
 P=NP
@@ -8,20 +8,18 @@ qquad	ext{and}qquad
 P\ne NP
 ]
 
-into adversarial research populations over one fixed formal problem.
+into opposing theorem directions over one immutable formal substrate.
 
-The populations are not voting on truth. They are producing constructions and counter-constructions for an exact referee.
+The field is not a fixed population of agents. It is an obligation-driven generator system.
 
 ## Core object
 
 [
-\mathcal P =
+\mathcal P=
 (
 \Gamma,
 O,
-C_{=},
-C_{\ne},
-S,
+G,
 R,
 E
 )
@@ -29,33 +27,46 @@ E
 
 where:
 
-- `Γ` — fixed complexity definitions and input semantics;
-- `O` — current proof obligation;
-- `C_=` — small population of constructive configurations;
-- `C_≠` — small population of adversarial configurations;
-- `S` — support roles invoked dynamically;
-- `R` — exact referee/admission process;
-- `E` — durable evidence, failures, costs, and remainder.
+- `Γ` — fixed definitions and input semantics;
+- `O` — the current obligation graph;
+- `G` — generators accepting obligation slices;
+- `R` — deterministic/formal referee and admission machinery;
+- `E` — durable evidence, costs, failures, provenance, and remainder.
+
+Each generator obeys:
+
+[
+G_i(O_i,Gamma,C,E,B)ightarrow RequestBundle^{0..*}.
+]
+
+The RequestBundle is the unit of work.
 
 ## Start here
 
 1. [Charter](CHARTER.md)
-2. [Roles](ROLES.md)
-3. [Battle protocol](BATTLE_PROTOCOL.md)
+2. [Generators](GENERATORS.md)
+3. [Battle/request protocol](BATTLE_PROTOCOL.md)
 4. [Universal obligations](OBLIGATIONS.md)
 5. [Current status](STATUS.md)
-6. [Receipt schema](BATTLE_RECEIPT.schema.json)
-7. [Population configuration](POPULATION_CONFIG.json)
+6. [Generator configuration](GENERATOR_CONFIG.json)
+7. [Obligation slice schema](OBLIGATION_SLICE.schema.json)
+8. [Request bundle schema](REQUEST_BUNDLE.schema.json)
+9. [Battle receipt schema](BATTLE_RECEIPT.schema.json)
 
 ## Execution
 
 Use Mathbox `research-program` to coordinate the program.
 
-Each individual offensive/defensive move is a bounded `research-attempt`.
-Use `proof-audit` for formal adjudication and `computation-audit` for finite DOE/counterexample work.
+A RequestBundle may be fulfilled with:
+
+- `research-attempt`;
+- `proof-audit`;
+- `computation-audit`;
+- `literature-check`;
+- `research-state`.
 
 No local copies of those skills belong in this repository.
 
 ## Claim ceiling
 
-The program is a research architecture. It proves neither theorem direction by existing.
+The generator architecture proves neither theorem direction by existing.

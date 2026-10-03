@@ -1,5 +1,7 @@
 # P vs NP / Dean
 
+> **Public page:** https://redogit.github.io/pnp-dean/ · **Main / About:** https://redogit.github.io/redogit/
+
 Solvers, probes, proofs, contracts, and evidence for the declared research scope.
 
 This export preserves original source paths and bytes. Necessary cross-project dependencies are copied with explicit provenance; ownership and historical evidence remain with their source projects.

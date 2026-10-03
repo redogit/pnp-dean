@@ -5,8 +5,6 @@
   "required": [
     "battle_id",
     "obligation",
-    "offense",
-    "defense",
     "claim",
     "cost",
     "referee",
@@ -15,27 +13,26 @@
   ],
   "properties": {
     "battle_id": { "type": "string" },
+    "protocol": { "type": "string" },
     "source_revision": { "type": "string" },
     "obligation": { "type": "string" },
+    "obligation_slice_refs": { "type": "array", "items": { "type": "string" } },
+    "generator_requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["generator", "accepted_obligation", "requested_parts"],
+        "properties": {
+          "generator": { "type": "string" },
+          "accepted_obligation": { "type": "string" },
+          "request_ref": { "type": ["string", "null"] },
+          "requested_parts": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
     "fixed_definitions": { "type": "array", "items": { "type": "string" } },
-    "offense": {
-      "type": "object",
-      "required": ["configuration_id", "mechanism"],
-      "properties": {
-        "configuration_id": { "type": "string" },
-        "mechanism": { "type": "string" },
-        "artifact_refs": { "type": "array", "items": { "type": "string" } }
-      }
-    },
-    "defense": {
-      "type": "object",
-      "required": ["configuration_id", "attack_class"],
-      "properties": {
-        "configuration_id": { "type": "string" },
-        "attack_class": { "type": "string" },
-        "artifact_refs": { "type": "array", "items": { "type": "string" } }
-      }
-    },
+    "offense": { "type": ["object", "null"] },
+    "defense": { "type": ["object", "null"] },
     "claim": {
       "type": "object",
       "required": ["statement", "scope"],
@@ -47,20 +44,7 @@
     },
     "evidence": { "type": "array", "items": { "type": "string" } },
     "counterexample": { "type": ["string", "null"] },
-    "cost": {
-      "type": "object",
-      "properties": {
-        "encode": { "type": ["integer", "number", "string", "null"] },
-        "discover": { "type": ["integer", "number", "string", "null"] },
-        "build": { "type": ["integer", "number", "string", "null"] },
-        "select": { "type": ["integer", "number", "string", "null"] },
-        "transform": { "type": ["integer", "number", "string", "null"] },
-        "reconcile": { "type": ["integer", "number", "string", "null"] },
-        "verify": { "type": ["integer", "number", "string", "null"] },
-        "rollback": { "type": ["integer", "number", "string", "null"] },
-        "recover": { "type": ["integer", "number", "string", "null"] }
-      }
-    },
+    "cost": { "type": "object" },
     "referee": {
       "type": "object",
       "required": ["verdict"],

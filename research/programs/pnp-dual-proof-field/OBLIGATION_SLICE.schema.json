@@ -2,20 +2,77 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "PNP Obligation Slice",
   "type": "object",
-  "required": ["obligation_id", "parent_obligation", "statement", "theorem_direction", "acceptance_boundary"],
+  "required": [
+    "obligation_id",
+    "parent_obligation",
+    "statement",
+    "theorem_direction",
+    "acceptance_boundary"
+  ],
   "properties": {
-    "obligation_id": { "type": "string" },
-    "parent_obligation": { "type": ["string", "null"] },
-    "statement": { "type": "string" },
-    "theorem_direction": {
-      "enum": ["P_EQ_NP", "P_NE_NP", "SHARED"]
+    "obligation_id": {
+      "type": "string"
     },
-    "accepted_by": { "type": ["string", "null"] },
-    "fixed_definition_refs": { "type": "array", "items": { "type": "string" } },
-    "carrier_refs": { "type": "array", "items": { "type": "string" } },
-    "evidence_refs": { "type": "array", "items": { "type": "string" } },
-    "acceptance_boundary": { "type": "string" },
-    "budget": { "type": ["object", "null"] },
-    "remainder": { "type": ["string", "null"] }
+    "parent_obligation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "statement": {
+      "type": "string"
+    },
+    "theorem_direction": {
+      "enum": [
+        "P_EQ_NP",
+        "P_NE_NP",
+        "SHARED"
+      ]
+    },
+    "accepted_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fixed_definition_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lineage_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "carrier_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptance_boundary": {
+      "type": "string"
+    },
+    "budget": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "remainder": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
   }
 }

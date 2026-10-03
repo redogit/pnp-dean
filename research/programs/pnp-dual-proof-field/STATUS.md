@@ -5,6 +5,32 @@
 **Claim ceiling:** OPEN  
 **Theorem directions:** `P=NP` and `P!=NP` both unresolved.
 
+## Execution-carrier lineage
+
+The active generator contract preserves this explicit successor spine:
+
+[
+FunctionalObject
+ightarrow
+AnyFunctor/FunctionObject
+ightarrow
+LocalPlane
+ightarrow
+ObligationGenerator.
+]
+
+The lineage is method/provenance, not proof authority.
+
+Key boundaries:
+
+- `HISTORICAL_SHAPE != CURRENT_SEMANTICS`;
+- `SUCCESSOR_RELATION != SOURCE_REWRITE`;
+- `KNOWN_ROUTE != KNOWN_ANSWER`;
+- `ROUTE_REUSE != OUTPUT_REUSE`;
+- `DISCOVER != EXECUTE != VERIFY != ADMIT`.
+
+See `FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md` and `LINEAGE.json`.
+
 ## Current parent obligation
 
 > Can the machine efficiently discover and update an exact continuation-sufficient carrier for every Dean/Independent-Set residual, while charging all construction/reconciliation/recovery work under one fixed polynomial bound?
@@ -66,7 +92,8 @@ Memory retrieval may request, among others:
 - algebraic/rank/Macaulay carriers;
 - normalized SAT/circuit interface machinery;
 - GYRO counterexamples and failed universals;
-- future-forbidden quotient / semantic antichain work.
+- future-forbidden quotient / semantic antichain work;
+- FunctionalObject / AnyFunctor / local-plane execution-carrier lineage.
 
 These are cold resources until requested by an obligation slice.
 

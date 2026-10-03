@@ -2,26 +2,44 @@
   "request_id": "REQ-0003-EXPLORER-SHAPE",
   "generator": "EXPLORER_GENERATOR",
   "accepted_obligation": "O-COVER/O-CONT: current ordered/shared carrier may be the wrong shape for universal continuation",
+  "lineage_refs": [
+    "LINEAGE.json#L0_FUNCTIONALOBJECT",
+    "LINEAGE.json#L1_ANYFUNCTOR",
+    "LINEAGE.json#L2_LOCAL_PLANE",
+    "LINEAGE.json#L3_OBLIGATION_GENERATOR"
+  ],
+  "inherited_contracts": [
+    "HISTORICAL_SHAPE != CURRENT_SEMANTICS",
+    "SUCCESSOR_RELATION != SOURCE_REWRITE",
+    "KNOWN_ROUTE != KNOWN_ANSWER",
+    "DISCOVER != EXECUTE",
+    "EXECUTE != VERIFY",
+    "VERIFY != ADMIT"
+  ],
   "needed_inputs": [
     "Current obligation semantics only",
     "Recovered GYRO, SAT-interface, articulation, de Bruijn/relational-carrier mechanisms",
+    "FunctionalObject/AnyFunctor/local-plane lineage and its non-collapse boundaries",
     "Known failure modes to avoid"
   ],
   "requested_parts": [
     "At least one mathematically different carrier shape",
     "The exact distinction it preserves that the current carrier may lose",
-    "A translation/reconstruction seam back to Dean semantics"
+    "A translation/reconstruction seam back to Dean semantics",
+    "Whether the finite local-plane route-index pattern can be reused without treating known route as known answer"
   ],
   "candidate_operations": [
     "ABSTRACT_UPWARD",
     "ROTATE_REPRESENTATION",
     "DUALIZE",
     "FACTOR",
-    "SERIALIZE_RELATIONS"
+    "SERIALIZE_RELATIONS",
+    "LOWER_TO_LOCAL_PLANE"
   ],
   "counterprobes": [
     "Does the new shape merely rename the original hard problem?",
-    "Is construction/discovery cost exported outside the carrier?"
+    "Is construction/discovery cost exported outside the carrier?",
+    "Does route reuse accidentally become answer/output reuse?"
   ],
   "dependencies": [
     "MEMORY_GENERATOR"
@@ -29,7 +47,8 @@
   "acceptance_criteria": [
     "Same obligation is preserved",
     "No evidence authority transfer from another domain",
-    "New shape exposes a consequentially different route"
+    "New shape exposes a consequentially different route",
+    "FunctionalObject/AnyFunctor lineage is preserved as successor provenance, not retroactive equivalence"
   ],
   "cost_envelope": {
     "discovery_cost_must_be_declared": true

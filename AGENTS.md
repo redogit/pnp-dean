@@ -32,7 +32,13 @@ G_i(O_i,Gamma,C,E,B)ightarrow RequestBundle^{0..*}.
 
 A generator receives only the obligation slice and context it needs. It emits requested parts, dependencies, counterprobes, acceptance criteria, cost requirements, child obligations, and an explicit remainder.
 
-Read `research/programs/pnp-dual-proof-field/GENERATORS.md`.
+Read:
+
+- `research/programs/pnp-dual-proof-field/GENERATORS.md`
+- `research/programs/pnp-dual-proof-field/FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md`
+- `research/programs/pnp-dual-proof-field/LINEAGE.json`
+
+The generator contract is a successor of the preserved FunctionalObject → AnyFunctor → local-plane lineage. Preserve that lineage without claiming historical semantic equivalence.
 
 Use installed Mathbox skills as execution machinery:
 
@@ -68,6 +74,9 @@ A different model instance alone does not create independent evidence.
 - Structural similarity does not transfer evidence.
 - Failed branches remain recoverable history.
 - Whole-history loading is forbidden by default; memory retrieval is obligation-local.
+- `HISTORICAL_SHAPE != CURRENT_SEMANTICS`.
+- `SUCCESSOR_RELATION != SOURCE_REWRITE`.
+- `KNOWN_ROUTE != KNOWN_ANSWER`.
 
 ## Program entry point
 

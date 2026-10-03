@@ -1,9 +1,19 @@
 {
-  "schema": "pnp-dual-proof-field/generator-v2",
+  "schema": "pnp-dual-proof-field/generator-v2.1",
   "claim_ceiling": "OPEN",
   "mode": "obligation-driven-zero-to-many",
   "fixed_population_limit": null,
   "activation_rule": "A generator activates only after accepting a consequential current obligation slice.",
+  "lineage_root": "LINEAGE.json",
+  "lineage_contracts": [
+    "HISTORICAL_SHAPE != CURRENT_SEMANTICS",
+    "SUCCESSOR_RELATION != SOURCE_REWRITE",
+    "KNOWN_ROUTE != KNOWN_ANSWER",
+    "ROUTE_REUSE != OUTPUT_REUSE",
+    "DISCOVER != EXECUTE",
+    "EXECUTE != VERIFY",
+    "VERIFY != ADMIT"
+  ],
   "generators": [
     "P_EQ_NP_GENERATOR",
     "P_NE_NP_GENERATOR",
@@ -28,6 +38,7 @@
     "failed_route_history_preserved": true,
     "whole_history_loaded_by_default": false,
     "unknown_cost_becomes_obligation": true,
-    "unresolved_is_valid": true
+    "unresolved_is_valid": true,
+    "lineage_refs_preserved_on_successor_requests": true
   }
 }

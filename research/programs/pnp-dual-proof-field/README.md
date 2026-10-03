@@ -41,17 +41,40 @@ G_i(O_i,Gamma,C,E,B)ightarrow RequestBundle^{0..*}.
 
 The RequestBundle is the unit of work.
 
+## Executable lineage
+
+The generator field is an explicit successor of:
+
+[
+FunctionalObject
+ightarrow
+AnyFunctor/FunctionObject
+ightarrow
+LocalPlane
+ightarrow
+ObligationGenerator.
+]
+
+See:
+
+- [FunctionalObject → AnyFunctor → generator lineage](FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md)
+- [Machine-readable lineage](LINEAGE.json)
+
+The relation is provenance and lowering, not retroactive equivalence.
+
 ## Start here
 
 1. [Charter](CHARTER.md)
 2. [Generators](GENERATORS.md)
-3. [Battle/request protocol](BATTLE_PROTOCOL.md)
-4. [Universal obligations](OBLIGATIONS.md)
-5. [Current status](STATUS.md)
-6. [Generator configuration](GENERATOR_CONFIG.json)
-7. [Obligation slice schema](OBLIGATION_SLICE.schema.json)
-8. [Request bundle schema](REQUEST_BUNDLE.schema.json)
-9. [Battle receipt schema](BATTLE_RECEIPT.schema.json)
+3. [FunctionalObject / AnyFunctor lineage](FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md)
+4. [Battle/request protocol](BATTLE_PROTOCOL.md)
+5. [Universal obligations](OBLIGATIONS.md)
+6. [Current status](STATUS.md)
+7. [Generator configuration](GENERATOR_CONFIG.json)
+8. [Machine-readable lineage](LINEAGE.json)
+9. [Obligation slice schema](OBLIGATION_SLICE.schema.json)
+10. [Request bundle schema](REQUEST_BUNDLE.schema.json)
+11. [Battle receipt schema](BATTLE_RECEIPT.schema.json)
 
 ## Execution
 

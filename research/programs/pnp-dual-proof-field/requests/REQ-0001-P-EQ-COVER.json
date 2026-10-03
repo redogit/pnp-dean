@@ -1,0 +1,42 @@
+{
+  "request_id": "REQ-0001-P-EQ-COVER",
+  "generator": "P_EQ_NP_GENERATOR",
+  "accepted_obligation": "O-COVER: construct a non-oracular universally applicable continuation rule or a certified partition of residuals with explicit uncovered remainder",
+  "needed_inputs": [
+    "Current RMAL SharedCarrier/Reconcile contract",
+    "Known exact Dean terminal classes and their recognizers",
+    "Known carrier counterexamples/falsified universals"
+  ],
+  "requested_parts": [
+    "One exact recognizer/transform pair that strictly enlarges current certified coverage",
+    "A composition rule showing how its output rejoins SharedCarrier",
+    "Explicit uncovered residual predicate rather than silent fallback"
+  ],
+  "candidate_operations": [
+    "RELATE",
+    "DECOMPOSE",
+    "RECONCILE",
+    "CIRCUITIZE",
+    "INDUCT"
+  ],
+  "counterprobes": [
+    "Hidden DeanSelection-equivalent applicability test",
+    "Residual family not covered by the proposed recognizer",
+    "Future continuation that invalidates the proposed merge"
+  ],
+  "dependencies": [
+    "MEMORY_GENERATOR retrieval of nearest predecessor mechanisms",
+    "COST_GENERATOR lifecycle accounting"
+  ],
+  "acceptance_criteria": [
+    "Exact decision preservation on declared scope",
+    "Applicability is polynomially recognizable without a solution oracle",
+    "Original-ID reconstruction retained where witness is claimed"
+  ],
+  "cost_envelope": {
+    "unknown_costs_become_child_obligations": true
+  },
+  "output_contract": "Return a scoped certified rule plus explicit residual class; do not claim universal coverage unless every residual is handled.",
+  "child_obligation_requests": [],
+  "remainder": "Universal coverage remains open unless the emitted rule closes the residual graph completely."
+}

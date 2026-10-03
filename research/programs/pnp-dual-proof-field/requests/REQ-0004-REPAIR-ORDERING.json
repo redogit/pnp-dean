@@ -1,0 +1,37 @@
+{
+  "request_id": "REQ-0004-REPAIR-ORDERING",
+  "generator": "REPAIR_GENERATOR",
+  "accepted_obligation": "O-CONT/O-MASS: repair the known weakness that a fixed ordered carrier can preserve semantics yet still accumulate a large frontier",
+  "needed_inputs": [
+    "Exact failure witness/family for ordered carrier growth",
+    "Current reverse-lookup and contextual-selection rules"
+  ],
+  "requested_parts": [
+    "The smallest additional relation allowing contextual/non-oblivious selection",
+    "A repair transform that preserves reconstruction and existing exactness",
+    "The original growth counterprobe rerun against the repair"
+  ],
+  "candidate_operations": [
+    "ADD_RELATION",
+    "REORDER_CONTEXTUALLY",
+    "SHARE_DAG_NODE",
+    "RECONCILE_EARLY"
+  ],
+  "counterprobes": [
+    "Same adversarial growth family",
+    "Hidden global optimization in next-relation selection"
+  ],
+  "dependencies": [
+    "P_NE_NP_GENERATOR exact failure witness",
+    "COST_GENERATOR"
+  ],
+  "acceptance_criteria": [
+    "Repair addresses the recorded failure directly",
+    "Selection rule is polynomially computable",
+    "No unrelated solver is substituted and called a repair"
+  ],
+  "cost_envelope": null,
+  "output_contract": "Return minimal repair plus same-counterprobe result.",
+  "child_obligation_requests": [],
+  "remainder": "If no local repair exists, emit zero outputs and preserve the obstruction."
+}

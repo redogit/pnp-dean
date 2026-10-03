@@ -64,7 +64,21 @@
         "rejected/incomplete/conflicting observations retained",
         "KNOWN_ROUTE != KNOWN_ANSWER",
         "ROUTE_REUSE != OUTPUT_REUSE"
-      ]
+      ],
+      "verification": {
+        "tested_source_revision": "5b05b2db94c0ac23cdc67c9be338449381f86271",
+        "receipt": "redogit/DnD:projects/decision-field/evidence/local_plane_2026-10-03/VERIFICATION.md",
+        "established": [
+          "finite four-stage local-plane successor executes",
+          "plural obligations required",
+          "route reuse preserves distinct invocation occurrence",
+          "rejected admission retained as residual"
+        ],
+        "nonclaims": [
+          "AVERAGE_O(1)_ROUTE_LOOKUP != O(1)_UNDERLYING_COMPUTATION",
+          "LOCAL_NATIVE_PROBE != UNIVERSAL_COMPLEXITY_RESULT"
+        ]
+      }
     },
     {
       "id": "L3_OBLIGATION_GENERATOR",

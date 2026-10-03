@@ -1,0 +1,40 @@
+{
+  "request_id": "REQ-0003-EXPLORER-SHAPE",
+  "generator": "EXPLORER_GENERATOR",
+  "accepted_obligation": "O-COVER/O-CONT: current ordered/shared carrier may be the wrong shape for universal continuation",
+  "needed_inputs": [
+    "Current obligation semantics only",
+    "Recovered GYRO, SAT-interface, articulation, de Bruijn/relational-carrier mechanisms",
+    "Known failure modes to avoid"
+  ],
+  "requested_parts": [
+    "At least one mathematically different carrier shape",
+    "The exact distinction it preserves that the current carrier may lose",
+    "A translation/reconstruction seam back to Dean semantics"
+  ],
+  "candidate_operations": [
+    "ABSTRACT_UPWARD",
+    "ROTATE_REPRESENTATION",
+    "DUALIZE",
+    "FACTOR",
+    "SERIALIZE_RELATIONS"
+  ],
+  "counterprobes": [
+    "Does the new shape merely rename the original hard problem?",
+    "Is construction/discovery cost exported outside the carrier?"
+  ],
+  "dependencies": [
+    "MEMORY_GENERATOR"
+  ],
+  "acceptance_criteria": [
+    "Same obligation is preserved",
+    "No evidence authority transfer from another domain",
+    "New shape exposes a consequentially different route"
+  ],
+  "cost_envelope": {
+    "discovery_cost_must_be_declared": true
+  },
+  "output_contract": "Return candidate carrier interfaces, not proof authority.",
+  "child_obligation_requests": [],
+  "remainder": "Candidate remains generator-only until exact verification."
+}

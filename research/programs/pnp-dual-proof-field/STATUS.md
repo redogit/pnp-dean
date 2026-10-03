@@ -1,65 +1,89 @@
 # Current status
 
 **Program:** Dual Adversarial Proof Field  
+**Architecture:** obligation-driven generator field  
 **Claim ceiling:** OPEN  
 **Theorem directions:** `P=NP` and `P!=NP` both unresolved.
 
-## Initial battlefield
-
-Current strongest shared question:
+## Current parent obligation
 
 > Can the machine efficiently discover and update an exact continuation-sufficient carrier for every Dean/Independent-Set residual, while charging all construction/reconciliation/recovery work under one fixed polynomial bound?
 
 This binds:
 
-- older `U_COVER / U_LOCAL / U_MASS`;
-- current SharedCarrier/Reconcile work;
+- `U_COVER / U_LOCAL / U_MASS`;
+- SharedCarrier/Reconcile;
 - N -> N+1 induction;
 - hidden-oracle prohibition;
-- future-sufficiency/Knowledge-Decay discipline.
+- future-sufficiency / Knowledge-Decay discipline.
 
-## Initial offense population
+## Initial obligation slices
 
-Populate from distinct existing mechanisms, not new duplicates:
+### O-COVER
 
-1. exact structural decomposition / articulation composition;
-2. RMAL shared-carrier + odd/even/reverse reconciliation;
-3. algebraic/rank/Macaulay carrier family;
-4. normalized SAT/circuit interface route.
+Find or falsify a universal, non-oracular rule-selection/coverage mechanism.
 
-These are starting mechanisms, not admitted universal solvers.
+Primary generators:
+- `P_EQ_NP_GENERATOR`;
+- `P_NE_NP_GENERATOR`;
+- `EXPLORER_GENERATOR`;
+- `MEMORY_GENERATOR`.
 
-## Initial defense population
+### O-LOCAL
 
-1. future-aliasing / continuation-divergence attack;
-2. interface-coupling attack;
-3. hidden-oracle / quotient-discovery attack;
-4. total-work / nonuniform-exponent attack.
+Account for every lifecycle step of any proposed rule.
 
-## Support triggers
+Primary generators:
+- `COST_GENERATOR`;
+- `REFEREE_GENERATOR`;
+- `REPAIR_GENERATOR`.
 
-- Explorer: population loses mechanism diversity or all attacks share one representation.
-- Repairer: referee returns `REPAIRABLE`.
-- Diversity Keeper: before population update.
-- Memory Carrier: after every material battle.
-- Cost Accountant: every algorithmic claim.
-- Referee: every claimed win.
+### O-MASS
 
-## First round target
+Find or falsify one fixed polynomial bound for the entire recursive field/machine execution.
 
-Attack the same exact seam from both sides:
+Primary generators:
+- `P_EQ_NP_GENERATOR`;
+- `P_NE_NP_GENERATOR`;
+- `COST_GENERATOR`.
+
+### O-CONT
+
+Prove or break continuation sufficiency of the current carrier.
+
+Primary generators:
+- `P_EQ_NP_GENERATOR`;
+- `P_NE_NP_GENERATOR`;
+- `DIVERSITY_GENERATOR`;
+- `REFEREE_GENERATOR`.
+
+## Existing mechanisms available on request
+
+Memory retrieval may request, among others:
+
+- exact articulation composition;
+- RMAL shared-carrier / odd-even / reverse reconciliation;
+- algebraic/rank/Macaulay carriers;
+- normalized SAT/circuit interface machinery;
+- GYRO counterexamples and failed universals;
+- future-forbidden quotient / semantic antichain work.
+
+These are cold resources until requested by an obligation slice.
+
+## Next request wave
+
+Generate requests against:
 
 [
-\text{polynomially discoverable continuation-sufficient Reconcile}
+\text{polynomially discoverable continuation-sufficient Reconcile}.
 ]
 
-Offense tries to construct it.
+Required attack surfaces:
 
-Defense tries to produce either:
+- carrier aliasing;
+- hidden DeanSelection oracle;
+- joint-interface coupling;
+- construction/reconciliation cost;
+- N -> N+1 fixed-exponent failure.
 
-- a pair the carrier incorrectly merges;
-- a family forcing superpolynomial carrier/work;
-- an equivalent hidden DeanSelection query;
-- a successor that breaks the fixed-exponent induction.
-
-No result from Round 1 may be promoted beyond its exact scope.
+No result may be promoted beyond its exact verified scope.

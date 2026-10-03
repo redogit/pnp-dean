@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PNP Dual Proof Field Battle Receipt",
+  "type": "object",
+  "required": [
+    "battle_id",
+    "obligation",
+    "offense",
+    "defense",
+    "claim",
+    "cost",
+    "referee",
+    "status",
+    "remainder"
+  ],
+  "properties": {
+    "battle_id": { "type": "string" },
+    "source_revision": { "type": "string" },
+    "obligation": { "type": "string" },
+    "fixed_definitions": { "type": "array", "items": { "type": "string" } },
+    "offense": {
+      "type": "object",
+      "required": ["configuration_id", "mechanism"],
+      "properties": {
+        "configuration_id": { "type": "string" },
+        "mechanism": { "type": "string" },
+        "artifact_refs": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "defense": {
+      "type": "object",
+      "required": ["configuration_id", "attack_class"],
+      "properties": {
+        "configuration_id": { "type": "string" },
+        "attack_class": { "type": "string" },
+        "artifact_refs": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": ["statement", "scope"],
+      "properties": {
+        "statement": { "type": "string" },
+        "scope": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "counterexample": { "type": ["string", "null"] },
+    "cost": {
+      "type": "object",
+      "properties": {
+        "encode": { "type": ["integer", "number", "string", "null"] },
+        "discover": { "type": ["integer", "number", "string", "null"] },
+        "build": { "type": ["integer", "number", "string", "null"] },
+        "select": { "type": ["integer", "number", "string", "null"] },
+        "transform": { "type": ["integer", "number", "string", "null"] },
+        "reconcile": { "type": ["integer", "number", "string", "null"] },
+        "verify": { "type": ["integer", "number", "string", "null"] },
+        "rollback": { "type": ["integer", "number", "string", "null"] },
+        "recover": { "type": ["integer", "number", "string", "null"] }
+      }
+    },
+    "referee": {
+      "type": "object",
+      "required": ["verdict"],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "ADMIT_SCOPED",
+            "REJECT_COUNTEREXAMPLE",
+            "REPAIRABLE",
+            "UNRESOLVED",
+            "INVALID_ATTACK"
+          ]
+        },
+        "reason": { "type": "string" },
+        "audit_refs": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "status": {
+      "enum": [
+        "ACTIVE",
+        "SURVIVES_SCOPED",
+        "DEFEATED",
+        "REPAIR_PENDING",
+        "UNRESOLVED",
+        "RETIRED_SUBSUMED"
+      ]
+    },
+    "repair_of": { "type": ["string", "null"] },
+    "preserved_distinctions": { "type": "array", "items": { "type": "string" } },
+    "lost_or_unresolved_distinctions": { "type": "array", "items": { "type": "string" } },
+    "recovery_reference": { "type": ["string", "null"] },
+    "remainder": { "type": "string" }
+  }
+}

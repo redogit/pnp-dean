@@ -1,0 +1,36 @@
+{
+  "request_id": "REQ-0002-P-NE-CONT",
+  "generator": "P_NE_NP_GENERATOR",
+  "accepted_obligation": "O-CONT: falsify continuation sufficiency or polynomial discoverability of the current SharedCarrier/Reconcile representation",
+  "needed_inputs": [
+    "Current future-forbidden quotient definition",
+    "Current dominance/antichain rules",
+    "Allowed successor/reverse-lookup transforms"
+  ],
+  "requested_parts": [
+    "A minimal pair of residual states merged by the carrier but separated by an allowed future obligation, OR",
+    "A graph family where exact carrier/discovery grows beyond any currently claimed fixed polynomial, OR",
+    "A reduction showing Reconcile asks an equivalent hard decision question"
+  ],
+  "candidate_operations": [
+    "COUNTEREXAMPLE_SEARCH",
+    "FAMILY_LIFT",
+    "ORACLE_REDUCTION",
+    "SUCCESSOR_ATTACK"
+  ],
+  "counterprobes": [
+    "Replay any found witness against the exact current carrier implementation"
+  ],
+  "dependencies": [
+    "MEMORY_GENERATOR for prior aliasing/interface barriers",
+    "REFEREE_GENERATOR for claim scoping"
+  ],
+  "acceptance_criteria": [
+    "One exact counterexample refutes the targeted universal carrier claim",
+    "A lower-bound direction must distinguish carrier-specific failure from representation-independent obstruction"
+  ],
+  "cost_envelope": null,
+  "output_contract": "Return counterexample/counterfamily/obstruction with exact scope and the strongest claim it actually defeats.",
+  "child_obligation_requests": [],
+  "remainder": "Failure of this carrier alone is not P!=NP."
+}

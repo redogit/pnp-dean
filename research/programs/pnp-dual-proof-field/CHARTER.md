@@ -2,7 +2,7 @@
 
 ## Goal
 
-Force progress on P versus NP by making the two theorem directions attack each other's exact obligations while sharing one immutable definitional substrate.
+Force progress on P versus NP by making both theorem directions generate exactly the parts demanded by the current obligation while sharing one immutable definitional substrate.
 
 ### Constructive direction
 
@@ -30,7 +30,7 @@ Dean / Independent Set:
 
 Given finite conflict graph `G=(V,E)` and target `K`, decide whether an independent set of size at least `K` exists.
 
-Original student identities and witnesses must remain reconstructible when a route claims witness preservation.
+Original student identities and witnesses must remain reconstructible whenever a route claims witness preservation.
 
 ## Shared base
 
@@ -43,19 +43,21 @@ Both theorem directions use exactly the same:
 - reduction rules;
 - proof/admission rules.
 
-The combatants may attack algorithms and representations. They may not redefine the game.
+Generators may attack algorithms and representations. They may not redefine the game.
 
 ## Design hypothesis
 
-Small populations can expose stronger invariants than one linear proof search if:
+An obligation-driven generator field can expose stronger invariants than one linear proof search when:
 
-1. the constructive population is rewarded only for exact polynomial progress;
-2. the adversarial population is rewarded only for genuine counterexamples or generalized obstructions;
-3. a neutral referee prevents rhetorical wins;
-4. diversity prevents collapse onto one carrier;
-5. memory prevents rediscovery of dead routes;
-6. cost accounting prevents hidden exponential work;
-7. repeated local wins are distilled into lemmas rather than accumulated as anecdotes.
+1. each generator accepts only a consequential obligation slice;
+2. each output names the requested parts needed to advance or attack that slice;
+3. generators may recursively request zero-to-many child obligations;
+4. constructive requests earn authority only from exact polynomial progress;
+5. lower-bound requests earn authority only from genuine counterexamples or generalized obstructions;
+6. verification/admission remains independent of generation;
+7. memory is retrieved obligation-locally, preventing both knowledge decay and context flooding;
+8. every unknown lifecycle cost becomes an explicit obligation;
+9. repeated local results are distilled into reusable lemmas/counterfamilies rather than battle counts.
 
 ## Success
 
@@ -65,7 +67,7 @@ One admitted universal construction discharging all required obligations.
 
 ### P!=NP success
 
-One admitted universal lower-bound theorem. A cemetery of failed algorithms is not sufficient.
+One admitted universal lower-bound theorem. A cemetery of failed constructions is not sufficient.
 
 ## Valuable fallback
 

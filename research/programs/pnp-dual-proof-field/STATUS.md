@@ -97,15 +97,37 @@ Memory retrieval may request, among others:
 
 These are cold resources until requested by an obligation slice.
 
-## Next request wave
+## Active Cook/Clay bridge request
 
-Generate requests against:
+`REQ-0009-COOK-CONSTRUCTOR-BRIDGE` is the next bounded constructive request.
+
+It does not assume that the current Float64/coordinate/path idea is a decider. It asks for the missing bridge explicitly:
 
 [
-\text{polynomially discoverable continuation-sufficient Reconcile}.
+x
+\rightarrow
+\text{constructed representation}
+\rightarrow
+\text{deterministic route}
+\rightarrow
+\text{exact YES/NO}
 ]
 
-Required attack surfaces:
+with every step charged against the fixed encoded input length and the complete lifecycle bounded by one fixed polynomial.
+
+The request is adversarially paired with:
+
+- `REQ-0007-COST-MASS`;
+- `REQ-0008-REFEREE`;
+- the Cook/Clay promotion counterprobe.
+
+The first verifier-to-constructor, representation-exactness, totality, hidden-oracle, or fixed-exponent gap is an acceptable bounded result and remains explicit.
+
+## Next request wave
+
+After `REQ-0009` is instantiated, attack only its first unresolved bridge before expanding scope.
+
+Existing consequential attack surfaces remain:
 
 - carrier aliasing;
 - hidden DeanSelection oracle;

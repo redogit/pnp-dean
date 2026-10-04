@@ -1,0 +1,102 @@
+{
+  "request_id": "REQ-0009-COOK-CONSTRUCTOR-BRIDGE",
+  "generator": "P_EQ_NP_GENERATOR",
+  "accepted_obligation": "U_LOCAL/U_MASS/U_TOTAL/U_INDUCT: determine whether the current route/Float64/path mechanism can be completed into one deterministic total Independent-Set decider from encoded input x alone under one fixed polynomial total-work bound",
+  "lineage_refs": [
+    "COOK_CLAY_FORMALIZATION.md",
+    "OBLIGATIONS.md#U_LOCAL",
+    "OBLIGATIONS.md#U_MASS",
+    "OBLIGATIONS.md#U_TOTAL",
+    "OBLIGATIONS.md#U_INDUCT",
+    "requests/REQ-0007-COST-MASS.json",
+    "requests/REQ-0008-REFEREE.json"
+  ],
+  "inherited_contracts": [
+    "Dean/Independent-Set semantics are unchanged",
+    "Encoded input length n=|x| remains the complexity variable",
+    "FAST_VERIFY(x,y) != FAST_FIND_OR_DECIDE(x)",
+    "CERTIFICATE_EXISTS != CERTIFICATE_CONSTRUCTOR",
+    "KNOWN_ROUTE != KNOWN_ANSWER",
+    "FLOAT64_OR_PATH_REPRESENTATION != POLYNOMIAL_DECIDER",
+    "POLYNOMIAL_LOCAL_STEP != POLYNOMIAL_TOTAL_WORK",
+    "P ?= NP = OPEN"
+  ],
+  "needed_inputs": [
+    "Exact fixed encoding of x=(G,K) and n=|x| under the existing charter",
+    "Exact definition of the proposed Float64/coordinate/path representation, including finite-precision or exact-arithmetic semantics actually claimed",
+    "Deterministic procedure that constructs that representation from x, rather than assuming it is supplied",
+    "Deterministic route/path selector from the constructed state, including how failure/no-route states are represented",
+    "Exact terminal YES/NO rule preserving Independent-Set semantics",
+    "Witness/certificate role: supplied, constructed, recovered, or unused",
+    "Original-ID witness reconstruction procedure if a YES witness is claimed",
+    "Lifecycle cost terms required by REQ-0007-COST-MASS"
+  ],
+  "requested_parts": [
+    "One finite deterministic candidate algorithm A taking only encoded input x",
+    "Exact proof obligation for A(x)=L(x) on every valid Independent-Set input",
+    "Exact proof obligation that A halts with YES or NO on every valid input",
+    "Exact construction rule from x to any Float64/coordinate/path state used by A",
+    "Exact route-selection rule with no hidden DeanSelection-equivalent oracle",
+    "If a certificate y is used, explicit separation between checking supplied y and constructing/finding y from x",
+    "One symbolic total-work recurrence W(n) covering representation construction, discovery, routing, transforms, reconciliation, verification, rollback, recovery, and witness reconstruction",
+    "One fixed candidate c,k for T_A(n) <= c*n^k+c, or an explicit unresolved/failure witness showing why that bound is not yet established",
+    "N->N+1 preservation argument, if used, for the same finite A and the same fixed exponent k"
+  ],
+  "candidate_operations": [
+    "DEFINE_DECIDER",
+    "LOWER_REPRESENTATION",
+    "CHARGE_CONSTRUCTION",
+    "SELECT_ROUTE",
+    "DECIDE_TOTAL",
+    "RECONSTRUCT_WITNESS",
+    "COMPOSE_COSTS",
+    "INDUCT",
+    "COUNTERPROBE"
+  ],
+  "counterprobes": [
+    "A polynomial verifier for supplied y is presented without a polynomial procedure that finds/constructs y or decides from x alone",
+    "A route/index is treated as known without charging deterministic discovery from x",
+    "Float64 or finite-precision coordinates alias two encoded states whose Independent-Set decisions or required continuations differ",
+    "A real-number or infinite-precision operation hides unbounded information or unit-cost arithmetic not present in the fixed deterministic model",
+    "Representation dimension/path length is used as the complexity variable without a proved and charged polynomial relation to n=|x|",
+    "An exponentially large certificate/path/search space is traversed implicitly through preprocessing, recursion, branching, table construction, or recovery",
+    "The exponent, machine, advice, preprocessing, or route family changes with n, K, graph family, deficit, depth, or selected path",
+    "The mechanism returns only YES witnesses and lacks an exact terminating NO rule",
+    "The mechanism preserves a heuristic/high-low coordinate objective but not exact Independent-Set language semantics",
+    "Local polynomial transitions compose into superpolynomial total work"
+  ],
+  "dependencies": [
+    "requests/REQ-0007-COST-MASS.json",
+    "requests/REQ-0008-REFEREE.json",
+    "COOK_CLAY_FORMALIZATION.md"
+  ],
+  "acceptance_criteria": [
+    "The candidate is one deterministic finite algorithm A whose only external problem input is the fixed encoding x",
+    "A(x)=L(x) is proved for every valid Independent-Set input, including exact YES and NO behavior",
+    "Every representation, route, certificate, and reconstruction object used by A is constructed or obtained by an explicitly charged deterministic operation",
+    "All lifecycle work is bounded by one fixed polynomial in n=|x| with constants/exponent independent of input family, K, depth, route, or size",
+    "Any N->N+1 argument preserves the same A and same fixed exponent",
+    "REQ-0008-REFEREE counterprobes find no verifier-to-constructor, known-route, representation, totality, or cost-bound promotion gap",
+    "Until all criteria are met, the result remains scoped or UNRESOLVED and P ?= NP remains OPEN"
+  ],
+  "cost_envelope": {
+    "complexity_variable": "n=|x| under the fixed encoded input",
+    "must_charge": [
+      "encode",
+      "representation_build",
+      "discover",
+      "select",
+      "transform",
+      "reconcile",
+      "verify",
+      "rollback",
+      "recover",
+      "witness_reconstruct"
+    ],
+    "fixed_exponent_required_for_universal_promotion": true,
+    "unknown_cost_becomes_obligation": true
+  },
+  "output_contract": "Return either (a) one fully specified candidate deterministic decider plus the exact proof obligations/cost recurrence needed for admission, or (b) the first explicit missing bridge/failure witness. Do not promote fast verification, known routes, or Float64/path structure by themselves.",
+  "child_obligation_requests": [],
+  "remainder": "This request does not itself prove P=NP. The next admissible move is to instantiate A and attack the first missing bridge under the same fixed definitions."
+}

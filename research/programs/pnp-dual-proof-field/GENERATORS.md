@@ -171,6 +171,15 @@ C_{total}=C_{encode}+C_{discover}+C_{build}+C_{select}+C_{transform}+C_{reconcil
 
 Unknown cost components become child obligations.
 
+Cook/Clay mapping for every constructive algorithmic claim:
+
+- bind `n` to the fixed encoded input length `|x|`;
+- distinguish checking a supplied certificate from constructing or deciding from `x` alone;
+- charge representation construction, route discovery, certificate construction/recovery, and every lifecycle term above;
+- require one fixed exponent for total work before universal constructive promotion, not one polynomial per route, family, or input size.
+
+See `COOK_CLAY_FORMALIZATION.md`.
+
 ### REFEREE_GENERATOR
 
 Accepts a claimed result and generates the exact verification requests required for admission.
@@ -186,6 +195,8 @@ It may request:
 - counterexample replay.
 
 The generator does not decide truth. Deterministic/formal checks and admissible evidence determine the verdict.
+
+For any universal constructive promotion, the referee must demand the missing bridge explicitly: one deterministic decider on `x` alone plus one fixed polynomial total-work bound in encoded input length. Fast verification of a supplied witness, a known route/index, or a Float64/path representation does not supply that bridge by itself. Such mechanisms may remain scoped evidence; without the bridge, universal promotion remains `UNRESOLVED`.
 
 ## Recursion
 

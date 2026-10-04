@@ -65,16 +65,17 @@ The relation is provenance and lowering, not retroactive equivalence.
 ## Start here
 
 1. [Charter](CHARTER.md)
-2. [Generators](GENERATORS.md)
-3. [FunctionalObject / AnyFunctor lineage](FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md)
-4. [Battle/request protocol](BATTLE_PROTOCOL.md)
-5. [Universal obligations](OBLIGATIONS.md)
-6. [Current status](STATUS.md)
-7. [Generator configuration](GENERATOR_CONFIG.json)
-8. [Machine-readable lineage](LINEAGE.json)
-9. [Obligation slice schema](OBLIGATION_SLICE.schema.json)
-10. [Request bundle schema](REQUEST_BUNDLE.schema.json)
-11. [Battle receipt schema](BATTLE_RECEIPT.schema.json)
+2. [Cook / Clay formalization gate](COOK_CLAY_FORMALIZATION.md)
+3. [Generators](GENERATORS.md)
+4. [FunctionalObject / AnyFunctor lineage](FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md)
+5. [Battle/request protocol](BATTLE_PROTOCOL.md)
+6. [Universal obligations](OBLIGATIONS.md)
+7. [Current status](STATUS.md)
+8. [Generator configuration](GENERATOR_CONFIG.json)
+9. [Machine-readable lineage](LINEAGE.json)
+10. [Obligation slice schema](OBLIGATION_SLICE.schema.json)
+11. [Request bundle schema](REQUEST_BUNDLE.schema.json)
+12. [Battle receipt schema](BATTLE_RECEIPT.schema.json)
 
 ## Execution
 

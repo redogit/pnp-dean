@@ -3,15 +3,18 @@
   "generator": "REFEREE_GENERATOR",
   "accepted_obligation": "Shared: generate admission tests for any claim that the current Reconcile obligation has advanced",
   "needed_inputs": [
+    "COOK_CLAY_FORMALIZATION.md source gate",
     "Claim statement",
+    "Claim role: verifier/checker, constructor, decider, or representation-only mechanism",
     "Scope",
     "Evidence refs",
-    "Cost refs",
+    "Encoded-input cost refs",
     "Recovery refs"
   ],
   "requested_parts": [
     "Proof-audit request",
     "Computation-audit request when finite evidence is used",
+    "Verifier/certificate-existence versus constructor/decider separation audit",
     "Counterexample replay request",
     "Cost-accounting verification request",
     "Claim-ceiling decision checklist"
@@ -25,15 +28,19 @@
   "counterprobes": [
     "Finite-to-universal promotion",
     "Self-refereeing",
-    "Authority leakage"
+    "Authority leakage",
+    "Fast verification of supplied y promoted to fast construction or decision from x alone",
+    "Known route/index promoted to known answer without charged discovery/construction",
+    "Float64/path representation promoted to a universal polynomial constructor without exact semantics, totality, and a fixed total-work bound in encoded input length"
   ],
   "dependencies": [],
   "acceptance_criteria": [
     "Verdict follows evidence rather than generator identity",
-    "Universal promotion requires all universal obligations"
+    "Universal promotion requires all universal obligations",
+    "Fast verification, a known route, or a Float64/path representation is insufficient for universal constructive promotion unless one deterministic total decider A(x) and one fixed polynomial total-work bound in |x| are proved"
   ],
   "cost_envelope": null,
   "output_contract": "Emit verification requests; deterministic/formal checking supplies the verdict.",
   "child_obligation_requests": [],
-  "remainder": "UNRESOLVED remains valid when evidence is insufficient."
+  "remainder": "UNRESOLVED remains valid when the verifier-to-constructor or representation-to-total-bound proof is missing."
 }

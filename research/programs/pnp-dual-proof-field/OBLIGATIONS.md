@@ -2,6 +2,8 @@
 
 The current program reconciles the older CertifiedPlanner obligations with the newer Dean/RMAL carrier language.
 
+The complexity-specific admission gate is [COOK_CLAY_FORMALIZATION.md](COOK_CLAY_FORMALIZATION.md). It anchors only encoded-input length, deterministic decision, verifier/certificate existence, and fixed polynomial bounds. It does not alter Dean/Independent-Set semantics or the existing cost model.
+
 ## U_COVER — universal exact coverage
 
 For every reachable nonterminal residual:
@@ -30,7 +32,7 @@ Every selected rule has uniformly polynomial:
 
 Current-language equivalent:
 
-> Every purposeful transition has a Cook-compatible polynomial implementation.
+> Every purposeful transition used by a candidate decider has deterministic work polynomial in the fixed encoded input length; local polynomiality alone does not discharge `U_MASS`.
 
 Status: **PARTIAL**. Many scoped terminals exist.
 
@@ -76,6 +78,8 @@ Every valid input must terminate as:
 
 `ERROR` and `UNRESOLVED` are research/runtime states, not terminal answers of a final P algorithm.
 
+Cook/Clay gate: fast checking of a supplied certificate does not itself provide the deterministic algorithm on input `x` alone required by the constructive direction.
+
 Status: **OPEN**.
 
 ## U_INDUCT — universal successor
@@ -87,6 +91,8 @@ I(N) \Rightarrow I(N+1)
 ]
 
 under the same finite machine and same fixed polynomial exponent.
+
+`U_INDUCT` is this program's proof discipline, not an additional Cook definition. An `N -> N+1` step is admissible only if it preserves the same finite deterministic algorithm and one fixed exponent across all encoded input lengths.
 
 Status: **OPEN**.
 

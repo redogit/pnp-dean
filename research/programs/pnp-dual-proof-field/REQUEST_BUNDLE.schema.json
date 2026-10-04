@@ -37,7 +37,8 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "description": "For algorithmic claims, identify the fixed encoded input length and whether any certificate/witness is supplied or must be constructed."
     },
     "requested_parts": {
       "type": "array",
@@ -55,7 +56,8 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "description": "For constructive-universality claims, include the verifier/certificate/known-route/representation promotion barrier when relevant."
     },
     "dependencies": {
       "type": "array",
@@ -67,13 +69,15 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "description": "For constructive universality, require a single deterministic total decider and one fixed polynomial total-work bound in the fixed encoded input length."
     },
     "cost_envelope": {
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "description": "Charge lifecycle plus representation/route/certificate construction and recovery against the fixed encoded input length. Null means unresolved, not zero."
     },
     "output_contract": {
       "type": "string"

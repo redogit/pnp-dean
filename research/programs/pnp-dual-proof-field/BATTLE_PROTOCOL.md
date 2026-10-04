@@ -147,7 +147,8 @@ Requires one construction with:
 - one fixed polynomial total-work bound;
 - total deterministic decision;
 - no hidden oracle;
-- reconstructible witnesses where claimed.
+- reconstructible witnesses where claimed;
+- the Cook/Clay promotion counterprobe passes: fast verification of a supplied witness, a known route/index, or a Float64/path representation is not treated as a universal constructor unless one deterministic total decider and one fixed polynomial total-work bound in encoded input length are proved.
 
 ### P!=NP
 

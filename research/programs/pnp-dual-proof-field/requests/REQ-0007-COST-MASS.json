@@ -3,19 +3,24 @@
   "generator": "COST_GENERATOR",
   "accepted_obligation": "O-MASS: translate the complete proposed Reconcile lifecycle into one Cook-compatible worst-case work bound",
   "needed_inputs": [
+    "COOK_CLAY_FORMALIZATION.md source gate",
+    "Fixed encoded input length n=|x| under the existing encoding",
+    "Whether any certificate/witness is supplied, verified, constructed, or recovered",
     "Recognizer cost",
     "Carrier build/update cost",
-    "Path-selection cost",
+    "Path-selection and route-discovery cost",
+    "Representation construction cost, including Float64/path coordinates if used",
     "Reverse-lookup cost",
     "Reconciliation count and cost",
     "Rollback/recovery cost",
     "Total transition count"
   ],
   "requested_parts": [
-    "Symbolic cost recurrence W(n)",
+    "Symbolic total-work recurrence W(n) over encoded input length",
     "All hidden/unknown terms isolated as child obligations",
-    "Candidate fixed exponent k if justified",
-    "Counterfamily if exponent or depth depends on input parameters"
+    "One bound T_A(n) <= c*n^k + c with fixed c,k if justified",
+    "Explicit separation of supplied-certificate verification from certificate/path construction or decision",
+    "Counterfamily if exponent, depth, machine, or advice depends on input parameters"
   ],
   "candidate_operations": [
     "ACCOUNT",
@@ -26,17 +31,21 @@
   "counterprobes": [
     "n^D with input-dependent D",
     "2^depth hidden in recursion",
-    "oracle/preprocessing cost omitted"
+    "oracle/preprocessing cost omitted",
+    "polynomial verifier mistaken for a polynomial constructor/decider",
+    "known route/index used without charging route discovery or construction",
+    "Float64/path dimension substituted for encoded input length without a charged polynomial relation to the fixed encoding"
   ],
   "dependencies": [
     "All algorithmic RequestBundles"
   ],
   "acceptance_criteria": [
-    "One fixed exponent independent of graph family, K, deficit, and recursion depth",
-    "All lifecycle phases charged"
+    "One fixed exponent independent of graph family, K, deficit, recursion depth, route, and input size",
+    "All lifecycle and representation/certificate construction phases charged against n=|x|",
+    "If a universal constructive claim is made, the accounted object is one deterministic total decider on x alone, not only a verifier given y"
   ],
   "cost_envelope": null,
   "output_contract": "Return exact/upper-bound accounting or explicit unresolved cost obligations.",
   "child_obligation_requests": [],
-  "remainder": "Unknown cost is never silently treated as polynomial."
+  "remainder": "Unknown cost or a missing verifier-to-constructor bridge is never silently treated as polynomial."
 }

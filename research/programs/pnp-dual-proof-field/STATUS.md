@@ -99,17 +99,21 @@ These are cold resources until requested by an obligation slice.
 
 ## Active Cook/Clay bridge request
 
-`REQ-0009-COOK-CONSTRUCTOR-BRIDGE` remains the bounded constructive request.
-Its 2026-10-05 checkpoint is **UNRESOLVED before candidate instantiation**:
-the charter requires a shared encoding but does not supply its byte grammar
-or decoder at source revision `4d896168bd3d4a62d2f951ec6cea0cfedaa84834`.
-No encoded-input candidate `A(x)` has been implemented or admitted.
+`REQ-0009-COOK-CONSTRUCTOR-BRIDGE` now has one finite x-only candidate:
+[A_0009_ONE_BIT_DESCENT](candidates/req0009/CANDIDATE.md).
+The user selected one JSON input on 2026-10-05; the shared
+[JSON-IS-1 codec](JSON_INPUT_ENCODING.md) closes the earlier
+[encoding-choice blocker](results/REQ-0009-FIRST-BRIDGE.md) and fulfills
+[REQ-0010](requests/REQ-0010-ENCODING-BINDING.json) as an input component.
 
-See [the first-bridge evidence](results/REQ-0009-FIRST-BRIDGE.md).
-The only active repair is
-[REQ-0010-ENCODING-BINDING](requests/REQ-0010-ENCODING-BINDING.json).
-Its proposed formats are not adopted. Historical object-level/native solver
-interfaces do not by themselves supply the missing encoded-input contract.
+Current verdict: **REJECT_COUNTEREXAMPLE** for this candidate's universal
+Independent-Set correctness. It stops at a one-bit local minimum and returns
+NO on a valid three-student YES instance. The first failed bridge is local
+optimality implying exact NO. The route, original encoded input, external
+witness, costs, and provenance are preserved in
+[the candidate checkpoint](results/REQ-0009-CANDIDATE-RESULT.md).
+No repair or later bridge attack was attempted. The codec/objective survives
+this attack; no universal decider has been admitted.
 
 It does not assume that the current Float64/coordinate/path idea is a decider. It asks for the missing bridge explicitly:
 
@@ -135,10 +139,11 @@ The first verifier-to-constructor, representation-exactness, totality, hidden-or
 
 ## Next request wave
 
-First bind the shared encoding through `REQ-0010`; then resume `REQ-0009`
-and attack only its first unresolved bridge before expanding scope.
-Coordinate/route correctness and total-work attacks are deferred at this
-checkpoint, not refuted or discharged.
+The authorized bounded step stops at the candidate's explicit false NO.
+A further step would need a justified continuation/terminal rule when local
+descent stops short of K. That repair remains a remainder; no new route is
+active or assumed to succeed. Numeric machine-time admission and other
+coordinate selectors remain unaddressed, not refuted by this example.
 
 Existing consequential attack surfaces remain:
 

@@ -6,7 +6,9 @@
     "CHARTER.md",
     "COOK_CLAY_FORMALIZATION.md",
     "requests/REQ-0009-COOK-CONSTRUCTOR-BRIDGE.json",
-    "results/REQ-0009-FIRST-BRIDGE.md"
+    "results/REQ-0009-FIRST-BRIDGE.md",
+    "JSON_INPUT_ENCODING.md",
+    "results/REQ-0009-CANDIDATE-RESULT.md"
   ],
   "inherited_contracts": [
     "Dean/Independent-Set graph semantics remain unchanged",
@@ -56,8 +58,23 @@
     "A codec or decoder is admitted only as a substrate component, never as the requested decider",
     "No downstream coordinate, selector, or universal-runtime claim is promoted at this bridge"
   ],
-  "cost_envelope": null,
-  "output_contract": "Return the recovered or selected shared codec, exact deterministic decoder specification, and charged size/cost relation; otherwise retain the encoded-input bridge as UNRESOLVED. The checkpoint's JSON and framed-CSV suggestions are unadopted proposals.",
+  "cost_envelope": {
+    "complexity_variable": "n=8*len(x) bits",
+    "decoder_bound": "polynomial finite scans and linear-list duplicate checks; see JSON_INPUT_ENCODING.md",
+    "all_conversion_work_charged": true,
+    "numeric_runtime_constant_certified": false
+  },
+  "output_contract": "Fulfilled as an encoding component: JSON-IS-1 specifies the selected x-only codec, validity rules, exact identity/K retention, and charged size/cost relation. No universal decider is admitted.",
   "child_obligation_requests": [],
-  "remainder": "REQ-0009 remains uninstantiated on encoded x. Coordinate construction, route selection, terminal decision, witness construction, and complete lifecycle recurrence resume only after this first binding is supplied."
+  "remainder": "The prior encoding-choice gap is closed. REQ-0009 is now instantiated and stopped at its three-vertex false-NO counterexample. A new continuation/terminal rule would require a separately bounded repair; no repair attempted.",
+  "fulfillment": {
+    "date": "2026-10-05",
+    "status": "BOUND_INPUT_COMPONENT",
+    "selection_authority": "User selected one JSON record containing IDs, incompatible pairs, and K",
+    "encoding_ref": "JSON_INPUT_ENCODING.md",
+    "implementation_ref": "candidates/req0009/json_codec.py",
+    "tests_ref": "candidates/req0009/test_json_codec.py",
+    "next_checkpoint": "results/REQ-0009-CANDIDATE-RESULT.md",
+    "claim_ceiling": "P ?= NP = OPEN"
+  }
 }

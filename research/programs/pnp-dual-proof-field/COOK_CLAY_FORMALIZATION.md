@@ -7,7 +7,8 @@ This is a bounded source-anchored admission layer for the existing P-vs-NP oblig
 It does **not** change:
 
 - Dean / Independent-Set language semantics;
-- the fixed encoding or deterministic cost model already selected by the charter;
+- the shared encoding and deterministic cost model required by the charter,
+  now explicitly pinned in [JSON_INPUT_ENCODING.md](JSON_INPUT_ENCODING.md);
 - any existing scoped result;
 - the theorem status.
 

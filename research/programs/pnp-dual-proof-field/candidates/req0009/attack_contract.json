@@ -1,0 +1,37 @@
+{
+  "claim_id": "REQ-0009-LOCAL-MINIMUM-NO-BRIDGE",
+  "mathematics": {
+    "assertion_tested": "A_0009(x) agrees with independently enumerated Independent-Set existence until the first disagreement, then stops and preserves the exact witness",
+    "coefficient_domain": "exact integer energy; Float64 coordinates restricted to exactly represented zero and one",
+    "conventions": "JSON-IS-1; vertex order from ids; numeric edge-pair order; one-bit descent ties by (energy,index); invalid encodings are outside language",
+    "inputs": [
+      "all labeled simple graphs in ascending vertex count, edge-mask order and target order up to the first mismatch",
+      "research/programs/pnp-dual-proof-field/JSON_INPUT_ENCODING.md",
+      "research/programs/pnp-dual-proof-field/candidates/req0009/CANDIDATE.md"
+    ],
+    "bounds": {
+      "vertices_min": 0,
+      "vertices_max": 3,
+      "targets": "0..N+1",
+      "graphs": "edge-mask order over lexicographically ordered pairs",
+      "stop": "first mismatch; no later graph or bridge attacked"
+    },
+    "non_claims": [
+      "No proof of P=NP or P!=NP",
+      "No general coordinate-route impossibility",
+      "No numeric Turing-machine runtime constant certified",
+      "No implicit use of the bounded combinations oracle inside A"
+    ]
+  },
+  "execution_artifacts": [
+    "research/programs/pnp-dual-proof-field/candidates/req0009/json_codec.py",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/candidate.py",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/attack_first_bridge.py",
+    "research/programs/pnp-dual-proof-field/JSON_INPUT_ENCODING.md",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/CANDIDATE.md"
+  ],
+  "software": [
+    {"name": "CPython", "version": "3.12.14"}
+  ],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

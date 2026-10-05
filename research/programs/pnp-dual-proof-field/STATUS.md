@@ -11,11 +11,14 @@ The active generator contract preserves this explicit successor spine:
 
 [
 FunctionalObject
-ightarrow
+
+ightarrow
 AnyFunctor/FunctionObject
-ightarrow
+
+ightarrow
 LocalPlane
-ightarrow
+
+ightarrow
 ObligationGenerator.
 ]
 
@@ -99,7 +102,17 @@ These are cold resources until requested by an obligation slice.
 
 ## Active Cook/Clay bridge request
 
-`REQ-0009-COOK-CONSTRUCTOR-BRIDGE` is the next bounded constructive request.
+`REQ-0009-COOK-CONSTRUCTOR-BRIDGE` remains the bounded constructive request.
+Its 2026-10-05 checkpoint is **UNRESOLVED before candidate instantiation**:
+the charter requires a shared encoding but does not supply its byte grammar
+or decoder at source revision `4d896168bd3d4a62d2f951ec6cea0cfedaa84834`.
+No encoded-input candidate `A(x)` has been implemented or admitted.
+
+See [the first-bridge evidence](results/REQ-0009-FIRST-BRIDGE.md).
+The only active repair is
+[REQ-0010-ENCODING-BINDING](requests/REQ-0010-ENCODING-BINDING.json).
+Its proposed formats are not adopted. Historical object-level/native solver
+interfaces do not by themselves supply the missing encoded-input contract.
 
 It does not assume that the current Float64/coordinate/path idea is a decider. It asks for the missing bridge explicitly:
 
@@ -125,7 +138,10 @@ The first verifier-to-constructor, representation-exactness, totality, hidden-or
 
 ## Next request wave
 
-After `REQ-0009` is instantiated, attack only its first unresolved bridge before expanding scope.
+First bind the shared encoding through `REQ-0010`; then resume `REQ-0009`
+and attack only its first unresolved bridge before expanding scope.
+Coordinate/route correctness and total-work attacks are deferred at this
+checkpoint, not refuted or discharged.
 
 Existing consequential attack surfaces remain:
 

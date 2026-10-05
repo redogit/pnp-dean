@@ -1,0 +1,63 @@
+{
+  "request_id": "REQ-0010-ENCODING-BINDING",
+  "generator": "REPAIR_GENERATOR",
+  "accepted_obligation": "SHARED: bind the first missing x-to-(G,K) operation of REQ-0009 before constructing or attacking downstream coordinates/routes",
+  "lineage_refs": [
+    "CHARTER.md",
+    "COOK_CLAY_FORMALIZATION.md",
+    "requests/REQ-0009-COOK-CONSTRUCTOR-BRIDGE.json",
+    "results/REQ-0009-FIRST-BRIDGE.md"
+  ],
+  "inherited_contracts": [
+    "Dean/Independent-Set graph semantics remain unchanged",
+    "Both theorem directions use the same fixed encoding and deterministic model",
+    "n=|x| in bits; representation-local size is not substituted for n",
+    "No supplied witness, route advice, or external file payload is hidden outside x",
+    "Stop at the first unsupported bridge",
+    "P ?= NP = OPEN"
+  ],
+  "needed_inputs": [
+    "An authoritative existing codec artifact and revision, or a decision selecting one shared codec",
+    "Finite byte grammar for one self-contained x encoding original IDs, all vertices including isolates, conflict pairs, and K",
+    "Valid-input rules and the treatment of invalid encodings",
+    "Deterministic decoding operations and bit-work model"
+  ],
+  "requested_parts": [
+    "Pin Gamma's byte grammar and deterministic decoder without silently replacing an existing authorized codec",
+    "Define L_Gamma on byte strings, including malformed input behavior",
+    "Show every finite simple graph and nonnegative K is representable; preserve original-ID reconstruction",
+    "Charge encoding/decoding, validation, identity mapping, and graph construction in n=|x| bits",
+    "Prove the relation between decoded vertex/edge/ID sizes and encoded input length",
+    "Record the selected codec in the shared authority chain; then resume the existing REQ-0009 rather than starting a different theorem route"
+  ],
+  "candidate_operations": [
+    "RECOVER_CODEC",
+    "BIND_ENCODING",
+    "DEFINE_DECODER",
+    "CHARGE_CONSTRUCTION",
+    "COUNTERPROBE"
+  ],
+  "counterprobes": [
+    "The charter's requirement for a shared encoding is mistaken for a supplied decoder",
+    "External CSV paths or supplied graph objects are mistaken for x alone",
+    "Duplicate identities, unknown endpoints, isolates, K=0, K>|V|, empty graphs, and malformed input silently alter graph semantics",
+    "Decoded graph size or ID operations are unit-cost without a bit-length bound",
+    "FAST_VERIFY(x,y), KNOWN_ROUTE, or FLOAT64_OR_PATH_REPRESENTATION is promoted to a polynomial decider",
+    "A newly proposed codec is mislabeled as the repository's previously fixed encoding"
+  ],
+  "dependencies": [
+    "requests/REQ-0009-COOK-CONSTRUCTOR-BRIDGE.json",
+    "results/REQ-0009-FIRST-BRIDGE.md"
+  ],
+  "acceptance_criteria": [
+    "One authoritative codec is explicitly pinned for both theorem directions",
+    "One deterministic x-only decoder has unambiguous validity/identity/edge/K behavior",
+    "All decoded-size conversions and decoder costs are explicit in the fixed bit model",
+    "A codec or decoder is admitted only as a substrate component, never as the requested decider",
+    "No downstream coordinate, selector, or universal-runtime claim is promoted at this bridge"
+  ],
+  "cost_envelope": null,
+  "output_contract": "Return the recovered or selected shared codec, exact deterministic decoder specification, and charged size/cost relation; otherwise retain the encoded-input bridge as UNRESOLVED. The checkpoint's JSON and framed-CSV suggestions are unadopted proposals.",
+  "child_obligation_requests": [],
+  "remainder": "REQ-0009 remains uninstantiated on encoded x. Coordinate construction, route selection, terminal decision, witness construction, and complete lifecycle recurrence resume only after this first binding is supplied."
+}

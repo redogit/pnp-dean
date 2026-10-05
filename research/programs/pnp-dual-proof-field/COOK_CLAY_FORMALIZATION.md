@@ -59,6 +59,10 @@ This is an existential certificate statement. It permits efficient checking of a
 ### Fixed polynomial bound
 
 The exponent belongs to the machine/algorithm, not to the individual input, graph family, route, certificate, or recursion depth.
+A rigorous uniform polynomial proof and justified machine simulation suffice;
+benchmark-derived numeric constants and a printed transition table are not
+additional Cook requirements. Repository requests for candidate constants
+remain evidence obligations, rather than a redefinition of P.
 
 Repository consequence: a collection of locally polynomial transitions does not discharge the constructive theorem unless their complete worst-case lifecycle is bounded by one fixed polynomial in encoded input length.
 
@@ -80,7 +84,11 @@ with fixed `c,k`, including representation construction, route discovery, certif
 
 ### `U_TOTAL`
 
-The candidate `A` must halt and return the exact `YES` or `NO` decision for every valid encoded input.
+The candidate `A` must halt on every finite binary input. It accepts exactly
+valid YES encodings and rejects valid NO encodings and malformed strings.
+The same worst-case time bound covers all strings of each length, including
+invalid UTF-8/JSON and inputs without complete octets. INVALID diagnostics
+do not assert NO for a valid graph.
 
 A verifier that is fast only after a witness/certificate has already been supplied does not discharge `U_TOTAL` as a P-algorithm.
 
@@ -107,8 +115,10 @@ Concrete cost and referee mappings are pinned in `requests/REQ-0007-COST-MASS.js
 Before any verifier, route, or coordinate/path mechanism is promoted to a universal constructive result, require all of the following:
 
 1. one deterministic algorithm `A` operating from the encoded input `x` alone;
-2. exact agreement `A(x) = L(x)` for every valid encoded input;
-3. termination with total worst-case work bounded by one fixed polynomial in `|x|`;
+2. exact agreement `A(x) = L(x)` for every finite encoded string, with
+   malformed strings outside the language;
+3. termination on every such string with total worst-case work bounded by
+   one fixed polynomial in `|x|`;
 4. all representation construction, route discovery, certificate construction/recovery, reconciliation, verification, rollback, and recovery included in that bound.
 
 Therefore the following non-implications are admission invariants:
@@ -127,6 +137,21 @@ A Float64/path representation is not rejected merely for being a Float64/path re
 
 If any required bridge is absent, the referee may admit only the exact scoped result supported by evidence; universal constructive promotion remains `UNRESOLVED`.
 
+## Current candidate enforcement
+
+[REQ-0009 compliance audit](results/REQ-0009-COOK-COMPLIANCE.md) records each
+of the four requirements separately. The unchanged candidate is refuted at
+exact NO correctness. The standalone `candidates/req0009/cook_admission.py`
+command checks that existing witness and exits nonzero; passing ordinary
+implementation tests cannot admit the candidate. The supplied-witness
+checker and [encoded-language proof](JSON_IS_COMPLETENESS.md) support the
+substrate, without supplying the missing continuation rule.
+
+Older request wording about valid instances is read under the all-string
+requirement above. No new graph semantics or route has been introduced.
+
 ## Boundary
 
-This layer formalizes the source gate only. It does not attempt a new constructor, lower bound, reduction, or proof of `P = NP` or `P != NP`.
+This layer formalizes the source gate and links its substrate support. It
+does not repair the candidate, attempt a new decision route or lower bound,
+or prove `P = NP` or `P != NP`.

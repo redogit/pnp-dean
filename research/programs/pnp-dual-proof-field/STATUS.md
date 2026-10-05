@@ -115,6 +115,14 @@ witness, costs, and provenance are preserved in
 No repair or later bridge attack was attempted. The codec/objective survives
 this attack; no universal decider has been admitted.
 
+[The Cook compliance audit](results/REQ-0009-COOK-COMPLIANCE.md) now tracks all
+four promotion requirements and strengthens the gate to include every finite
+binary input, including malformed strings. An explicit supplied-witness
+checker and [JSON-language completeness proof](JSON_IS_COMPLETENESS.md)
+close substrate formalization gaps. The executable admission command exits
+nonzero on the preserved false NO. Implementation test success is not
+constructive admission.
+
 It does not assume that the current Float64/coordinate/path idea is a decider. It asks for the missing bridge explicitly:
 
 [
@@ -142,8 +150,11 @@ The first verifier-to-constructor, representation-exactness, totality, hidden-or
 The authorized bounded step stops at the candidate's explicit false NO.
 A further step would need a justified continuation/terminal rule when local
 descent stops short of K. That repair remains a remainder; no new route is
-active or assumed to succeed. Numeric machine-time admission and other
-coordinate selectors remain unaddressed, not refuted by this example.
+active or assumed to succeed. The scoped polynomial lifecycle argument is
+supported; a complete all-input machine lowering remains unadmitted after
+the earlier correctness failure. Numeric benchmarking is not an extra Cook
+definition. Other coordinate selectors remain unaddressed, not refuted by
+this example.
 
 Existing consequential attack surfaces remain:
 

@@ -71,7 +71,9 @@ Status: **OPEN as a universal cheaply discoverable carrier condition**.
 
 ## U_TOTAL — total decision
 
-Every valid input must terminate as:
+Every finite binary input must halt within the same uniform time bound.
+Malformed encodings are rejected outside the language; INVALID is not a
+NO assertion about a valid graph. Every valid instance must terminate as:
 
 - `YES_PROVED`, or
 - `NO_PROVED`.

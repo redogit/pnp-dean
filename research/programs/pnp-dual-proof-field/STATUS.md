@@ -11,14 +11,11 @@ The active generator contract preserves this explicit successor spine:
 
 [
 FunctionalObject
-
-ightarrow
+ightarrow
 AnyFunctor/FunctionObject
-
-ightarrow
+ightarrow
 LocalPlane
-
-ightarrow
+ightarrow
 ObligationGenerator.
 ]
 

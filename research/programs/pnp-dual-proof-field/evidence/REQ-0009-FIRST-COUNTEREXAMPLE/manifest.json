@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "claim_id": "REQ-0009-LOCAL-MINIMUM-NO-BRIDGE",
+  "repository": {
+    "commit": "c30df58d3ed6622ed731fabc2c71d314f028ad17",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/attack_first_bridge.py",
+    "--output",
+    "research/programs/pnp-dual-proof-field/evidence/REQ-0009-FIRST-COUNTEREXAMPLE/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "CPython",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "mathematics": {
+    "assertion_tested": "A_0009(x) agrees with independently enumerated Independent-Set existence until the first disagreement, then stops and preserves the exact witness",
+    "coefficient_domain": "exact integer energy; Float64 coordinates restricted to exactly represented zero and one",
+    "conventions": "JSON-IS-1; vertex order from ids; numeric edge-pair order; one-bit descent ties by (energy,index); invalid encodings are outside language",
+    "inputs": [
+      "all labeled simple graphs in ascending vertex count, edge-mask order and target order up to the first mismatch",
+      "research/programs/pnp-dual-proof-field/JSON_INPUT_ENCODING.md",
+      "research/programs/pnp-dual-proof-field/candidates/req0009/CANDIDATE.md"
+    ],
+    "bounds": {
+      "vertices_min": 0,
+      "vertices_max": 3,
+      "targets": "0..N+1",
+      "graphs": "edge-mask order over lexicographically ordered pairs",
+      "stop": "first mismatch; no later graph or bridge attacked"
+    },
+    "non_claims": [
+      "No proof of P=NP or P!=NP",
+      "No general coordinate-route impossibility",
+      "No numeric Turing-machine runtime constant certified",
+      "No implicit use of the bounded combinations oracle inside A"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-05T09:18:00.836360+00:00",
+    "runtime_seconds": 0.066385,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 1073741824,
+      "cpu_seconds": 20,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/programs/pnp-dual-proof-field/candidates/req0009/json_codec.py",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/candidate.py",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/attack_first_bridge.py",
+    "research/programs/pnp-dual-proof-field/JSON_INPUT_ENCODING.md",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/CANDIDATE.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/json_codec.py",
+      "sha256": "e9909ae6418dab7c32e7fe2448204dbe81d68756525dd7683c0220b9dc109843",
+      "sha256_after": "e9909ae6418dab7c32e7fe2448204dbe81d68756525dd7683c0220b9dc109843"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/candidate.py",
+      "sha256": "5f3b93b323d8c42bdb90b50db054349e0f02394f871c92362d9cc1920d2a0f82",
+      "sha256_after": "5f3b93b323d8c42bdb90b50db054349e0f02394f871c92362d9cc1920d2a0f82"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/attack_first_bridge.py",
+      "sha256": "71182f6f923a5fd2aaab6d0f2e9bea8856a85f953f13815df5e26b3d6b787f41",
+      "sha256_after": "71182f6f923a5fd2aaab6d0f2e9bea8856a85f953f13815df5e26b3d6b787f41"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/JSON_INPUT_ENCODING.md",
+      "sha256": "b7370da170d8dc3fc5d5a1a4c195941d1e00d8bf2a07e924758a18949dfbed01",
+      "sha256_after": "b7370da170d8dc3fc5d5a1a4c195941d1e00d8bf2a07e924758a18949dfbed01"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/CANDIDATE.md",
+      "sha256": "6b34dfb71919eff476dbe71352d22e5b6a08143c6b242f14f03b0bca3856a07e",
+      "sha256_after": "6b34dfb71919eff476dbe71352d22e5b6a08143c6b242f14f03b0bca3856a07e"
+    }
+  ],
+  "output_directory": "research/programs/pnp-dual-proof-field/evidence/REQ-0009-FIRST-COUNTEREXAMPLE",
+  "declared_results": [
+    "research/programs/pnp-dual-proof-field/evidence/REQ-0009-FIRST-COUNTEREXAMPLE/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/programs/pnp-dual-proof-field/evidence/REQ-0009-FIRST-COUNTEREXAMPLE/stdout.txt",
+      "sha256": "9adb14aa59e566f271d61d42638b9df57d98214019987a4bd2a9bb59ca8d80bc",
+      "kind": "log"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/evidence/REQ-0009-FIRST-COUNTEREXAMPLE/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/evidence/REQ-0009-FIRST-COUNTEREXAMPLE/result.json",
+      "sha256": "c355197a4a8e88409322e72b93f22226db5a4612700fbd326a566e1dbfc1f986",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

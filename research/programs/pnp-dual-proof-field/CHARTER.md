@@ -45,6 +45,19 @@ Both theorem directions use exactly the same:
 
 Generators may attack algorithms and representations. They may not redefine the game.
 
+The shared input encoding is now explicitly bound by
+[JSON-IS-1](JSON_INPUT_ENCODING.md), selected by the user on 2026-10-05:
+one UTF-8 JSON record containing ordered original IDs, incompatible index
+pairs, and K. Its bit length is `n=8*len(x)`. The deterministic charged model
+is multi-tape Turing-machine bit work, including decoding, construction,
+arithmetic, selection, storage, verification, rollback, and reconstruction.
+The binary language includes only whole-octet valid YES records. Every
+other bit string is rejected, and its parsing/rejection time counts in the
+same worst-case bound. [JSON_IS_COMPLETENESS.md](JSON_IS_COMPLETENESS.md)
+specifies the checking relation and encoded-language reduction.
+This fills the earlier missing binding; it does not attribute that codec to
+historical sources or alter Independent-Set semantics.
+
 ## Design hypothesis
 
 An obligation-driven generator field can expose stronger invariants than one linear proof search when:

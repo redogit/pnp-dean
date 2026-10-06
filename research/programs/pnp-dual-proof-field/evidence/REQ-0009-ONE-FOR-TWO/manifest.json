@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "claim_id": "REQ-0009-ONE-FOR-TWO-COMPLETENESS",
+  "repository": {
+    "commit": "e3312b89fb5532dedefbc0c731696749aa07b6c3",
+    "dirty": true,
+    "source_parent": "43879fe2f496f04f99a70fab0b25efb3adb20e4b",
+    "checkout_scope": "hash-verified source subset, not a full clone; new files not yet committed at execution"
+  },
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/attack_continuation.py",
+    "research/programs/pnp-dual-proof-field/evidence/REQ-0009-ONE-FOR-TWO/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.13.5"
+      }
+    ],
+    "hardware": "x86_64",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "the fixed 1-for-2 candidate agrees with the independent oracle until the first counterexample",
+    "coefficient_domain": "exact integers and binary coordinates",
+    "conventions": "JSON-IS-1; N then K then increasing lex-edge bitmask",
+    "inputs": [
+      "Every labeled simple graph in the stopped canonical prefix; preserved star is a separate regression"
+    ],
+    "bounds": {
+      "configured_max_N": 6,
+      "K": "0..N+1",
+      "stop": {
+        "K": 3,
+        "N": 5,
+        "graph_mask": 58,
+        "graphs_in_partial_slice": 59
+      },
+      "tested_instances": 3568
+    },
+    "non_claims": [
+      "Not P=NP or P!=NP",
+      "Not all spellings or arbitrarily large graphs",
+      "No numeric Python/TM constant certification",
+      "External exponential oracle work is not candidate work"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-06T04:03:14.381436+00:00",
+    "runtime_seconds": 1.2957779030000438,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": 536870912,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": null,
+      "wall_seconds": 45,
+      "enforcement": "child POSIX RLIMIT_AS/RLIMIT_CPU; parent subprocess timeout"
+    }
+  },
+  "input_artifacts": [
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/continuation.py",
+      "sha256": "2d05d2235aa45d78c6e2ec2ff97d103d732552fcb2de0e7ef72d91880804c25c",
+      "sha256_after": "2d05d2235aa45d78c6e2ec2ff97d103d732552fcb2de0e7ef72d91880804c25c"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/json_codec.py",
+      "sha256": "e9909ae6418dab7c32e7fe2448204dbe81d68756525dd7683c0220b9dc109843",
+      "sha256_after": "e9909ae6418dab7c32e7fe2448204dbe81d68756525dd7683c0220b9dc109843"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/certificate.py",
+      "sha256": "24680acf296f553e9f0e14787ca16775ab4fcdefac80c6d7907c7b985427f945",
+      "sha256_after": "24680acf296f553e9f0e14787ca16775ab4fcdefac80c6d7907c7b985427f945"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/attack_continuation.py",
+      "sha256": "24520891cdff333b64d22872f5ccb8941d3dc3ec134fa5745d5e241eb0e9801d",
+      "sha256_after": "24520891cdff333b64d22872f5ccb8941d3dc3ec134fa5745d5e241eb0e9801d"
+    }
+  ],
+  "execution_artifacts": [
+    "research/programs/pnp-dual-proof-field/candidates/req0009/continuation.py",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/json_codec.py",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/certificate.py",
+    "research/programs/pnp-dual-proof-field/candidates/req0009/attack_continuation.py"
+  ],
+  "declared_results": [
+    "research/programs/pnp-dual-proof-field/evidence/REQ-0009-ONE-FOR-TWO/result.json"
+  ],
+  "output_directory": "research/programs/pnp-dual-proof-field/evidence/REQ-0009-ONE-FOR-TWO",
+  "outputs": [
+    {
+      "path": "research/programs/pnp-dual-proof-field/evidence/REQ-0009-ONE-FOR-TWO/result.json",
+      "sha256": "34fdc3fed15fba61e76d95561c60ac1400d792d1ca769a0372df6a051f1b5944",
+      "kind": "result"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/evidence/REQ-0009-ONE-FOR-TWO/stdout.txt",
+      "sha256": "34fdc3fed15fba61e76d95561c60ac1400d792d1ca769a0372df6a051f1b5944",
+      "kind": "log"
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/evidence/REQ-0009-ONE-FOR-TWO/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    "Required three-vertex repair passed before the sweep",
+    "All committed states independently checked for independence, cardinality, energy and route bounds",
+    "All YES witnesses checked by the retained certificate relation",
+    "Trial and rollback phase-count invariants checked",
+    "Input files hashed before and after execution"
+  ],
+  "result": "REJECT_COUNTEREXAMPLE",
+  "residual_risks": [
+    "Finite-prefix execution evidence; algorithm-level complexity proof is separate",
+    "Whole-repository/native validation not part of this scoped run",
+    "Execution was on the recovered source subset, not a complete Git clone"
+  ]
+}

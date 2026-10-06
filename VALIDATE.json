@@ -2,6 +2,21 @@
   "schema": "standalone-export-validation/v1",
   "checks": [
     {
+      "name": "req0009-candidate",
+      "cwd": ".",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/programs/pnp-dual-proof-field/candidates/req0009",
+        "-p",
+        "test_*.py"
+      ],
+      "timeout_seconds": 30
+    },
+    {
       "name": "mlir-python",
       "cwd": "Other-Projects-",
       "command": [

@@ -1,0 +1,108 @@
+{
+  "same_stopped_prefix_replayed": true,
+  "identical_result_json": true,
+  "orthogonal_vertex_bitmask_oracle_prefix_instances": 3568,
+  "stop": {
+    "K": 3,
+    "N": 5,
+    "graph_mask": 58,
+    "graphs_in_partial_slice": 59
+  },
+  "oracle_alpha_on_counterexample": 3,
+  "retained_certificate_accepts": true,
+  "rejected_exchange_trials": [
+    {
+      "remove": 0,
+      "add": [
+        2,
+        3
+      ],
+      "conflicts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "energy": 9
+    },
+    {
+      "remove": 0,
+      "add": [
+        2,
+        4
+      ],
+      "conflicts": [
+        [
+          1,
+          2
+        ]
+      ],
+      "energy": 3
+    },
+    {
+      "remove": 0,
+      "add": [
+        3,
+        4
+      ],
+      "conflicts": [
+        [
+          1,
+          3
+        ]
+      ],
+      "energy": 3
+    },
+    {
+      "remove": 1,
+      "add": [
+        2,
+        3
+      ],
+      "conflicts": [
+        [
+          0,
+          2
+        ]
+      ],
+      "energy": 3
+    },
+    {
+      "remove": 1,
+      "add": [
+        2,
+        4
+      ],
+      "conflicts": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "energy": 9
+    },
+    {
+      "remove": 1,
+      "add": [
+        3,
+        4
+      ],
+      "conflicts": [
+        [
+          0,
+          4
+        ]
+      ],
+      "energy": 3
+    }
+  ],
+  "boundary": "Verification/reproduction only; no new rule or post-stop graph"
+}

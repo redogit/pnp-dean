@@ -19,6 +19,40 @@ where:
 
 A generator wakes only when it can accept an obligation slice. It does not receive the whole project by default.
 
+## Inherited executable shape
+
+This contract is not provenance-free. It lowers the preserved line:
+
+[
+FunctionalObject
+ightarrow
+AnyFunctor/FunctionObject
+ightarrow
+LocalPlane
+ightarrow
+ObligationGenerator.
+]
+
+The inheritance is structural:
+
+- plural `Operations[]` → zero-to-many requested parts/operations;
+- plural `Checks[]` → acceptance criteria/counterprobes;
+- ordered buffers → obligation-local carrier/context;
+- reusable links → admitted route/dependency edges;
+- `NullTarget<T>()` → retained residual obligation;
+- `AnyInvocation<T>` → explicit obligation-slice acceptance;
+- receipt → request/result receipt;
+- Homeward → recovery reference;
+- local route index → obligation-local memory retrieval.
+
+Do not collapse the stages:
+
+[
+FunctionalObject \neq AnyFunctor \neq LocalPlane \neq ObligationGenerator.
+]
+
+See `FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md` and `LINEAGE.json`.
+
 ## Common output: RequestBundle
 
 Every generator emits requested parts, not a rhetorical answer.
@@ -26,6 +60,7 @@ Every generator emits requested parts, not a rhetorical answer.
 A RequestBundle contains:
 
 - accepted obligation slice;
+- source-lineage references when inherited machinery matters;
 - exact inputs still needed;
 - requested parts to construct/recover/test;
 - candidate operations allowed;
@@ -37,7 +72,7 @@ A RequestBundle contains:
 - zero-to-many child obligation requests;
 - explicit remainder.
 
-This is AnyFunctor-compatible: one accepted object may yield zero, one, or many requested parts and may recursively request further obligation slices.
+This is the lowered AnyFunctor shape: one accepted obligation object may yield zero, one, or many requested parts and may recursively request further obligation slices.
 
 ## Generator family
 
@@ -121,7 +156,8 @@ Accepts the current obligation slice and asks historical storage only for conseq
 - source identities;
 - costs;
 - reconstruction paths;
-- unresolved remainder.
+- unresolved remainder;
+- lineage nodes/edges needed to reconstruct the mechanism.
 
 It is retrieval-on-demand, not whole-history loading.
 
@@ -135,6 +171,15 @@ C_{total}=C_{encode}+C_{discover}+C_{build}+C_{select}+C_{transform}+C_{reconcil
 
 Unknown cost components become child obligations.
 
+Cook/Clay mapping for every constructive algorithmic claim:
+
+- bind `n` to the fixed encoded input length `|x|`;
+- distinguish checking a supplied certificate from constructing or deciding from `x` alone;
+- charge representation construction, route discovery, certificate construction/recovery, and every lifecycle term above;
+- require one fixed exponent for total work before universal constructive promotion, not one polynomial per route, family, or input size.
+
+See `COOK_CLAY_FORMALIZATION.md`.
+
 ### REFEREE_GENERATOR
 
 Accepts a claimed result and generates the exact verification requests required for admission.
@@ -145,10 +190,13 @@ It may request:
 - computation audit;
 - external theorem verification;
 - reconstruction check;
+- lineage/authority check;
 - cost audit;
 - counterexample replay.
 
 The generator does not decide truth. Deterministic/formal checks and admissible evidence determine the verdict.
+
+For any universal constructive promotion, the referee must demand the missing bridge explicitly: one deterministic decider on `x` alone plus one fixed polynomial total-work bound in encoded input length. Fast verification of a supplied witness, a known route/index, or a Float64/path representation does not supply that bridge by itself. Such mechanisms may remain scoped evidence; without the bridge, universal promotion remains `UNRESOLVED`.
 
 ## Recursion
 
@@ -157,11 +205,11 @@ The field advances by obligation decomposition:
 [
 O
 ightarrow
-{O_1,ldots,O_m}
+\{O_1,ldots,O_m\}
 ightarrow
-{G_i(O_i)}
+\{G_i(O_i)\}
 ightarrow
-{R_{ij}}
+\{R_{ij}\}
 ightarrow
 Evidence
 ightarrow

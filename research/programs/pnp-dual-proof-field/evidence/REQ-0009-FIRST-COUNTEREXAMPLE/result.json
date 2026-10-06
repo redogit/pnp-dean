@@ -1,0 +1,98 @@
+{
+  "status": "COUNTEREXAMPLE_FOUND",
+  "candidate": "A_0009_ONE_BIT_DESCENT",
+  "claim_ceiling": "P ?= NP = OPEN",
+  "first_failed_bridge": "a one-bit local minimum below K proves no independent K-set exists",
+  "instance": {
+    "ids": [
+      "0",
+      "1",
+      "2"
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "K": 2
+  },
+  "encoded_utf8": "{\"ids\":[\"0\",\"1\",\"2\"],\"edges\":[[0,1],[0,2]],\"K\":2}",
+  "input_sha256": "85c3f4a421656df67987092971fd87d30554049d671df289feef5e94ab03941d",
+  "n_bits": 392,
+  "candidate_run": {
+    "valid_input": true,
+    "decision": "NO",
+    "witness": [],
+    "path": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "energies": [
+      0,
+      -1
+    ],
+    "counts": {
+      "input_bytes": 49,
+      "adjacency_cells": 9,
+      "edge_insertions": 2,
+      "energy_evaluations": 7,
+      "coordinate_terms": 21,
+      "edge_terms": 14,
+      "trial_flips": 6,
+      "rollbacks": 6,
+      "accepted_flips": 1,
+      "trace_coordinate_copies": 6,
+      "verification_pairs": 0,
+      "witness_ids": 0,
+      "witness_utf8_bytes": 0
+    }
+  },
+  "exact_decision": "YES",
+  "exact_witness_indices": [
+    1,
+    2
+  ],
+  "exact_witness_ids": [
+    "1",
+    "2"
+  ],
+  "graphs_visited": 8,
+  "instances_checked": 31,
+  "all_smaller_N": [
+    {
+      "N": 0,
+      "graphs": 1,
+      "instances": 2
+    },
+    {
+      "N": 1,
+      "graphs": 1,
+      "instances": 3
+    },
+    {
+      "N": 2,
+      "graphs": 2,
+      "instances": 8
+    }
+  ],
+  "enumeration": "N ascending 0..3; edge mask ascending; K ascending 0..N+1; stop at first mismatch",
+  "research_oracle": "independent combinations enumeration, N<=3; charged research work, never inside A",
+  "non_claims": [
+    "No P=NP or P!=NP conclusion",
+    "No later bridge attacked",
+    "No candidate repair performed"
+  ]
+}

@@ -1,0 +1,1 @@
+{"status": "COUNTEREXAMPLE_FOUND", "instances_checked": 31, "vertices": 3, "K": 2}

@@ -12,29 +12,112 @@
     "remainder"
   ],
   "properties": {
-    "request_id": { "type": "string" },
-    "generator": { "type": "string" },
-    "accepted_obligation": { "type": "string" },
-    "needed_inputs": { "type": "array", "items": { "type": "string" } },
-    "requested_parts": { "type": "array", "items": { "type": "string" } },
-    "candidate_operations": { "type": "array", "items": { "type": "string" } },
-    "counterprobes": { "type": "array", "items": { "type": "string" } },
-    "dependencies": { "type": "array", "items": { "type": "string" } },
-    "acceptance_criteria": { "type": "array", "items": { "type": "string" } },
-    "cost_envelope": { "type": ["object", "null"] },
-    "output_contract": { "type": "string" },
+    "request_id": {
+      "type": "string"
+    },
+    "generator": {
+      "type": "string"
+    },
+    "accepted_obligation": {
+      "type": "string"
+    },
+    "lineage_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inherited_contracts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "needed_inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "For algorithmic claims, identify the fixed encoded input length and whether any certificate/witness is supplied or must be constructed."
+    },
+    "requested_parts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_operations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "counterprobes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "For constructive-universality claims, include the verifier/certificate/known-route/representation promotion barrier when relevant."
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "For constructive universality, require a single deterministic total decider and one fixed polynomial total-work bound in the fixed encoded input length."
+    },
+    "cost_envelope": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Charge lifecycle plus representation/route/certificate construction and recovery against the fixed encoded input length. Null means unresolved, not zero."
+    },
+    "output_contract": {
+      "type": "string"
+    },
     "child_obligation_requests": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["statement", "theorem_direction"],
+        "required": [
+          "statement",
+          "theorem_direction"
+        ],
         "properties": {
-          "statement": { "type": "string" },
-          "theorem_direction": { "enum": ["P_EQ_NP", "P_NE_NP", "SHARED"] },
-          "preferred_generator": { "type": ["string", "null"] }
+          "statement": {
+            "type": "string"
+          },
+          "theorem_direction": {
+            "enum": [
+              "P_EQ_NP",
+              "P_NE_NP",
+              "SHARED"
+            ]
+          },
+          "preferred_generator": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lineage_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
         }
       }
     },
-    "remainder": { "type": "string" }
+    "remainder": {
+      "type": "string"
+    }
   }
 }

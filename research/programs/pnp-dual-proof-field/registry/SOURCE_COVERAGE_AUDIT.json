@@ -1,0 +1,378 @@
+{
+  "schema": "pnp-dean/fpcv-source-coverage-audit-v1",
+  "date": "2026-10-10",
+  "verdict": "REGISTRY_REPAIRED_AFTER_FULL_REVIEW",
+  "claim_ceiling": "P ?= NP = OPEN",
+  "roots": [
+    {
+      "repository": "redogit/pnp-dean",
+      "revision": "92040a45d9b05bdfbce0357d061cc250637d6b54",
+      "role": "canonical obligation/Cook/REQ-0009 repository",
+      "blob_count": 391
+    },
+    {
+      "repository": "redogit/redogit",
+      "revision": "fb9c4d4b36ca218334c30c24b08db2bec1c667a7",
+      "role": "live mathematical carrier/Dean predecessor-successor surface",
+      "pnp_relevant_blobs": 74
+    },
+    {
+      "repository": "redogit/Other-Projects-",
+      "revision": "e25aca5496436e1c67d0c0b82205575baf3e5a27",
+      "role": "live Repair Lab / Decision Field / FIG-5 / MLIR successor surface",
+      "repair_lab_blobs": 223,
+      "files_absent_from_pnp_dean_import": 63
+    },
+    {
+      "repository": "redogit/conscience64",
+      "revision": "cec20286e626c2070e95eccf084ee21146361d56",
+      "role": "live September-12 P-vs-NP method/evidence surface",
+      "pnp_relevant_blobs": 11
+    },
+    {
+      "source": "Minimum_Dorm_Repair_2026-10-07.md",
+      "sha256": "dc412e3f3f2fec754099fbc69baa4f41bd42a2bc9116c1554213eb84ca2f9d1d",
+      "role": "user-supplied separate packing-model derivation"
+    }
+  ],
+  "integrity": {
+    "external_dorm_sha256_verified": true,
+    "broken_registry_local_source_refs": 0,
+    "duplicate_registry_ids": 0,
+    "broken_semantic_ancestry_refs": 0
+  },
+  "snapshot_semantic_coverage": {
+    "semantic_candidate_files": 143,
+    "directly_referenced_semantic_files": 106,
+    "supporting_or_duplicate_semantic_files": 37,
+    "unclassified_semantic_files": 0
+  },
+  "live_successor_findings": {
+    "other_projects_repair_lab_files": 223,
+    "absent_from_pnp_dean_import": 63,
+    "absent_breakdown": "Current/root successor navigation plus FIG-5 v0.19-v0.26 and related code; FIG-5 was the substantive omitted research line.",
+    "conscience64_pnp_files": 11,
+    "conscience64_import_match": "All 11 current PNP blobs match the pnp-dean import.",
+    "redogit_pnp_relevant_files": 74,
+    "authority_rule": "Use live redogit mathematical sources for current source authority; imported copies remain historical/export occurrences."
+  },
+  "critical_repairs": [
+    {
+      "issue": "FIG-5 omitted",
+      "repair": "Added FPCV-056 with exact pair-pressure identity, v0.22/v0.23/v0.24 bounded results, v0.25 inconclusive width-4 result and v0.26 preregistration."
+    },
+    {
+      "issue": "Session derivation incorrectly treated as new",
+      "repair": "FPCV-038 now records source-backed Step-23 2^s future-context theorem; FPCV-039 is explicitly source-backed synthesis of Steps 23-25, Step 27 and positive-circuit value separation."
+    },
+    {
+      "issue": "Dorm note authority too high",
+      "repair": "FPCV-033/FPCV-034 now EXTERNAL_SOURCE_DERIVATION_REVIEWED, not repository PROVED_EXACT authority."
+    },
+    {
+      "issue": "Cook gate mislabeled theorem",
+      "repair": "FPCV-029 now FORMALIZATION_METHOD."
+    },
+    {
+      "issue": "GYRO theorem granularity too coarse",
+      "repair": "Added FPCV-041..045 for DEAN-4 NP-completeness, pressure closure, four-result reduction, exact factorization and regular-core plateau."
+    },
+    {
+      "issue": "Dean progression over-compressed",
+      "repair": "Added FPCV-051..055 and enriched FPCV-024..027."
+    },
+    {
+      "issue": "Boundary/tight-block carrier progression incomplete",
+      "repair": "Added FPCV-048..050 and split surplus lineage into leaf entries FPCV-059..061."
+    },
+    {
+      "issue": "Decision-Field/MLIR live work underrepresented",
+      "repair": "Added FPCV-046/FPCV-047."
+    },
+    {
+      "issue": "Historical first bridge lost",
+      "repair": "Added FPCV-058 to preserve the resolved encoding gap."
+    }
+  ],
+  "supporting_occurrences": [
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/README.md",
+      "classification": "summary/navigation",
+      "covered_by": [
+        "FPCV-004",
+        "FPCV-041",
+        "FPCV-043"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/SOURCE_ARCHIVE_NOTE.md",
+      "classification": "provenance/recovery",
+      "covered_by": [
+        "registry review provenance"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/ALGORITHM.md",
+      "classification": "algorithm summary",
+      "covered_by": [
+        "FPCV-004"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/IMPLEMENTATION_NOTES.md",
+      "classification": "implementation guidance",
+      "covered_by": [
+        "FPCV-004",
+        "FPCV-010"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/PROOF_RESEARCH_PROTOCOL.md",
+      "classification": "method/protocol",
+      "covered_by": [
+        "FPCV-028",
+        "FPCV-057"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/REFERENCES.md",
+      "classification": "bibliography",
+      "covered_by": [
+        "leaf theorem entries"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/SEMANTIC_GRAVITY.md",
+      "classification": "explanatory restatement",
+      "covered_by": [
+        "FPCV-008",
+        "FPCV-010"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/docs/SQL_CARRIER.md",
+      "classification": "implementation carrier guidance",
+      "covered_by": [
+        "FPCV-044",
+        "FPCV-004"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/examples/README.md",
+      "classification": "example/data guide",
+      "covered_by": [
+        "bounded evidence occurrences"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/20_PROOF_STATUS_AND_OPEN_CLAIMS.md",
+      "classification": "status summary",
+      "covered_by": [
+        "FPCV-004..FPCV-013",
+        "FPCV-041..FPCV-045"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/DF_PNP_01_RESULT.json",
+      "classification": "bounded corroboration",
+      "covered_by": [
+        "FPCV-014",
+        "FPCV-046"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/CHECKPOINT.json",
+      "classification": "bounded experiment aggregate",
+      "covered_by": [
+        "FPCV-046"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/CONTRACTS.json",
+      "classification": "experiment contract",
+      "covered_by": [
+        "FPCV-046"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/discriminators_2026_09_14/SOURCE_PROVENANCE.json",
+      "classification": "provenance",
+      "covered_by": [
+        "FPCV-046"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/docs/GYRO_DEAN_DECISION_FIELD_2026-09-17.md",
+      "classification": "architecture synthesis",
+      "covered_by": [
+        "FPCV-004",
+        "FPCV-043",
+        "FPCV-057"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/PUBLISH_FILES.json",
+      "classification": "publication manifest",
+      "covered_by": [
+        "FPCV-001"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/audit_contract.json",
+      "classification": "execution contract",
+      "covered_by": [
+        "FPCV-001"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/contract.json",
+      "classification": "execution contract",
+      "covered_by": [
+        "FPCV-001"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/contract_v6.json",
+      "classification": "execution contract",
+      "covered_by": [
+        "FPCV-001"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/contract_v6_1.json",
+      "classification": "execution contract",
+      "covered_by": [
+        "FPCV-001"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/contract_v6_2.json",
+      "classification": "execution contract",
+      "covered_by": [
+        "FPCV-001"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/contract.json",
+      "classification": "execution contract",
+      "covered_by": [
+        "FPCV-003"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/history/README.md",
+      "classification": "historical source correction",
+      "covered_by": [
+        "FPCV-003"
+      ]
+    },
+    {
+      "path": "Other-Projects-/projects/research/P versus NP Repair Lab/mutation/macro-contract.json",
+      "classification": "execution contract",
+      "covered_by": [
+        "FPCV-003"
+      ]
+    },
+    {
+      "path": "conscience64/research/pnp/2026-09-12/ALL_RESEARCH_TO_P_VS_NP_ROLE_MATRIX.json",
+      "classification": "machine-readable duplicate of role matrix",
+      "covered_by": [
+        "FPCV-057"
+      ]
+    },
+    {
+      "path": "redogit/research/pnp/README.md",
+      "classification": "navigation",
+      "covered_by": [
+        "corpus"
+      ]
+    },
+    {
+      "path": "redogit/research/pnp/carriers/README.md",
+      "classification": "navigation",
+      "covered_by": [
+        "corpus"
+      ]
+    },
+    {
+      "path": "redogit/research/pnp/carriers/docs/PNP_CURRENT_PROBLEM_MAP_2026-09-30.md",
+      "classification": "currentness/navigation summary; leaf authority remains source-local",
+      "covered_by": [
+        "core/open-obligation registry fields"
+      ]
+    },
+    {
+      "path": "redogit/research/pnp/dean/README.md",
+      "classification": "navigation",
+      "covered_by": [
+        "corpus"
+      ]
+    },
+    {
+      "path": "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_HANDOFF_003_2026-09-26.md",
+      "classification": "synchronization summary",
+      "covered_by": [
+        "FPCV-018",
+        "FPCV-048..FPCV-050"
+      ]
+    },
+    {
+      "path": "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_PACKET_2026-09-26.md",
+      "classification": "coordination summary",
+      "covered_by": [
+        "FPCV-015..FPCV-023"
+      ]
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/GENERATOR_CONFIG.json",
+      "classification": "method configuration",
+      "covered_by": [
+        "FPCV-028"
+      ]
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/README.md",
+      "classification": "navigation",
+      "covered_by": [
+        "FPCV-028"
+      ]
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/battles/BATTLE-0001.json",
+      "classification": "historical replay receipt; explicitly not new independent mathematical verification",
+      "covered_by": [
+        "FPCV-027",
+        "FPCV-028"
+      ]
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/candidates/req0009/attack_contract.json",
+      "classification": "counterprobe contract",
+      "covered_by": [
+        "FPCV-032"
+      ]
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/requests/REQ-0001-P-EQ-COVER.json",
+      "classification": "open request specification",
+      "covered_by": [
+        "FPCV-028",
+        "U_COVER"
+      ]
+    },
+    {
+      "path": "research/programs/pnp-dual-proof-field/requests/REQ-0002-P-NE-CONT.json",
+      "classification": "open request specification",
+      "covered_by": [
+        "FPCV-028",
+        "U_CONT"
+      ]
+    }
+  ],
+  "nonclaims": [
+    "The review did not independently reprove every cited external theorem.",
+    "The review did not rerun historical scientific probes/experiments merely to classify their recorded evidence.",
+    "Deleted/private/unreachable commits are outside the claimed exhaustive scope.",
+    "No registry completeness claim changes the P-vs-NP claim ceiling."
+  ]
+}

@@ -2,11 +2,38 @@
 
 Date: 2026-10-10
 
-Status: `SESSION_DERIVATION_UNPROMOTED`
-
 Claim ceiling: `P ?= NP = OPEN`.
 
-This note records already-completed bounded conversation derivations so they can be compared with the source-backed registry. It does not promote them above the repository sources and performs no new proof step.
+This note reconciles the bounded 2026-10-10 conversation work against the earlier authoritative P-vs-NP sources recovered during the registry review. It does not promote session reasoning above repository authority and performs no new universal proof step.
+
+## Authority correction discovered by the registry review
+
+The September-29 source
+`redogit/research/pnp/dean/docs/PNP_DEAN_BOUNDARY_STATE_PROGRESSION_2026-09-29.md`
+already contains stronger source-backed predecessors for several ideas that were initially described in session language as new:
+
+- **Step 20:** exact conditional composition across a supplied boundary.
+- **Step 21:** count-only state compression can invent a false YES.
+- **Step 22:** exact tree composition with verified bounded bags/separators and witness traceback.
+- **Step 23:** on an edgeless boundary of size (s), every one of the (2^s) assignments is distinguishable by some one-vertex future context. This is stronger than the session's later binomial-family observation.
+- **Step 24:** a fixed-context quotient can safely merge states by equal future-side value after the complete contextual tables are already known.
+- **Step 25:** even one boundary class can contain the original optimization, because an empty-boundary value can be (alpha(H)).
+
+The September-30 component-expression source independently shows that polynomially constructing compact local factors can still leave optimization equivalent to arbitrary Independent Set.
+
+The September-26 positive-circuit source independently shows that an exact signature quotient does not supply polynomial signature-value evaluation.
+
+Therefore the source-backed Anti-Ouroboros distinction predates this session. The session contribution is primarily the unifying terminology:
+
+[
+	ext{representation}
+	o
+	ext{quotient}
+	o
+	ext{value evaluation}
+	o
+	ext{total work}.
+]
 
 ## External source anchor
 
@@ -16,39 +43,41 @@ SHA-256: `dc412e3f3f2fec754099fbc69baa4f41bd42a2bc9116c1554213eb84ca2f9d1d`
 
 Its declared boundary is preserved: the dorm model is a separate packing model; it does not replace the independent-set successor analysis or prove a general P-vs-NP result.
 
+Registry-review verdict on the mathematical derivations: internally coherent under the stated assumptions. No new computational run or external publication review is claimed.
+
 The useful exact pattern is the two-dorm dynamic program: partial arrangements may be merged only after proving that their future possibilities are identical. For two dorms the retained state is the processed-component index plus occupancy in one dorm.
 
-## A. Cross-state frontier candidate — refuted
+## A. Cross-state frontier candidate — session derivation, refuted
 
 On the preserved REQ-0009 five-vertex path, test
 
 [
-\sigma_{front}(S)=(|S|,A(S)),
+sigma_{front}(S)=(|S|,A(S)),
 ]
 
 where (A(S)) is the exact set of currently addable vertices.
 
-The states (S_1=\{0,1\}) and (S_2=\{0,3\}) both have size two and empty addable frontier, yet under the frozen one-for-two continuation (S_1) has no successful exchange while (S_2\to\{2,3,4\}) succeeds.
+The states (S_1={0,1}) and (S_2={0,3}) both have size two and empty addable frontier, yet under the frozen one-for-two continuation (S_1) has no successful exchange while (S_2	o{2,3,4}) succeeds.
 
 Result:
 
 [
-\sigma_{front}\text{ is not continuation-sufficient.}
+sigma_{front}	ext{ is not continuation-sufficient.}
 ]
 
-Interpretation: the legal frontier loses which selected vertex is responsible for each blockage.
+This specific collision remains a session derivation. Its mechanism is consistent with the earlier source-backed warning that compressed states must preserve every consequential future distinction.
 
-## B. Exact blocker-incidence candidate — sufficient but not a useful quotient
+## B. Exact blocker-incidence candidate — session derivation, sufficient but not a useful quotient
 
 Define
 
 [
-B_S(v)=N(v)\cap S
+B_S(v)=N(v)cap S
 ]
 
 for every unselected vertex and retain the exact unselected-domain identities.
 
-This distinguishes the previous collision. More generally the domain is (V\setminus S), so the carrier identifies (S) itself.
+This distinguishes the previous collision. More generally the domain is (Vsetminus S), so the carrier identifies (S) itself.
 
 Result:
 
@@ -59,72 +88,74 @@ Result:
 
 This is identity preservation, not useful compression.
 
-## C. Residual future-behavior equivalence
+## C. Residual future-behavior equivalence — session synthesis aligned with earlier exact context work
 
-For a residual state (S), let (\Phi_S(F)) be the exact decision outcome under an allowed future continuation/attachment (F).
+For a residual state (S), let (Phi_S(F)) be the exact decision outcome under an allowed future continuation/attachment (F).
 
 Define
 
 [
-S\equiv T
-\iff
-\forall F,\;\Phi_S(F)=\Phi_T(F).
+Sequiv T
+iff
+orall F,;Phi_S(F)=Phi_T(F).
 ]
 
-This is the semantic fixed point for cross-state exclusions and obligations: any exact future-sufficient carrier must refine this equivalence, while the equivalence class itself is the coarsest exact semantic quotient.
+This provides convenient session notation for the coarsest semantic future-equivalence relation. It is aligned with:
 
-Important boundary: semantic existence does not establish efficient discovery, representation, update, or value evaluation.
+- GYRO exact context-equivalence work;
+- Dean Step 23's exact future-context separation theorem.
 
-## D. Depth versus width/index
+The notation/synthesis is not claimed as a new repository theorem.
 
-The odd path family shows that local augmentation depth can grow without a fixed constant bound. This does not imply that the information *type* must grow with depth: paths/trees can reuse a small boundary state recursively.
+## D. Depth versus interface behavior
 
-A separate width-(w) fixed-boundary construction yields at least
+The odd-path augmentation family used in session shows that a bounded local exchange radius need not suffice as instance size grows. This does not imply information type grows with depth.
+
+The authoritative stronger width result is Dean Step 23:
 
 [
-\binom{w}{\lfloor w/2\rfloor}
+oxed{2^s}
 ]
 
-future-distinguishable boundary states.
+future-distinguishable states on an edgeless boundary of size (s), under equivalence required to preserve every allowed one-vertex future attachment.
 
-This is an equivalence-class count, not a storage or runtime lower bound. One current class can still have an (O(w))-bit identifier.
+That theorem is a class-count barrier, not a storage or runtime lower bound. Each current state can still be represented by an (s)-bit mask.
 
-## E. Anti-Ouroboros split
+## E. Anti-Ouroboros split — source-backed synthesis
 
-A polynomial-size symbolic carrier exists trivially:
+A polynomial-size symbolic representation exists trivially by retaining the residual itself. More importantly, the earlier Dean sources already distinguish:
 
-[
-C(x)=x.
-]
+1. **Representation** — store/construct the residual or compact factor system.
+2. **Quotient** — merge states only under proved contextual interchangeability.
+3. **Value evaluation** — compute the exact value attached to the quotient/class.
+4. **Total work** — discover/update/evaluate/reconstruct under one fixed polynomial bound.
 
-Therefore finite/poly-size representation and composition closure are not enough.
+The source-backed barriers are:
 
-Keep four obligations distinct:
+- Step 23: many distinct future behaviors can have short descriptions.
+- Step 24: safe fixed-context compression can depend on already-computed tables.
+- Step 25: one class/value can be the original (alpha(H)) optimization.
+- Step 27: compact small-factor construction can retain arbitrary Independent Set.
+- Positive-circuit signature completeness: exact quotient equality does not discharge signature/core value evaluation.
 
-1. **Representation** — write the residual/carrier.
-2. **Quotient** — merge genuinely distinct states without losing protected future behavior.
-3. **Value evaluation** — compute the exact decision value of the quotient.
-4. **Total work** — discover/update/evaluate/reconstruct under one fixed polynomial bound in the encoded input.
-
-If carrier evaluation reconstructs an equally hard residual solve, the problem has only been renamed.
-
-This aligns with two prior source-backed barriers:
-
-- `PNP_DEAN_COMPONENT_EXPRESSION_2026-09-30.md`: polynomial compact-factor construction can still leave optimization equivalent to the original Independent-Set obligation.
-- `PNP_POSITIVE_CIRCUIT_SIGNATURE_COMPLETENESS_2026-09-26.md`: exact signature equality does not supply polynomial signature-value evaluation.
+The session term **Anti-Ouroboros** is retained as a synthesis label only.
 
 ## F. Next open criterion — not executed here
 
 Candidate local-value law:
 
 [
-V(C_1\otimes C_2)=F(V(C_1),V(C_2),I_{12}),
+V(C_1otimes C_2)=F(V(C_1),V(C_2),I_{12}),
 ]
 
 where (I_{12}) is an exact polynomial-size cross-state exclusion/obligation interface.
 
-For this to be Anti-Ouroboros, (F) must not evaluate an equally hard reconstructed residual.
+Scoped positive predecessors exist:
 
-The articulation terminal is a scoped positive example of local value composition through a one-vertex interface. No universal composition theorem is claimed.
+- Dean Step 20/22 conditional boundary composition;
+- cross-circuit bounded-adhesion composition;
+- Dean articulation Steps 35-39 for singleton interfaces.
 
-No further proof step is performed in this note.
+For this to close the universal obligation, (F) must not evaluate an equally hard reconstructed residual and the interface/discovery/update/witness lifecycle must remain under one fixed polynomial bound.
+
+No universal composition theorem is claimed and no further proof step is performed in this note.

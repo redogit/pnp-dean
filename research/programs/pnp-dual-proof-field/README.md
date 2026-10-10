@@ -4,7 +4,7 @@ This program turns
 
 [
 P=NP
-qquad	ext{and}qquad
+qquad\text{and}\qquad
 P\ne NP
 ]
 
@@ -36,7 +36,7 @@ where:
 Each generator obeys:
 
 [
-G_i(O_i,Gamma,C,E,B)ightarrow RequestBundle^{0..*}.
+G_i(O_i,Gamma,C,E,B)\rightarrow RequestBundle^{0..*}.
 ]
 
 The RequestBundle is the unit of work.
@@ -47,11 +47,11 @@ The generator field is an explicit successor of:
 
 [
 FunctionalObject
-ightarrow
+\rightarrow
 AnyFunctor/FunctionObject
-ightarrow
+\rightarrow
 LocalPlane
-ightarrow
+\rightarrow
 ObligationGenerator.
 ]
 
@@ -76,6 +76,9 @@ The relation is provenance and lowering, not retroactive equivalence.
 10. [Obligation slice schema](OBLIGATION_SLICE.schema.json)
 11. [Request bundle schema](REQUEST_BUNDLE.schema.json)
 12. [Battle receipt schema](BATTLE_RECEIPT.schema.json)
+13. [Feature / Property / Contribution / Value registry](registry/FPCV_REGISTRY.md)
+14. [Machine-readable FPCV registry](registry/FPCV_REGISTRY.json)
+15. [Current cross-state / Anti-Ouroboros note](registry/CURRENT_CROSS_STATE_2026-10-10.md)
 
 ## Execution
 

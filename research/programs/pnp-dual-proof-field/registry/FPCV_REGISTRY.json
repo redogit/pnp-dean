@@ -1,0 +1,1288 @@
+{
+  "schema": "pnp-dean/fpcv-registry-v1",
+  "date": "2026-10-10",
+  "claim_ceiling": "P ?= NP = OPEN",
+  "authority_rule": "Source-local authority only. Later summaries do not upgrade earlier claims. Session derivations are unpromoted until reviewed.",
+  "dimensions": {
+    "feature": "mechanism/object/algorithm/carrier",
+    "properties": "scope, exactness, complexity, continuation, reconstruction, failure boundaries",
+    "contribution": "theorem, terminal, implementation, counterexample, method, evidence, or open obligation",
+    "value": "current research utility, not theorem authority"
+  },
+  "corpus": {
+    "canonical_repository": "redogit/pnp-dean",
+    "canonical_head_seen": "92040a45d9b05bdfbce0357d061cc250637d6b54",
+    "blob_count": 391,
+    "grouped_occurrences": {
+      "Other-Projects-": 230,
+      "redogit": 78,
+      "research/programs/pnp-dual-proof-field": 53,
+      "conscience64": 12,
+      "top-level/recovery/validation": 18
+    },
+    "external_sources": [
+      {
+        "id": "SRC-DORM-2026-10-07",
+        "name": "Minimum_Dorm_Repair_2026-10-07.md",
+        "sha256": "dc412e3f3f2fec754099fbc69baa4f41bd42a2bc9116c1554213eb84ca2f9d1d",
+        "authority": "user-supplied mathematical note; separate packing model"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "FPCV-001",
+      "feature": "Partial-Hard / Range-Avoidance finite selector construction",
+      "chronology": "2026-09-12..2026-09-14",
+      "properties": {
+        "exact_scope": "finite NAND circuit classes",
+        "construction_cost": "dominant and explicitly charged",
+        "universal": false
+      },
+      "contribution": {
+        "type": [
+          "IMPLEMENTATION",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Reproduced the bounded six-gate selector advantage; neighboring five-gate case refuted universal all-ones complete-route score optimality."
+      },
+      "value": {
+        "class": [
+          "CALIBRATION",
+          "BARRIER"
+        ],
+        "reason": "Preserves finite selector evidence and blocks promotion from initial symmetry/orbit shrinkage to end-to-end optimality."
+      },
+      "status": "IMPLEMENTED_VERIFIED_BOUNDED",
+      "semantic_ancestry": [],
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/full_cost/NOTES.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/docs/CURRENT.md",
+        "conscience64/research/pnp/2026-09-12/WHOLE_RESEARCH_PARETO_ABLATION_ACTIVE_CARRIER.json"
+      ]
+    },
+    {
+      "id": "FPCV-002",
+      "feature": "Boolean HSP/Fourier quotient carrier",
+      "chronology": "2026-09-12",
+      "properties": {
+        "exactness": "abstract finite-group theorems",
+        "hsp_promise": "only Boolean index-2 coset membership gives ordinary Boolean HSP promise",
+        "quotient": "exact when stabilizer known",
+        "universal": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "NEGATIVE_EVIDENCE"
+        ],
+        "summary": "Separated exact symmetry quotienting from generic SAT; bounded audits found ordinary HSP promise absent on tested 2-SAT/3-SAT panels."
+      },
+      "value": {
+        "class": [
+          "REPRESENTATION",
+          "BARRIER"
+        ],
+        "reason": "Useful after certified symmetry; prevents assuming a hidden period for generic NP search."
+      },
+      "status": "PROVED_EXACT",
+      "semantic_ancestry": [],
+      "sources": [
+        "conscience64/research/pnp/2026-09-12/BOOLEAN_MEMBERSHIP_HSP_BOUNDARY_AND_FOURIER_QUOTIENT.md",
+        "conscience64/research/pnp/2026-09-12/SHOR_HSP_PNP_EVIDENCE_UPDATE.json"
+      ]
+    },
+    {
+      "id": "FPCV-003",
+      "feature": "Exact CNF repair and implication-closure repair",
+      "chronology": "2026-09-14",
+      "properties": {
+        "general_repair": "exact under explicit cap by Hamming-layer enumeration",
+        "restricted_class": "one positive clause plus implications solved by reachable closures",
+        "universal": false
+      },
+      "contribution": {
+        "type": [
+          "IMPLEMENTATION",
+          "SCOPED_TERMINAL"
+        ],
+        "summary": "Established a polynomial graph repair for the declared implication class and preserved the arbitrary-CNF SAT obligation."
+      },
+      "value": {
+        "class": [
+          "TERMINAL",
+          "METHOD"
+        ],
+        "reason": "Demonstrates semantic block repair can escape one-bit local traps without overclaiming generality."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/README.md"
+      ]
+    },
+    {
+      "id": "FPCV-004",
+      "feature": "GYRO exact branch-and-reduce fallback",
+      "chronology": "2026-09-17",
+      "properties": {
+        "exact": true,
+        "terminating": true,
+        "polynomial_runtime": false,
+        "homeward": true
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "IMPLEMENTATION"
+        ],
+        "summary": "Exact include/exclude fallback guarantees correctness/termination when carriers stall; exhaustive comparison passed all labeled graphs through five vertices and positive targets (5,405 cases)."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "CALIBRATION"
+        ],
+        "reason": "Correctness reference and referee; explicitly not a polynomial-collapse result."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/06_SOLVER_CORRECTNESS_AND_TERMINATION.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/PROOF_REPORT.md"
+      ]
+    },
+    {
+      "id": "FPCV-005",
+      "feature": "Independent Set / Vertex Cover duality, pressure forcing, O(k^2) residual kernel",
+      "chronology": "2026-09-17",
+      "properties": {
+        "exact": true,
+        "parameterized": true,
+        "universal": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "TERMINAL"
+        ],
+        "summary": "Provides exact cover-side forcing/kernelization and a polynomial terminal when k=O(log n)."
+      },
+      "value": {
+        "class": [
+          "TERMINAL"
+        ],
+        "reason": "Reusable exact parameterized terminal with clear claim boundary."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/08_VERTEX_COVER_DUALITY_AND_KERNEL.md"
+      ]
+    },
+    {
+      "id": "FPCV-006",
+      "feature": "Exact context signature and Pareto dominance",
+      "chronology": "2026-09-17",
+      "properties": {
+        "continuation_equivalence": "exact on declared cut signature",
+        "dominance": "exact",
+        "frontier_size": "can be exponential"
+      },
+      "contribution": {
+        "type": [
+          "THEOREM"
+        ],
+        "summary": "Formalized when two partial independent-set states are externally indistinguishable and when one dominates another."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "REPRESENTATION"
+        ],
+        "reason": "Direct predecessor of continuation-sufficient quotient work."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/03_CONTEXT_SIGNATURE.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/10_CONTEXT_FRONTIER_AND_RANK_BARRIERS.md"
+      ]
+    },
+    {
+      "id": "FPCV-007",
+      "feature": "Matching-cut frontier and disjointness-rank barrier",
+      "chronology": "2026-09-17",
+      "properties": {
+        "nondominated_states": "2^b on b-edge matching cut",
+        "linear_rank": "2^b over every field",
+        "hardness_proof": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "BARRIER"
+        ],
+        "summary": "Shows exact cut behavior and ordinary exact linear factorization can require exponential frontier/rank on a simple family."
+      },
+      "value": {
+        "class": [
+          "BARRIER"
+        ],
+        "reason": "Rejects universal claims that exact cut frontiers or ordinary linear rank must stay polynomial."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/10_CONTEXT_FRONTIER_AND_RANK_BARRIERS.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/21_CLAIM_FALSIFICATION_LEDGER.md"
+      ]
+    },
+    {
+      "id": "FPCV-008",
+      "feature": "Gyroscopic closure / frontier-mass / semantic-event progress",
+      "chronology": "2026-09-17",
+      "properties": {
+        "closure_soundness": "conditional on exact carriers",
+        "polynomiality": "conditional on polynomial mass/event universe and progress",
+        "universal_bound": "open"
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "OPEN_OBLIGATION"
+        ],
+        "summary": "Gives sufficient conditions under which exact adaptive carrier closure would be polynomial; does not establish those conditions universally."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "METHOD"
+        ],
+        "reason": "Defines a clean potential-function route while exposing exactly which global progress theorem is missing."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/11_GYRO_CLOSURE_AND_FRONTIER_MASS.md"
+      ]
+    },
+    {
+      "id": "FPCV-009",
+      "feature": "Maximal linear PCA exact invariant carrier",
+      "chronology": "2026-09-17",
+      "properties": {
+        "exact_linear_invariants": true,
+        "operational_from_true_solution_set": false,
+        "universal_terminal": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Characterizes all exact linear invariants of the true solution set and proves linear PCA is not a universal terminal measure."
+      },
+      "value": {
+        "class": [
+          "REPRESENTATION",
+          "BARRIER"
+        ],
+        "reason": "Separates exact semantic characterization from efficiently computable operational information."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/12_MAXIMAL_LINEAR_PCA.md"
+      ]
+    },
+    {
+      "id": "FPCV-010",
+      "feature": "Certified Macaulay / MPCA exact-rank carrier",
+      "chronology": "2026-09-17",
+      "properties": {
+        "certified_relations": true,
+        "rank_gain_exact": true,
+        "log_nullity_terminal": true,
+        "dictionary_growth_must_be_charged": true
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "TERMINAL"
+        ],
+        "summary": "Sound polynomial-identity lifting to exact affine equations; logarithmic certified nullity over a polynomial dictionary is polynomially terminal."
+      },
+      "value": {
+        "class": [
+          "TERMINAL",
+          "REPRESENTATION"
+        ],
+        "reason": "Operational algebraic carrier that only changes logical state through verified exact equations."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/13_CERTIFIED_MACAULAY_ENGINE.md"
+      ]
+    },
+    {
+      "id": "FPCV-011",
+      "feature": "Lifted MPCA curvature / semantic Jacobian / Graph-Hilbert bridge",
+      "chronology": "2026-09-17",
+      "properties": {
+        "analysis_exact": true,
+        "solution_set_dependence": "some objects analysis-only",
+        "universal_runtime": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM"
+        ],
+        "summary": "Derived degree-growth, branch-exposure, stabilization, block-curvature and graph-Hilbert identities."
+      },
+      "value": {
+        "class": [
+          "REPRESENTATION",
+          "METHOD"
+        ],
+        "reason": "Supplies exact structural diagnostics but is not automatically computable without resolving the solution set."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/14_LIFTED_MPCA_CURVATURE.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/15_SEMANTIC_JACOBIAN_AND_BLOCK_ATTACKS.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/16_GRAPH_HILBERT_BRIDGE.md"
+      ]
+    },
+    {
+      "id": "FPCV-012",
+      "feature": "Fractional-dual support frames and multi-frame rank collapse",
+      "chronology": "2026-09-17",
+      "properties": {
+        "odd_cycle_bounds": true,
+        "tight_frame_factorization": true,
+        "inconsistency_certificate": true,
+        "low_nullity_terminal": true
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "TERMINAL"
+        ],
+        "summary": "Turns exact dual-support structure into local omission bounds, affine stacks, contradiction certificates and logarithmic-nullity terminals."
+      },
+      "value": {
+        "class": [
+          "TERMINAL",
+          "REPRESENTATION"
+        ],
+        "reason": "Combines combinatorial and affine certificates with recoverable verification."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/17_DUAL_SUPPORT_FRAME_THEOREMS.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/18_MULTI_FRAME_RANK_COLLAPSE.md"
+      ]
+    },
+    {
+      "id": "FPCV-013",
+      "feature": "Submodular rank gravity",
+      "chronology": "2026-09-17",
+      "properties": {
+        "monotone_submodular_rank_gain": true,
+        "greedy_cover_bound": true,
+        "availability_sufficiency": "not guaranteed"
+      },
+      "contribution": {
+        "type": [
+          "THEOREM"
+        ],
+        "summary": "Optimizes extraction of already-available certified rank; does not prove that available rank is enough to solve every residual."
+      },
+      "value": {
+        "class": [
+          "METHOD"
+        ],
+        "reason": "Useful selector theorem with explicit boundary between choosing information and possessing sufficient information."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/GYRO-DEAN-4/proofs/19_SUBMODULAR_RANK_GRAVITY.md"
+      ]
+    },
+    {
+      "id": "FPCV-014",
+      "feature": "Decision-Field affine coordinate invariance and succinct candidate frontier",
+      "chronology": "2026-09-14..2026-09-20",
+      "properties": {
+        "affine_partition_invariance": true,
+        "basis_query_depth_not_invariant": true,
+        "candidate_family_polynomial": true,
+        "solver_bound": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "METHOD"
+        ],
+        "summary": "Separates induced decision partitions from coordinate expression length and bounds affine candidate families without confusing candidate-space size with solve time."
+      },
+      "value": {
+        "class": [
+          "METHOD",
+          "BARRIER"
+        ],
+        "reason": "Prevents coordinate-choice heuristics from being mistaken for invariant complexity progress."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/AFFINE_COORDINATE_BRANCHING_THEOREM.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/ORIGINAL_PARTITION_INVARIANCE.md",
+        "Other-Projects-/projects/research/P versus NP Repair Lab/decision_field/SUCCINCT_AFFINE_CANDIDATE_FRONTIER.md"
+      ]
+    },
+    {
+      "id": "FPCV-015",
+      "feature": "RMAL deterministic normalization lifecycle",
+      "chronology": "2026-09-25",
+      "properties": {
+        "deterministic_schedule": true,
+        "polynomial_local_lifecycle": true,
+        "polynomial_trace": true,
+        "homeward": true,
+        "universal_solver": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "METHOD"
+        ],
+        "summary": "Proves polynomial preparation/normalization under guarded exact rules and retains reproducible receipts and reconstruction."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "METHOD"
+        ],
+        "reason": "Current cost/provenance discipline; explicitly NORMALIZATION != SOLVER."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "redogit/research/pnp/carriers/docs/RMAL_PNP_LIVE_DESIGN_2026-09-25.md",
+        "redogit/research/pnp/carriers/docs/PNP_SIGNED_BINARY_CLUSTER_CARRIER_2026-09-25.md"
+      ]
+    },
+    {
+      "id": "FPCV-016",
+      "feature": "Signed binary-cluster augmentation carrier",
+      "chronology": "2026-09-25",
+      "properties": {
+        "scope": "binary support matroid with fixed conflict-clique structure",
+        "exact_positive_and_negative_outcomes": true,
+        "polynomial": true
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "TERMINAL"
+        ],
+        "summary": "Polynomially finds a rainbow support-matroid circuit or certifies none, yielding an exact +1 Dean augmentation decision in the declared class."
+      },
+      "value": {
+        "class": [
+          "TERMINAL"
+        ],
+        "reason": "Strong scoped successor/augmentation theorem with explicit negative certificate."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "redogit/research/pnp/carriers/docs/PNP_SIGNED_BINARY_CLUSTER_CARRIER_2026-09-25.md"
+      ]
+    },
+    {
+      "id": "FPCV-017",
+      "feature": "Surplus/autarky/BVE/tight-block normalization line",
+      "chronology": "2026-09-26",
+      "properties": {
+        "exact_rules": true,
+        "scoped_polynomial_closures": true,
+        "surplus_inflation": "can occur without representation growth",
+        "universalization": "open"
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "COUNTEREXAMPLE",
+          "TERMINAL"
+        ],
+        "summary": "Adds surplus autarky-object reduction, R5+1/fixed-B BVE, low-surplus/log-surplus terminals, tight-block balance inheritance, and counterexamples to naive surplus monotonicity."
+      },
+      "value": {
+        "class": [
+          "TERMINAL",
+          "BARRIER",
+          "CORE"
+        ],
+        "reason": "Consumes substantial normalized residual classes while exposing surplus inflation as a real feedback edge."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "redogit/research/pnp/carriers/docs/PNP_SURPLUS_AUTARKY_OBJECT_REDUCTION_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_R5_PLUS1_ADDITIVE_BVE_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_FIXED_B_BVE_UNIFORMITY_EDGE_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_SURPLUS_INFLATION_COUNTERPROBE_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_MINIMUM_SURPLUS_FORK_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_LOG_SURPLUS_TIGHT_EDGE_CLOSURE_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_TIGHT_BLOCK_BALANCE_INHERITANCE_2026-09-26.md"
+      ]
+    },
+    {
+      "id": "FPCV-018",
+      "feature": "Boundary residual / shear / correction-set seam",
+      "chronology": "2026-09-26",
+      "properties": {
+        "linear_boundary_map_exact": true,
+        "boolean_semantics_not_invariant_on_linear_fiber": true,
+        "correction_set_interface_exact": true
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Identifies the information discarded by a linear boundary seam and refines the exact Boolean parent interface to rescue/correction-set/MUS-transversal status."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "BARRIER"
+        ],
+        "reason": "Prevents linear residual equality from being promoted to Boolean continuation equivalence."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "redogit/research/pnp/carriers/docs/PNP_BOUNDARY_RESIDUAL_MAP_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_MINIMAL_LINEAR_BOOLEAN_SEAM_PAIR_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_BOOLEAN_SHEAR_FIBER_THEOREM_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_BOUNDARY_RESCUE_CORRECTION_SET_SEAM_2026-09-26.md"
+      ]
+    },
+    {
+      "id": "FPCV-019",
+      "feature": "Positive balance-circuit local decision",
+      "chronology": "2026-09-26",
+      "properties": {
+        "positive_row_circuit_promise": true,
+        "local_sat_unsat_decidable_polynomially": true,
+        "global_compatibility": "not solved"
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "TERMINAL"
+        ],
+        "summary": "Closes internal decision for each support-minimal positive balance circuit under the circuit promise."
+      },
+      "value": {
+        "class": [
+          "TERMINAL"
+        ],
+        "reason": "Removes internal circuit hardness and shifts the remainder to cross-circuit compatibility."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "redogit/research/pnp/carriers/docs/PNP_POSITIVE_CIRCUIT_LOCAL_DECISION_2026-09-26.md",
+        "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_HANDOFF_002_2026-09-26.md"
+      ]
+    },
+    {
+      "id": "FPCV-020",
+      "feature": "Cross-circuit bounded-adhesion composition",
+      "chronology": "2026-09-26",
+      "properties": {
+        "running_intersection": true,
+        "boundary_size": "b=O(log n)",
+        "local_conditioned_solver": "maximum-deficiency SAT",
+        "homeward": true
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "TERMINAL"
+        ],
+        "summary": "Exact tree-message composition gives a polynomial terminal when the union boundary per bag is logarithmically bounded."
+      },
+      "value": {
+        "class": [
+          "TERMINAL",
+          "REPRESENTATION"
+        ],
+        "reason": "Concrete local-value composability theorem with a charged interface."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "redogit/research/pnp/carriers/docs/PNP_CROSS_CIRCUIT_BOUNDED_ADHESION_2026-09-26.md"
+      ]
+    },
+    {
+      "id": "FPCV-021",
+      "feature": "Full positive-circuit hit-signature quotient",
+      "chronology": "2026-09-26",
+      "properties": {
+        "exact_quotient": true,
+        "implicit_representation": "M^T y=0, y>=0",
+        "signature_equivalence_queries": "polynomial LP",
+        "surviving_core_membership": "polynomial LP",
+        "value_evaluation": "OPEN"
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Proves correction status constant on the full positive-circuit hit signature; selected-cover signatures are refuted as too coarse."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "REPRESENTATION",
+          "BARRIER"
+        ],
+        "reason": "Current exact quotient. Separates quotient discovery from the still-open signature/core value evaluation."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "redogit/research/pnp/carriers/docs/PNP_POSITIVE_CIRCUIT_SIGNATURE_COMPLETENESS_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_HIGHER_ORDER_CIRCUIT_COMPATIBILITY_2026-09-26.md",
+        "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_HANDOFF_004_2026-09-26.md"
+      ]
+    },
+    {
+      "id": "FPCV-022",
+      "feature": "Surviving positive-circuit core U(C)",
+      "chronology": "2026-09-26",
+      "properties": {
+        "definition": "union of positive circuits disjoint from rescue C",
+        "equivalence": "SAT(G\\C)=SAT(U(C))",
+        "constructibility": "clause membership polynomially testable by LP",
+        "value_evaluation": "OPEN"
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "OPEN_OBLIGATION"
+        ],
+        "summary": "Normalizes the exact quotient value problem to SAT on the surviving positive-circuit core."
+      },
+      "value": {
+        "class": [
+          "CORE"
+        ],
+        "reason": "Current strongest normalized value-evaluation remainder."
+      },
+      "status": "OPEN",
+      "sources": [
+        "redogit/research/pnp/handoffs/PNP_SYNCHRONIZATION_HANDOFF_004_2026-09-26.md"
+      ]
+    },
+    {
+      "id": "FPCV-023",
+      "feature": "Semantic intersection quotient and cubic paired-NAE/bond-lattice/frontier projection",
+      "chronology": "2026-09-26",
+      "properties": {
+        "event_quotient_exact": true,
+        "bond_lattice_exact": true,
+        "frontier_projection_exact": true,
+        "output_sensitive_caps": true,
+        "universal_width_bound": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "REPRESENTATION"
+        ],
+        "summary": "Quotients duplicate event/clique histories by exact semantic intersections, then specializes paired NAE to equality partitions and active-frontier projection with Homeward."
+      },
+      "value": {
+        "class": [
+          "REPRESENTATION",
+          "BARRIER"
+        ],
+        "reason": "Demonstrates exact history compression while keeping carrier-size/width admission explicit."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "redogit/research/pnp/carriers/docs/PNP_SEMANTIC_INTERSECTION_QUOTIENT_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_CUBIC_3UNIFORM_RESIDUAL_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_CUBIC_BOND_LATTICE_CARRIER_2026-09-26.md",
+        "redogit/research/pnp/carriers/docs/PNP_CUBIC_FRONTIER_PROJECTION_CARRIER_2026-09-26.md"
+      ]
+    },
+    {
+      "id": "FPCV-024",
+      "feature": "Dean fixed-motif rank/rounding carriers",
+      "chronology": "2026-09-29",
+      "properties": {
+        "seven_vertex_antihole": "exact local rounding",
+        "nine_vertex_pattern": "exact local rounding",
+        "overlap_accounting": "exact",
+        "discovery": "fixed-size polynomial but high-degree",
+        "universal_rank_separator": false
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "COUNTEREXAMPLE",
+          "TERMINAL"
+        ],
+        "summary": "Closes specific integrality gaps while preserving one-edge and overlap counterprobes against unsafe admission/addition."
+      },
+      "value": {
+        "class": [
+          "TERMINAL",
+          "BARRIER"
+        ],
+        "reason": "Useful exact local certificates; prevents local-rank rows from being generalized without proof."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "redogit/research/pnp/dean/docs/PNP_DEAN_ONE_DEGREE_RANK_REPAIR_2026-09-29.md",
+        "redogit/research/pnp/dean/docs/PNP_DEAN_NINE_VERTEX_LOCAL_ROUNDING_2026-09-29.md",
+        "redogit/research/pnp/dean/docs/PNP_DEAN_OVERLAPPING_WHEEL_ROUNDING_2026-09-29.md"
+      ]
+    },
+    {
+      "id": "FPCV-025",
+      "feature": "Dean compact component expression",
+      "chronology": "2026-09-30",
+      "properties": {
+        "construction": "polynomial for private components <=3",
+        "evaluation_of_supplied_boundary": "polynomial",
+        "global_optimization": "can encode original Independent Set",
+        "witness_recovery": true
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "BARRIER"
+        ],
+        "summary": "Shows exact compact factors can be constructed cheaply while optimizing the resulting expression can still contain the original decision problem."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "BARRIER"
+        ],
+        "reason": "Canonical predecessor of the Anti-Ouroboros representation-versus-value distinction."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "redogit/research/pnp/dean/docs/PNP_DEAN_COMPONENT_EXPRESSION_2026-09-30.md"
+      ]
+    },
+    {
+      "id": "FPCV-026",
+      "feature": "Bipartite and one-vertex-bipartization Dean terminals",
+      "chronology": "2026-09-30",
+      "properties": {
+        "bipartite_matching": true,
+        "one_exception_vertex": true,
+        "discovery_polynomial": true,
+        "witnesses": true,
+        "repair_cap": 1
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "TERMINAL"
+        ],
+        "summary": "Exact maximum independent set via matching on bipartite residuals; complete polynomial recognition/solution when deletion of at most one vertex makes the graph bipartite."
+      },
+      "value": {
+        "class": [
+          "TERMINAL"
+        ],
+        "reason": "Nontrivial exact terminal with charged discovery, not merely supplied decomposition."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "redogit/research/pnp/dean/docs/PNP_DEAN_PARITY_REPAIR_2026-09-30.md"
+      ]
+    },
+    {
+      "id": "FPCV-027",
+      "feature": "Articulation composition over cap-one-bipartite atoms",
+      "chronology": "2026-09-30",
+      "properties": {
+        "interface": "one articulation vertex",
+        "message_states": 2,
+        "discovery_polynomial": true,
+        "local_solver": "cap-one bipartite",
+        "witness_recovery": true
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "TERMINAL",
+          "IMPLEMENTATION"
+        ],
+        "summary": "Exact dynamic composition over discovered articulation atoms; no factor exponential in number of atoms."
+      },
+      "value": {
+        "class": [
+          "TERMINAL",
+          "CORE"
+        ],
+        "reason": "Strongest structural Dean terminal in the imported September-30 line; concrete proof of local value composability across a bounded interface."
+      },
+      "status": "SCOPED_TERMINAL",
+      "sources": [
+        "redogit/research/pnp/dean/docs/PNP_DEAN_ARTICULATION_2026-09-30.md"
+      ]
+    },
+    {
+      "id": "FPCV-028",
+      "feature": "Obligation-driven generator field",
+      "chronology": "2026-10-03..2026-10-06",
+      "properties": {
+        "lineage": "FunctionalObject -> AnyFunctor -> LocalPlane -> ObligationGenerator",
+        "retains_failures": true,
+        "obligation_local_memory": true,
+        "proof_authority": "none by architecture alone"
+      },
+      "contribution": {
+        "type": [
+          "METHOD",
+          "IMPLEMENTATION"
+        ],
+        "summary": "Recasts P-vs-NP research as explicit obligation slices with separate constructive, lower-bound, cost, repair and referee outputs."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "METHOD"
+        ],
+        "reason": "Current execution discipline; preserves step gates, provenance, residuals and cost obligations."
+      },
+      "status": "METHOD_ONLY",
+      "sources": [
+        "research/programs/pnp-dual-proof-field/FUNCTIONALOBJECT_ANYFUNCTOR_GENERATOR_LINEAGE.md",
+        "research/programs/pnp-dual-proof-field/GENERATORS.md",
+        "research/programs/pnp-dual-proof-field/LINEAGE.json"
+      ]
+    },
+    {
+      "id": "FPCV-029",
+      "feature": "Cook/Clay admission gate and universal obligations",
+      "chronology": "2026-10-04..2026-10-06",
+      "properties": {
+        "complexity_variable": "n=|x|",
+        "deterministic_total_decider_required": true,
+        "verifier_constructor_separated": true,
+        "fixed_exponent_required": true
+      },
+      "contribution": {
+        "type": [
+          "FORMALIZATION",
+          "METHOD"
+        ],
+        "summary": "Binds U_COVER/U_LOCAL/U_MASS/U_CONT/U_TOTAL/U_INDUCT to one encoded-input, all-lifecycle polynomial admission discipline."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "METHOD"
+        ],
+        "reason": "Prevents verifier, route, representation, or locally polynomial steps from being promoted to a universal decider."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "research/programs/pnp-dual-proof-field/COOK_CLAY_FORMALIZATION.md",
+        "research/programs/pnp-dual-proof-field/OBLIGATIONS.md",
+        "research/programs/pnp-dual-proof-field/requests/REQ-0007-COST-MASS.json",
+        "research/programs/pnp-dual-proof-field/requests/REQ-0009-COOK-CONSTRUCTOR-BRIDGE.json"
+      ]
+    },
+    {
+      "id": "FPCV-030",
+      "feature": "JSON-IS-1 fixed input language and verifier",
+      "chronology": "2026-10-05",
+      "properties": {
+        "self_contained_x": true,
+        "ids_edges_K": true,
+        "total_invalid_rejection": true,
+        "checking_relation_polynomial": true,
+        "np_complete_binding": true,
+        "decider": false
+      },
+      "contribution": {
+        "type": [
+          "FORMALIZATION",
+          "IMPLEMENTATION"
+        ],
+        "summary": "Closes the encoding-choice bridge and supplies the explicit NP checking relation/NP-completeness binding."
+      },
+      "value": {
+        "class": [
+          "CORE"
+        ],
+        "reason": "Fixes the input/cost substrate used by constructive and counterexample work."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "research/programs/pnp-dual-proof-field/JSON_INPUT_ENCODING.md",
+        "research/programs/pnp-dual-proof-field/JSON_IS_COMPLETENESS.md",
+        "research/programs/pnp-dual-proof-field/requests/REQ-0010-ENCODING-BINDING.json"
+      ]
+    },
+    {
+      "id": "FPCV-031",
+      "feature": "A_0009 one-bit descent candidate",
+      "chronology": "2026-10-05",
+      "properties": {
+        "x_only": true,
+        "polynomial_route": "scoped algorithm-level",
+        "yes_witness_sound": true,
+        "no_completeness": false
+      },
+      "contribution": {
+        "type": [
+          "IMPLEMENTATION",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Instantiated the first Cook-compatible candidate and stopped at a three-vertex false-NO counterexample."
+      },
+      "value": {
+        "class": [
+          "BARRIER",
+          "CALIBRATION"
+        ],
+        "reason": "Pins the exact missing bridge: local one-bit saturation does not imply global NO."
+      },
+      "status": "REFUTED_UNIVERSAL",
+      "sources": [
+        "research/programs/pnp-dual-proof-field/results/REQ-0009-CANDIDATE-RESULT.md",
+        "research/programs/pnp-dual-proof-field/results/REQ-0009-COOK-COMPLIANCE.md"
+      ]
+    },
+    {
+      "id": "FPCV-032",
+      "feature": "A_0009_ONE_FOR_TWO continuation",
+      "chronology": "2026-10-06",
+      "properties": {
+        "x_only": true,
+        "repairs_three_vertex_star": true,
+        "one_for_two_exchange": true,
+        "polynomial_route": "O((n+1)^9) abstract tape bound",
+        "exact_decider": false
+      },
+      "contribution": {
+        "type": [
+          "IMPLEMENTATION",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Repaired the first star but failed at the vertex-minimal N=5 path counterexample after 3,568 stopped-prefix instances."
+      },
+      "value": {
+        "class": [
+          "BARRIER",
+          "CALIBRATION"
+        ],
+        "reason": "Shows bounded local exchange depth does not supply completeness; preserves the failure as an explicit obstruction."
+      },
+      "status": "REFUTED_UNIVERSAL",
+      "sources": [
+        "research/programs/pnp-dual-proof-field/results/REQ-0009-ONE-FOR-TWO-RESULT.md"
+      ]
+    },
+    {
+      "id": "FPCV-033",
+      "feature": "Minimum-dorm-repair exact baseline and two-dorm dynamic program",
+      "chronology": "2026-10-07",
+      "properties": {
+        "general_search": "exact by increasing move budget",
+        "fixed_budget": "polynomial for constant r",
+        "constant_radius": "refuted by infinite family",
+        "two_dorms": "exact polynomial DP",
+        "arbitrary_dorms": "open"
+      },
+      "contribution": {
+        "type": [
+          "THEOREM",
+          "ALGORITHM",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Separates exact bounded repair from unrestricted search; proves arbitrary move depth can coexist with a compact future-sufficient state in the two-dorm case."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "TERMINAL"
+        ],
+        "reason": "Direct model of safe state merging: same processed components and occupancy have identical future options."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "external:SRC-DORM-2026-10-07"
+      ]
+    },
+    {
+      "id": "FPCV-034",
+      "feature": "Binary badges and selective dependency reads",
+      "chronology": "2026-10-07",
+      "properties": {
+        "stable_snapshot": true,
+        "forbidden_masks": true,
+        "two_dorm_component_orientation": true,
+        "selective_verification": true,
+        "capacity_dependencies_required": true,
+        "minimum_read_query_optimality": false
+      },
+      "contribution": {
+        "type": [
+          "REPRESENTATION",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Defines exact binary carrier fields and proves selective reads sound under current summaries while refuting conflict-only reads via a capacity-only dependency example."
+      },
+      "value": {
+        "class": [
+          "REPRESENTATION",
+          "BARRIER"
+        ],
+        "reason": "Introduces explicit local facts + shared exact summaries + invalidation obligations."
+      },
+      "status": "PROVED_EXACT",
+      "sources": [
+        "external:SRC-DORM-2026-10-07"
+      ]
+    },
+    {
+      "id": "FPCV-035",
+      "feature": "Cross-state frontier signature sigma_front(S)=(|S|,A(S))",
+      "chronology": "2026-10-10",
+      "properties": {
+        "keeps_exact_addable_frontier": true,
+        "continuation_sufficient": false,
+        "counterexample": "N=5 path"
+      },
+      "contribution": {
+        "type": [
+          "SESSION_DERIVATION",
+          "COUNTEREXAMPLE"
+        ],
+        "summary": "Two size-2 states can have identical empty addable frontier but different successful frozen 1-for-2 continuations."
+      },
+      "value": {
+        "class": [
+          "BARRIER",
+          "PENDING"
+        ],
+        "reason": "Shows current legal frontier loses blocker responsibility needed by exchange decisions."
+      },
+      "status": "SESSION_DERIVATION_UNPROMOTED",
+      "semantic_ancestry": [
+        "FPCV-032",
+        "FPCV-006"
+      ],
+      "sources": [
+        "conversation:2026-10-10",
+        "research/programs/pnp-dual-proof-field/results/REQ-0009-ONE-FOR-TWO-RESULT.md"
+      ]
+    },
+    {
+      "id": "FPCV-036",
+      "feature": "Exact blocker-incidence carrier B_S(v)=N(v)∩S",
+      "chronology": "2026-10-10",
+      "properties": {
+        "future_sufficient": "trivially, because domain identifies S",
+        "injective": true,
+        "nontrivial_quotient": false,
+        "polynomial_size": true
+      },
+      "contribution": {
+        "type": [
+          "SESSION_DERIVATION"
+        ],
+        "summary": "Repairs the frontier collision but does so by preserving enough information to recover the exact selected state."
+      },
+      "value": {
+        "class": [
+          "BARRIER",
+          "PENDING"
+        ],
+        "reason": "Demonstrates identity preservation is not useful compression and motivates the Anti-Ouroboros closure test."
+      },
+      "status": "SESSION_DERIVATION_UNPROMOTED",
+      "semantic_ancestry": [
+        "FPCV-035"
+      ],
+      "sources": [
+        "conversation:2026-10-10"
+      ]
+    },
+    {
+      "id": "FPCV-037",
+      "feature": "Residual future-behavior equivalence",
+      "chronology": "2026-10-10",
+      "properties": {
+        "definition": "S~T iff every allowed future continuation has the same decision value",
+        "semantic_fixed_point": true,
+        "coarsest_exact_future_quotient": true,
+        "computability": "not established"
+      },
+      "contribution": {
+        "type": [
+          "SESSION_DERIVATION"
+        ],
+        "summary": "Collapses arbitrary cross-state exclusion/obligation depth semantically into one future-behavior equivalence class."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "REPRESENTATION",
+          "PENDING"
+        ],
+        "reason": "Precise target for continuation sufficiency; separates semantic closure from efficient discovery/evaluation."
+      },
+      "status": "SESSION_DERIVATION_UNPROMOTED",
+      "semantic_ancestry": [
+        "FPCV-006",
+        "FPCV-021",
+        "FPCV-033"
+      ],
+      "sources": [
+        "conversation:2026-10-10"
+      ]
+    },
+    {
+      "id": "FPCV-038",
+      "feature": "Width-w future-behavior index lower bound",
+      "chronology": "2026-10-10",
+      "properties": {
+        "boundary_width": "w",
+        "inequivalent_classes": "at least binomial(w,floor(w/2)) under fixed-boundary extension semantics",
+        "class_id_size": "can still be O(w)",
+        "runtime_lower_bound": false
+      },
+      "contribution": {
+        "type": [
+          "SESSION_DERIVATION"
+        ],
+        "summary": "Shows exponential numbers of future-distinguishable interface states need not imply exponential storage for one current state."
+      },
+      "value": {
+        "class": [
+          "BARRIER",
+          "PENDING"
+        ],
+        "reason": "Prevents class-count explosion from being mislabeled as a representation or runtime lower bound."
+      },
+      "status": "SESSION_DERIVATION_UNPROMOTED",
+      "semantic_ancestry": [
+        "FPCV-007",
+        "FPCV-037"
+      ],
+      "sources": [
+        "conversation:2026-10-10"
+      ]
+    },
+    {
+      "id": "FPCV-039",
+      "feature": "Anti-Ouroboros representation / quotient / value separation",
+      "chronology": "2026-10-10",
+      "properties": {
+        "trivial_representation": "C(x)=x is already polynomial-size and composition-closed",
+        "quotient": "must merge states without losing future value",
+        "value_evaluation": "must be polynomial without reconstructing an equally hard solve",
+        "total_work": "all lifecycle charged"
+      },
+      "contribution": {
+        "type": [
+          "SESSION_DERIVATION",
+          "FORMALIZATION"
+        ],
+        "summary": "Identifies polynomial exact value evaluation—not finite/poly-size representation alone—as the essential missing operation."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "PENDING"
+        ],
+        "reason": "Directly unifies the Dean component-expression barrier with the positive-circuit signature-value obligation."
+      },
+      "status": "SESSION_DERIVATION_UNPROMOTED",
+      "semantic_ancestry": [
+        "FPCV-021",
+        "FPCV-022",
+        "FPCV-025",
+        "FPCV-029",
+        "FPCV-037"
+      ],
+      "sources": [
+        "conversation:2026-10-10",
+        "redogit/research/pnp/dean/docs/PNP_DEAN_COMPONENT_EXPRESSION_2026-09-30.md",
+        "redogit/research/pnp/carriers/docs/PNP_POSITIVE_CIRCUIT_SIGNATURE_COMPLETENESS_2026-09-26.md"
+      ]
+    },
+    {
+      "id": "FPCV-040",
+      "feature": "Local value composability",
+      "chronology": "2026-10-10",
+      "properties": {
+        "candidate_equation": "V(C1⊗C2)=F(V(C1),V(C2),I12)",
+        "interface": "polynomial-size cross-state exclusion/obligation carrier",
+        "anti_recursion": "F must not invoke value on an equally hard reconstructed residual",
+        "proved_general": false
+      },
+      "contribution": {
+        "type": [
+          "OPEN_OBLIGATION"
+        ],
+        "summary": "Proposed next registry-level criterion for a carrier that closes value locally rather than merely representing the residual."
+      },
+      "value": {
+        "class": [
+          "CORE",
+          "PENDING"
+        ],
+        "reason": "Natural next bounded proof obligation; articulation composition is a scoped positive example, universal closure remains open."
+      },
+      "status": "OPEN",
+      "semantic_ancestry": [
+        "FPCV-020",
+        "FPCV-027",
+        "FPCV-039"
+      ],
+      "sources": [
+        "conversation:2026-10-10",
+        "redogit/research/pnp/dean/docs/PNP_DEAN_ARTICULATION_2026-09-30.md"
+      ]
+    }
+  ],
+  "current_open_obligations": [
+    {
+      "id": "U_COVER",
+      "status": "OPEN",
+      "meaning": "Universal exact coverage without solution-oracle applicability."
+    },
+    {
+      "id": "U_LOCAL",
+      "status": "PARTIAL",
+      "meaning": "Uniformly polynomial complete lifecycle for every admitted local move."
+    },
+    {
+      "id": "U_MASS",
+      "status": "OPEN/PARTIAL",
+      "meaning": "One fixed polynomial controls total branching/composition and carrier growth."
+    },
+    {
+      "id": "U_CONT",
+      "status": "OPEN",
+      "meaning": "Exact continuation-sufficient carrier is universally and cheaply discoverable/updateable."
+    },
+    {
+      "id": "SIGNATURE_VALUE",
+      "status": "OPEN",
+      "meaning": "Polynomially decide SAT on the normalized surviving positive-circuit core U(C)."
+    },
+    {
+      "id": "LOCAL_VALUE_COMPOSABILITY",
+      "status": "OPEN",
+      "meaning": "Find a universal exact composition law whose value step does not recreate an equally hard residual solve."
+    }
+  ]
+}
